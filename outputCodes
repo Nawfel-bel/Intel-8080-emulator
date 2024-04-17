@@ -1,0 +1,7599 @@
+0000 NOP
+0001 NOP
+0002 NOP
+0003 JMP    $18d4
+0006 NOP
+0007 NOP
+0008 Unknown opcode
+0009 Unknown opcode
+000a Unknown opcode
+000b Unknown opcode
+000c JMP    $008c
+000f NOP
+0010 Unknown opcode
+0011 Unknown opcode
+0012 Unknown opcode
+0013 Unknown opcode
+0014 MVI    A,#0x80
+0016 Unknown opcode
+0017 Unknown opcode
+0018 Unknown opcode
+0019 Unknown opcode
+001a Unknown opcode
+001b Unknown opcode
+001c Unknown opcode
+001d Unknown opcode
+001e Unknown opcode
+001f Unknown opcode
+0020 Unknown opcode
+0021 LXI    B,#$da0f
+0024 Unknown opcode
+0025 NOP
+0026 Unknown opcode
+0027 Unknown opcode
+0028 Unknown opcode
+0029 Unknown opcode
+002a Unknown opcode
+002b Unknown opcode
+002c NOP
+002d Unknown opcode
+002e Unknown opcode
+002f Unknown opcode
+0030 Unknown opcode
+0031 Unknown opcode
+0032 Unknown opcode
+0033 MVI    A,#0x00
+0035 Unknown opcode
+0036 LXI    B,#$3227
+0039 Unknown opcode
+003a Unknown opcode
+003b Unknown opcode
+003c Unknown opcode
+003d Unknown opcode
+003e Unknown opcode
+003f Unknown opcode
+0040 Unknown opcode
+0041 Unknown opcode
+0042 Unknown opcode
+0043 Unknown opcode
+0044 Unknown opcode
+0045 Unknown opcode
+0046 Unknown opcode
+0047 Unknown opcode
+0048 NOP
+0049 Unknown opcode
+004a Unknown opcode
+004b Unknown opcode
+004c Unknown opcode
+004d Unknown opcode
+004e Unknown opcode
+004f NOP
+0050 Unknown opcode
+0051 Unknown opcode
+0052 Unknown opcode
+0053 Unknown opcode
+0054 Unknown opcode
+0055 Unknown opcode
+0056 NOP
+0057 Unknown opcode
+0058 Unknown opcode
+0059 Unknown opcode
+005a JMP    $0082
+005d Unknown opcode
+005e Unknown opcode
+005f Unknown opcode
+0060 Unknown opcode
+0061 Unknown opcode
+0062 Unknown opcode
+0063 NOP
+0064 JMP    $0765
+0067 MVI    A,#0x01
+0069 Unknown opcode
+006a Unknown opcode
+006b Unknown opcode
+006c JMP    $003f
+006f Unknown opcode
+0070 Unknown opcode
+0071 Unknown opcode
+0072 Unknown opcode
+0073 Unknown opcode
+0074 Unknown opcode
+0075 Unknown opcode
+0076 Unknown opcode
+0077 Unknown opcode
+0078 Unknown opcode
+0079 NOP
+007a LXI    B,#$48cd
+007d STAX   B
+007e Unknown opcode
+007f Unknown opcode
+0080 Unknown opcode
+0081 NOP
+0082 Unknown opcode
+0083 Unknown opcode
+0084 Unknown opcode
+0085 Unknown opcode
+0086 Unknown opcode
+0087 Unknown opcode
+0088 NOP
+0089 NOP
+008a NOP
+008b NOP
+008c Unknown opcode
+008d Unknown opcode
+008e Unknown opcode
+008f Unknown opcode
+0090 Unknown opcode
+0091 Unknown opcode
+0092 Unknown opcode
+0093 Unknown opcode
+0094 Unknown opcode
+0095 Unknown opcode
+0096 NOP
+0097 Unknown opcode
+0098 Unknown opcode
+0099 Unknown opcode
+009a Unknown opcode
+009b Unknown opcode
+009c Unknown opcode
+009d NOP
+009e Unknown opcode
+009f Unknown opcode
+00a0 Unknown opcode
+00a1 Unknown opcode
+00a2 Unknown opcode
+00a3 Unknown opcode
+00a4 NOP
+00a5 Unknown opcode
+00a6 Unknown opcode
+00a7 Unknown opcode
+00a8 Unknown opcode
+00a9 Unknown opcode
+00aa STAX   B
+00ab Unknown opcode
+00ac Unknown opcode
+00ad LXI    B,#$82c3
+00b0 NOP
+00b1 Unknown opcode
+00b2 Unknown opcode
+00b3 NOP
+00b4 Unknown opcode
+00b5 Unknown opcode
+00b6 Unknown opcode
+00b7 Unknown opcode
+00b8 Unknown opcode
+00b9 Unknown opcode
+00ba Unknown opcode
+00bb Unknown opcode
+00bc Unknown opcode
+00bd Unknown opcode
+00be Unknown opcode
+00bf Unknown opcode
+00c0 Unknown opcode
+00c1 Unknown opcode
+00c2 Unknown opcode
+00c3 INX    B
+00c4 Unknown opcode
+00c5 Unknown opcode
+00c6 NOP
+00c7 Unknown opcode
+00c8 Unknown opcode
+00c9 NOP
+00ca Unknown opcode
+00cb Unknown opcode
+00cc Unknown opcode
+00cd MVI    A,#0x00
+00cf Unknown opcode
+00d0 Unknown opcode
+00d1 NOP
+00d2 Unknown opcode
+00d3 Unknown opcode
+00d4 Unknown opcode
+00d5 Unknown opcode
+00d6 Unknown opcode
+00d7 MVI    A,#0x02
+00d9 Unknown opcode
+00da Unknown opcode
+00db Unknown opcode
+00dc Unknown opcode
+00dd Unknown opcode
+00de Unknown opcode
+00df JMP    $08e4
+00e2 NOP
+00e3 NOP
+00e4 NOP
+00e5 NOP
+00e6 NOP
+00e7 NOP
+00e8 NOP
+00e9 NOP
+00ea NOP
+00eb NOP
+00ec NOP
+00ed NOP
+00ee NOP
+00ef NOP
+00f0 NOP
+00f1 NOP
+00f2 NOP
+00f3 NOP
+00f4 NOP
+00f5 NOP
+00f6 NOP
+00f7 NOP
+00f8 NOP
+00f9 NOP
+00fa NOP
+00fb NOP
+00fc NOP
+00fd NOP
+00fe NOP
+00ff NOP
+0100 Unknown opcode
+0101 STAX   B
+0102 Unknown opcode
+0103 Unknown opcode
+0104 Unknown opcode
+0105 Unknown opcode
+0106 Unknown opcode
+0107 Unknown opcode
+0108 Unknown opcode
+0109 Unknown opcode
+010a MVI    B,#$20
+010c Unknown opcode
+010d Unknown opcode
+010e Unknown opcode
+010f Unknown opcode
+0110 Unknown opcode
+0111 Unknown opcode
+0112 Unknown opcode
+0113 Unknown opcode
+0114 Unknown opcode
+0115 Unknown opcode
+0116 LXI    B,#$2323
+0119 Unknown opcode
+011a Unknown opcode
+011b Unknown opcode
+011c Unknown opcode
+011d Unknown opcode
+011e RLC
+011f RLC
+0120 RLC
+0121 Unknown opcode
+0122 Unknown opcode
+0123 NOP
+0124 Unknown opcode
+0125 NOP
+0126 Unknown opcode
+0127 Unknown opcode
+0128 Unknown opcode
+0129 Unknown opcode
+012a Unknown opcode
+012b Unknown opcode
+012c Unknown opcode
+012d LXI    B,#$0b2a
+0130 Unknown opcode
+0131 MVI    B,#$10
+0133 Unknown opcode
+0134 Unknown opcode
+0135 Unknown opcode
+0136 Unknown opcode
+0137 Unknown opcode
+0138 NOP
+0139 Unknown opcode
+013a Unknown opcode
+013b Unknown opcode
+013c Unknown opcode
+013d NOP
+013e Unknown opcode
+013f Unknown opcode
+0140 Unknown opcode
+0141 Unknown opcode
+0142 Unknown opcode
+0143 Unknown opcode
+0144 Unknown opcode
+0145 Unknown opcode
+0146 Unknown opcode
+0147 NOP
+0148 Unknown opcode
+0149 Unknown opcode
+014a Unknown opcode
+014b Unknown opcode
+014c Unknown opcode
+014d Unknown opcode
+014e Unknown opcode
+014f Unknown opcode
+0150 MVI    B,#$20
+0152 Unknown opcode
+0153 STAX   B
+0154 Unknown opcode
+0155 Unknown opcode
+0156 Unknown opcode
+0157 Unknown opcode
+0158 Unknown opcode
+0159 LXI    B,#$466f
+015c DCR    B
+015d Unknown opcode
+015e Unknown opcode
+015f LXI    B,#$0632
+0162 Unknown opcode
+0163 Unknown opcode
+0164 Unknown opcode
+0165 LXI    B,#$2261
+0168 Unknown opcode
+0169 Unknown opcode
+016a Unknown opcode
+016b Unknown opcode
+016c Unknown opcode
+016d Unknown opcode
+016e Unknown opcode
+016f Unknown opcode
+0170 Unknown opcode
+0171 Unknown opcode
+0172 INR    B
+0173 Unknown opcode
+0174 MVI    A,#0x01
+0176 Unknown opcode
+0177 NOP
+0178 Unknown opcode
+0179 Unknown opcode
+017a Unknown opcode
+017b NOP
+017c Unknown opcode
+017d Unknown opcode
+017e Unknown opcode
+017f Unknown opcode
+0180 Unknown opcode
+0181 Unknown opcode
+0182 Unknown opcode
+0183 Unknown opcode
+0184 Unknown opcode
+0185 Unknown opcode
+0186 Unknown opcode
+0187 LXI    B,#$0bde
+018a Unknown opcode
+018b Unknown opcode
+018c Unknown opcode
+018d Unknown opcode
+018e Unknown opcode
+018f Unknown opcode
+0190 Unknown opcode
+0191 JMP    $0183
+0194 Unknown opcode
+0195 Unknown opcode
+0196 Unknown opcode
+0197 Unknown opcode
+0198 Unknown opcode
+0199 Unknown opcode
+019a Unknown opcode
+019b Unknown opcode
+019c Unknown opcode
+019d Unknown opcode
+019e JMP    $0195
+01a1 Unknown opcode
+01a2 Unknown opcode
+01a3 Unknown opcode
+01a4 LXI    B,#$0621
+01a7 Unknown opcode
+01a8 Unknown opcode
+01a9 NOP
+01aa Unknown opcode
+01ab Unknown opcode
+01ac Unknown opcode
+01ad NOP
+01ae Unknown opcode
+01af Unknown opcode
+01b0 LXI    B,#$0521
+01b3 Unknown opcode
+01b4 Unknown opcode
+01b5 Unknown opcode
+01b6 Unknown opcode
+01b7 LXI    B,#$af77
+01ba Unknown opcode
+01bb Unknown opcode
+01bc Unknown opcode
+01bd Unknown opcode
+01be Unknown opcode
+01bf NOP
+01c0 Unknown opcode
+01c1 NOP
+01c2 Unknown opcode
+01c3 MVI    B,#$37
+01c5 Unknown opcode
+01c6 LXI    B,#$0523
+01c9 Unknown opcode
+01ca Unknown opcode
+01cb LXI    B,#$e1c9
+01ce Unknown opcode
+01cf MVI    A,#0x01
+01d1 MVI    B,#$e0
+01d3 Unknown opcode
+01d4 STAX   B
+01d5 Unknown opcode
+01d6 JMP    $14cc
+01d9 Unknown opcode
+01da Unknown opcode
+01db Unknown opcode
+01dc Unknown opcode
+01dd Unknown opcode
+01de Unknown opcode
+01df Unknown opcode
+01e0 Unknown opcode
+01e1 Unknown opcode
+01e2 Unknown opcode
+01e3 Unknown opcode
+01e4 MVI    B,#$c0
+01e6 Unknown opcode
+01e7 NOP
+01e8 Unknown opcode
+01e9 Unknown opcode
+01ea NOP
+01eb Unknown opcode
+01ec JMP    $1a32
+01ef Unknown opcode
+01f0 Unknown opcode
+01f1 Unknown opcode
+01f2 JMP    $01f8
+01f5 Unknown opcode
+01f6 Unknown opcode
+01f7 Unknown opcode
+01f8 Unknown opcode
+01f9 INR    B
+01fa Unknown opcode
+01fb Unknown opcode
+01fc Unknown opcode
+01fd Unknown opcode
+01fe MVI    B,#$2c
+0200 Unknown opcode
+0201 Unknown opcode
+0202 Unknown opcode
+0203 Unknown opcode
+0204 Unknown opcode
+0205 Unknown opcode
+0206 Unknown opcode
+0207 LXI    B,#$3ec9
+020a LXI    B,#$1bc3
+020d STAX   B
+020e MVI    A,#0x01
+0210 JMP    $0214
+0213 Unknown opcode
+0214 Unknown opcode
+0215 Unknown opcode
+0216 Unknown opcode
+0217 JMP    $021e
+021a Unknown opcode
+021b Unknown opcode
+021c Unknown opcode
+021d Unknown opcode
+021e Unknown opcode
+021f Unknown opcode
+0220 Unknown opcode
+0221 LXI    B,#$1602
+0224 Unknown opcode
+0225 MVI    B,#$28
+0227 MVI    A,#0x04
+0229 Unknown opcode
+022a Unknown opcode
+022b Unknown opcode
+022c Unknown opcode
+022d Unknown opcode
+022e Unknown opcode
+022f Unknown opcode
+0230 Unknown opcode
+0231 STAX   B
+0232 Unknown opcode
+0233 Unknown opcode
+0234 Unknown opcode
+0235 Unknown opcode
+0236 Unknown opcode
+0237 Unknown opcode
+0238 Unknown opcode
+0239 Unknown opcode
+023a Unknown opcode
+023b Unknown opcode
+023c STAX   B
+023d Unknown opcode
+023e Unknown opcode
+023f JMP    $0229
+0242 Unknown opcode
+0243 Unknown opcode
+0244 Unknown opcode
+0245 JMP    $0235
+0248 Unknown opcode
+0249 Unknown opcode
+024a Unknown opcode
+024b Unknown opcode
+024c Unknown opcode
+024d Unknown opcode
+024e Unknown opcode
+024f Unknown opcode
+0250 Unknown opcode
+0251 Unknown opcode
+0252 Unknown opcode
+0253 STAX   B
+0254 Unknown opcode
+0255 Unknown opcode
+0256 Unknown opcode
+0257 Unknown opcode
+0258 Unknown opcode
+0259 Unknown opcode
+025a Unknown opcode
+025b STAX   B
+025c Unknown opcode
+025d Unknown opcode
+025e Unknown opcode
+025f Unknown opcode
+0260 Unknown opcode
+0261 STAX   B
+0262 Unknown opcode
+0263 Unknown opcode
+0264 Unknown opcode
+0265 Unknown opcode
+0266 Unknown opcode
+0267 Unknown opcode
+0268 Unknown opcode
+0269 Unknown opcode
+026a Unknown opcode
+026b STAX   B
+026c Unknown opcode
+026d Unknown opcode
+026e Unknown opcode
+026f Unknown opcode
+0270 Unknown opcode
+0271 Unknown opcode
+0272 NOP
+0273 Unknown opcode
+0274 JMP    $024b
+0277 DCR    B
+0278 INR    B
+0279 Unknown opcode
+027a Unknown opcode
+027b STAX   B
+027c Unknown opcode
+027d DCR    B
+027e Unknown opcode
+027f Unknown opcode
+0280 Unknown opcode
+0281 Unknown opcode
+0282 Unknown opcode
+0283 NOP
+0284 Unknown opcode
+0285 JMP    $024b
+0288 Unknown opcode
+0289 Unknown opcode
+028a Unknown opcode
+028b JMP    $0281
+028e Unknown opcode
+028f Unknown opcode
+0290 Unknown opcode
+0291 Unknown opcode
+0292 Unknown opcode
+0293 Unknown opcode
+0294 Unknown opcode
+0295 INX    B
+0296 Unknown opcode
+0297 Unknown opcode
+0298 Unknown opcode
+0299 Unknown opcode
+029a Unknown opcode
+029b Unknown opcode
+029c Unknown opcode
+029d Unknown opcode
+029e Unknown opcode
+029f Unknown opcode
+02a0 Unknown opcode
+02a1 MVI    A,#0x30
+02a3 Unknown opcode
+02a4 Unknown opcode
+02a5 Unknown opcode
+02a6 Unknown opcode
+02a7 Unknown opcode
+02a8 DCR    B
+02a9 Unknown opcode
+02aa Unknown opcode
+02ab Unknown opcode
+02ac Unknown opcode
+02ad INX    B
+02ae Unknown opcode
+02af Unknown opcode
+02b0 Unknown opcode
+02b1 MVI    B,#$10
+02b3 Unknown opcode
+02b4 Unknown opcode
+02b5 Unknown opcode
+02b6 Unknown opcode
+02b7 Unknown opcode
+02b8 Unknown opcode
+02b9 Unknown opcode
+02ba Unknown opcode
+02bb Unknown opcode
+02bc MVI    B,#$10
+02be Unknown opcode
+02bf Unknown opcode
+02c0 Unknown opcode
+02c1 MVI    B,#$00
+02c3 Unknown opcode
+02c4 Unknown opcode
+02c5 Unknown opcode
+02c6 Unknown opcode
+02c7 Unknown opcode
+02c8 Unknown opcode
+02c9 Unknown opcode
+02ca Unknown opcode
+02cb Unknown opcode
+02cc Unknown opcode
+02cd Unknown opcode
+02ce Unknown opcode
+02cf Unknown opcode
+02d0 Unknown opcode
+02d1 NOP
+02d2 Unknown opcode
+02d3 Unknown opcode
+02d4 Unknown opcode
+02d5 Unknown opcode
+02d6 Unknown opcode
+02d7 Unknown opcode
+02d8 Unknown opcode
+02d9 Unknown opcode
+02da Unknown opcode
+02db Unknown opcode
+02dc Unknown opcode
+02dd Unknown opcode
+02de Unknown opcode
+02df Unknown opcode
+02e0 Unknown opcode
+02e1 Unknown opcode
+02e2 Unknown opcode
+02e3 Unknown opcode
+02e4 Unknown opcode
+02e5 INX    B
+02e6 Unknown opcode
+02e7 Unknown opcode
+02e8 Unknown opcode
+02e9 Unknown opcode
+02ea Unknown opcode
+02eb Unknown opcode
+02ec INX    B
+02ed Unknown opcode
+02ee Unknown opcode
+02ef Unknown opcode
+02f0 Unknown opcode
+02f1 Unknown opcode
+02f2 Unknown opcode
+02f3 Unknown opcode
+02f4 INX    B
+02f5 Unknown opcode
+02f6 Unknown opcode
+02f7 STAX   B
+02f8 Unknown opcode
+02f9 Unknown opcode
+02fa NOP
+02fb Unknown opcode
+02fc Unknown opcode
+02fd Unknown opcode
+02fe Unknown opcode
+02ff Unknown opcode
+0300 Unknown opcode
+0301 NOP
+0302 Unknown opcode
+0303 Unknown opcode
+0304 LXI    B,#$0ff1
+0307 MVI    A,#0x21
+0309 MVI    B,#$00
+030b Unknown opcode
+030c Unknown opcode
+030d INX    B
+030e MVI    B,#$20
+0310 MVI    A,#0x22
+0312 Unknown opcode
+0313 Unknown opcode
+0314 Unknown opcode
+0315 Unknown opcode
+0316 Unknown opcode
+0317 Unknown opcode
+0318 Unknown opcode
+0319 Unknown opcode
+031a Unknown opcode
+031b Unknown opcode
+031c Unknown opcode
+031d Unknown opcode
+031e DCR    B
+031f Unknown opcode
+0320 Unknown opcode
+0321 Unknown opcode
+0322 Unknown opcode
+0323 Unknown opcode
+0324 Unknown opcode
+0325 Unknown opcode
+0326 Unknown opcode
+0327 Unknown opcode
+0328 Unknown opcode
+0329 JMP    $07f9
+032c Unknown opcode
+032d Unknown opcode
+032e Unknown opcode
+032f JMP    $0817
+0332 Unknown opcode
+0333 Unknown opcode
+0334 STAX   B
+0335 JMP    $02f8
+0338 NOP
+0339 NOP
+033a NOP
+033b Unknown opcode
+033c Unknown opcode
+033d Unknown opcode
+033e Unknown opcode
+033f LXI    B,#$7e23
+0342 Unknown opcode
+0343 JMP    $03b0
+0346 NOP
+0347 Unknown opcode
+0348 Unknown opcode
+0349 LXI    B,#$1b3a
+034c Unknown opcode
+034d Unknown opcode
+034e Unknown opcode
+034f Unknown opcode
+0350 Unknown opcode
+0351 Unknown opcode
+0352 Unknown opcode
+0353 Unknown opcode
+0354 INX    B
+0355 Unknown opcode
+0356 Unknown opcode
+0357 Unknown opcode
+0358 Unknown opcode
+0359 Unknown opcode
+035a Unknown opcode
+035b INX    B
+035c Unknown opcode
+035d Unknown opcode
+035e Unknown opcode
+035f INX    B
+0360 JMP    $036f
+0363 Unknown opcode
+0364 Unknown opcode
+0365 Unknown opcode
+0366 RLC
+0367 RLC
+0368 Unknown opcode
+0369 Unknown opcode
+036a INX    B
+036b RLC
+036c Unknown opcode
+036d Unknown opcode
+036e INX    B
+036f Unknown opcode
+0370 Unknown opcode
+0371 Unknown opcode
+0372 Unknown opcode
+0373 Unknown opcode
+0374 Unknown opcode
+0375 Unknown opcode
+0376 Unknown opcode
+0377 Unknown opcode
+0378 Unknown opcode
+0379 Unknown opcode
+037a Unknown opcode
+037b MVI    A,#0x00
+037d Unknown opcode
+037e Unknown opcode
+037f Unknown opcode
+0380 Unknown opcode
+0381 Unknown opcode
+0382 Unknown opcode
+0383 Unknown opcode
+0384 Unknown opcode
+0385 Unknown opcode
+0386 INX    B
+0387 Unknown opcode
+0388 Unknown opcode
+0389 Unknown opcode
+038a Unknown opcode
+038b JMP    $036f
+038e Unknown opcode
+038f Unknown opcode
+0390 Unknown opcode
+0391 Unknown opcode
+0392 Unknown opcode
+0393 INX    B
+0394 Unknown opcode
+0395 Unknown opcode
+0396 Unknown opcode
+0397 Unknown opcode
+0398 JMP    $036f
+039b Unknown opcode
+039c Unknown opcode
+039d LXI    B,#$1532
+03a0 Unknown opcode
+03a1 RLC
+03a2 RLC
+03a3 RLC
+03a4 RLC
+03a5 Unknown opcode
+03a6 Unknown opcode
+03a7 Unknown opcode
+03a8 Unknown opcode
+03a9 Unknown opcode
+03aa Unknown opcode
+03ab Unknown opcode
+03ac Unknown opcode
+03ad JMP    $036f
+03b0 Unknown opcode
+03b1 Unknown opcode
+03b2 INX    B
+03b3 Unknown opcode
+03b4 Unknown opcode
+03b5 Unknown opcode
+03b6 Unknown opcode
+03b7 INX    B
+03b8 JMP    $0346
+03bb Unknown opcode
+03bc Unknown opcode
+03bd Unknown opcode
+03be Unknown opcode
+03bf MVI    B,#$1a
+03c1 Unknown opcode
+03c2 Unknown opcode
+03c3 Unknown opcode
+03c4 Unknown opcode
+03c5 Unknown opcode
+03c6 Unknown opcode
+03c7 Unknown opcode
+03c8 LXI    B,#$faca
+03cb INX    B
+03cc Unknown opcode
+03cd STAX   B
+03ce Unknown opcode
+03cf Unknown opcode
+03d0 INR    B
+03d1 Unknown opcode
+03d2 Unknown opcode
+03d3 INX    B
+03d4 Unknown opcode
+03d5 Unknown opcode
+03d6 INR    B
+03d7 Unknown opcode
+03d8 Unknown opcode
+03d9 Unknown opcode
+03da INR    B
+03db Unknown opcode
+03dc Unknown opcode
+03dd Unknown opcode
+03de Unknown opcode
+03df Unknown opcode
+03e0 Unknown opcode
+03e1 Unknown opcode
+03e2 INR    B
+03e3 Unknown opcode
+03e4 Unknown opcode
+03e5 Unknown opcode
+03e6 Unknown opcode
+03e7 Unknown opcode
+03e8 Unknown opcode
+03e9 Unknown opcode
+03ea Unknown opcode
+03eb Unknown opcode
+03ec Unknown opcode
+03ed Unknown opcode
+03ee Unknown opcode
+03ef Unknown opcode
+03f0 Unknown opcode
+03f1 Unknown opcode
+03f2 Unknown opcode
+03f3 NOP
+03f4 Unknown opcode
+03f5 Unknown opcode
+03f6 INR    B
+03f7 JMP    $1400
+03fa Unknown opcode
+03fb Unknown opcode
+03fc Unknown opcode
+03fd Unknown opcode
+03fe Unknown opcode
+03ff Unknown opcode
+0400 NOP
+0401 Unknown opcode
+0402 Unknown opcode
+0403 Unknown opcode
+0404 Unknown opcode
+0405 Unknown opcode
+0406 INR    B
+0407 JMP    $1400
+040a Unknown opcode
+040b Unknown opcode
+040c INR    B
+040d Unknown opcode
+040e Unknown opcode
+040f Unknown opcode
+0410 Unknown opcode
+0411 Unknown opcode
+0412 Unknown opcode
+0413 Unknown opcode
+0414 Unknown opcode
+0415 Unknown opcode
+0416 Unknown opcode
+0417 Unknown opcode
+0418 Unknown opcode
+0419 Unknown opcode
+041a Unknown opcode
+041b Unknown opcode
+041c Unknown opcode
+041d Unknown opcode
+041e Unknown opcode
+041f Unknown opcode
+0420 Unknown opcode
+0421 Unknown opcode
+0422 Unknown opcode
+0423 Unknown opcode
+0424 Unknown opcode
+0425 Unknown opcode
+0426 Unknown opcode
+0427 STAX   B
+0428 Unknown opcode
+0429 Unknown opcode
+042a Unknown opcode
+042b DCR    B
+042c Unknown opcode
+042d JMP    $0436
+0430 Unknown opcode
+0431 Unknown opcode
+0432 Unknown opcode
+0433 JMP    $1a3b
+0436 Unknown opcode
+0437 Unknown opcode
+0438 INR    B
+0439 Unknown opcode
+043a Unknown opcode
+043b Unknown opcode
+043c Unknown opcode
+043d Unknown opcode
+043e Unknown opcode
+043f Unknown opcode
+0440 Unknown opcode
+0441 Unknown opcode
+0442 MVI    B,#$07
+0444 Unknown opcode
+0445 Unknown opcode
+0446 Unknown opcode
+0447 Unknown opcode
+0448 Unknown opcode
+0449 Unknown opcode
+044a Unknown opcode
+044b Unknown opcode
+044c Unknown opcode
+044d Unknown opcode
+044e Unknown opcode
+044f Unknown opcode
+0450 INR    B
+0451 Unknown opcode
+0452 Unknown opcode
+0453 Unknown opcode
+0454 Unknown opcode
+0455 Unknown opcode
+0456 Unknown opcode
+0457 Unknown opcode
+0458 Unknown opcode
+0459 Unknown opcode
+045a Unknown opcode
+045b Unknown opcode
+045c Unknown opcode
+045d Unknown opcode
+045e Unknown opcode
+045f Unknown opcode
+0460 Unknown opcode
+0461 Unknown opcode
+0462 Unknown opcode
+0463 Unknown opcode
+0464 LXI    B,#$2901
+0467 STAX   B
+0468 Unknown opcode
+0469 Unknown opcode
+046a INR    B
+046b LXI    B,#$fee0
+046e Unknown opcode
+046f Unknown opcode
+0470 Unknown opcode
+0471 Unknown opcode
+0472 Unknown opcode
+0473 Unknown opcode
+0474 Unknown opcode
+0475 Unknown opcode
+0476 Unknown opcode
+0477 Unknown opcode
+0478 Unknown opcode
+0479 Unknown opcode
+047a Unknown opcode
+047b Unknown opcode
+047c Unknown opcode
+047d Unknown opcode
+047e Unknown opcode
+047f Unknown opcode
+0480 Unknown opcode
+0481 Unknown opcode
+0482 Unknown opcode
+0483 Unknown opcode
+0484 INR    B
+0485 Unknown opcode
+0486 Unknown opcode
+0487 Unknown opcode
+0488 Unknown opcode
+0489 Unknown opcode
+048a Unknown opcode
+048b Unknown opcode
+048c Unknown opcode
+048d MVI    A,#0xf9
+048f Unknown opcode
+0490 Unknown opcode
+0491 DCR    B
+0492 Unknown opcode
+0493 Unknown opcode
+0494 Unknown opcode
+0495 Unknown opcode
+0496 Unknown opcode
+0497 Unknown opcode
+0498 Unknown opcode
+0499 Unknown opcode
+049a Unknown opcode
+049b Unknown opcode
+049c Unknown opcode
+049d Unknown opcode
+049e Unknown opcode
+049f Unknown opcode
+04a0 DCR    B
+04a1 Unknown opcode
+04a2 Unknown opcode
+04a3 Unknown opcode
+04a4 Unknown opcode
+04a5 Unknown opcode
+04a6 Unknown opcode
+04a7 Unknown opcode
+04a8 Unknown opcode
+04a9 Unknown opcode
+04aa DCR    B
+04ab Unknown opcode
+04ac Unknown opcode
+04ad Unknown opcode
+04ae Unknown opcode
+04af Unknown opcode
+04b0 Unknown opcode
+04b1 MVI    B,#$10
+04b3 JMP    $1a32
+04b6 Unknown opcode
+04b7 Unknown opcode
+04b8 Unknown opcode
+04b9 Unknown opcode
+04ba Unknown opcode
+04bb Unknown opcode
+04bc Unknown opcode
+04bd Unknown opcode
+04be Unknown opcode
+04bf Unknown opcode
+04c0 LXI    B,#$11c0
+04c3 Unknown opcode
+04c4 Unknown opcode
+04c5 MVI    A,#0xed
+04c7 Unknown opcode
+04c8 Unknown opcode
+04c9 DCR    B
+04ca Unknown opcode
+04cb Unknown opcode
+04cc Unknown opcode
+04cd Unknown opcode
+04ce Unknown opcode
+04cf Unknown opcode
+04d0 Unknown opcode
+04d1 Unknown opcode
+04d2 Unknown opcode
+04d3 Unknown opcode
+04d4 Unknown opcode
+04d5 Unknown opcode
+04d6 Unknown opcode
+04d7 Unknown opcode
+04d8 DCR    B
+04d9 Unknown opcode
+04da Unknown opcode
+04db Unknown opcode
+04dc Unknown opcode
+04dd Unknown opcode
+04de Unknown opcode
+04df Unknown opcode
+04e0 INR    B
+04e1 Unknown opcode
+04e2 Unknown opcode
+04e3 Unknown opcode
+04e4 Unknown opcode
+04e5 Unknown opcode
+04e6 Unknown opcode
+04e7 Unknown opcode
+04e8 Unknown opcode
+04e9 Unknown opcode
+04ea Unknown opcode
+04eb Unknown opcode
+04ec Unknown opcode
+04ed Unknown opcode
+04ee Unknown opcode
+04ef Unknown opcode
+04f0 DCR    B
+04f1 Unknown opcode
+04f2 Unknown opcode
+04f3 Unknown opcode
+04f4 Unknown opcode
+04f5 Unknown opcode
+04f6 Unknown opcode
+04f7 MVI    B,#$10
+04f9 Unknown opcode
+04fa Unknown opcode
+04fb Unknown opcode
+04fc Unknown opcode
+04fd Unknown opcode
+04fe Unknown opcode
+04ff Unknown opcode
+0500 Unknown opcode
+0501 NOP
+0502 DCR    B
+0503 MVI    A,#0x01
+0505 Unknown opcode
+0506 Unknown opcode
+0507 Unknown opcode
+0508 Unknown opcode
+0509 Unknown opcode
+050a Unknown opcode
+050b JMP    $067e
+050e Unknown opcode
+050f Unknown opcode
+0510 Unknown opcode
+0511 Unknown opcode
+0512 MVI    A,#0xdb
+0514 Unknown opcode
+0515 Unknown opcode
+0516 DCR    B
+0517 Unknown opcode
+0518 Unknown opcode
+0519 Unknown opcode
+051a Unknown opcode
+051b Unknown opcode
+051c Unknown opcode
+051d Unknown opcode
+051e Unknown opcode
+051f Unknown opcode
+0520 Unknown opcode
+0521 Unknown opcode
+0522 Unknown opcode
+0523 Unknown opcode
+0524 Unknown opcode
+0525 DCR    B
+0526 Unknown opcode
+0527 Unknown opcode
+0528 Unknown opcode
+0529 Unknown opcode
+052a Unknown opcode
+052b Unknown opcode
+052c Unknown opcode
+052d DCR    B
+052e Unknown opcode
+052f Unknown opcode
+0530 Unknown opcode
+0531 Unknown opcode
+0532 Unknown opcode
+0533 Unknown opcode
+0534 Unknown opcode
+0535 Unknown opcode
+0536 Unknown opcode
+0537 Unknown opcode
+0538 Unknown opcode
+0539 Unknown opcode
+053a Unknown opcode
+053b Unknown opcode
+053c Unknown opcode
+053d DCR    B
+053e Unknown opcode
+053f Unknown opcode
+0540 Unknown opcode
+0541 Unknown opcode
+0542 Unknown opcode
+0543 Unknown opcode
+0544 MVI    B,#$10
+0546 Unknown opcode
+0547 Unknown opcode
+0548 Unknown opcode
+0549 Unknown opcode
+054a Unknown opcode
+054b Unknown opcode
+054c Unknown opcode
+054d Unknown opcode
+054e Unknown opcode
+054f Unknown opcode
+0550 Unknown opcode
+0551 Unknown opcode
+0552 Unknown opcode
+0553 Unknown opcode
+0554 Unknown opcode
+0555 Unknown opcode
+0556 MVI    B,#$0b
+0558 JMP    $1a32
+055b Unknown opcode
+055c Unknown opcode
+055d Unknown opcode
+055e MVI    B,#$0b
+0560 JMP    $1a32
+0563 Unknown opcode
+0564 Unknown opcode
+0565 Unknown opcode
+0566 Unknown opcode
+0567 Unknown opcode
+0568 Unknown opcode
+0569 Unknown opcode
+056a Unknown opcode
+056b DCR    B
+056c Unknown opcode
+056d Unknown opcode
+056e Unknown opcode
+056f Unknown opcode
+0570 INR    B
+0571 Unknown opcode
+0572 Unknown opcode
+0573 Unknown opcode
+0574 Unknown opcode
+0575 Unknown opcode
+0576 DCR    B
+0577 Unknown opcode
+0578 Unknown opcode
+0579 Unknown opcode
+057a Unknown opcode
+057b NOP
+057c Unknown opcode
+057d Unknown opcode
+057e Unknown opcode
+057f Unknown opcode
+0580 Unknown opcode
+0581 Unknown opcode
+0582 DCR    B
+0583 Unknown opcode
+0584 Unknown opcode
+0585 Unknown opcode
+0586 Unknown opcode
+0587 Unknown opcode
+0588 Unknown opcode
+0589 Unknown opcode
+058a Unknown opcode
+058b Unknown opcode
+058c Unknown opcode
+058d Unknown opcode
+058e Unknown opcode
+058f DCR    B
+0590 Unknown opcode
+0591 Unknown opcode
+0592 Unknown opcode
+0593 Unknown opcode
+0594 Unknown opcode
+0595 Unknown opcode
+0596 Unknown opcode
+0597 Unknown opcode
+0598 Unknown opcode
+0599 Unknown opcode
+059a Unknown opcode
+059b MVI    B,#$2a
+059d Unknown opcode
+059e Unknown opcode
+059f Unknown opcode
+05a0 Unknown opcode
+05a1 NOP
+05a2 Unknown opcode
+05a3 Unknown opcode
+05a4 Unknown opcode
+05a5 Unknown opcode
+05a6 Unknown opcode
+05a7 MVI    B,#$d0
+05a9 Unknown opcode
+05aa Unknown opcode
+05ab LXI    B,#$c679
+05ae RLC
+05af Unknown opcode
+05b0 Unknown opcode
+05b1 Unknown opcode
+05b2 Unknown opcode
+05b3 Unknown opcode
+05b4 Unknown opcode
+05b5 Unknown opcode
+05b6 Unknown opcode
+05b7 Unknown opcode
+05b8 Unknown opcode
+05b9 Unknown opcode
+05ba Unknown opcode
+05bb Unknown opcode
+05bc Unknown opcode
+05bd Unknown opcode
+05be Unknown opcode
+05bf Unknown opcode
+05c0 Unknown opcode
+05c1 Unknown opcode
+05c2 Unknown opcode
+05c3 Unknown opcode
+05c4 Unknown opcode
+05c5 MVI    B,#$1a
+05c7 Unknown opcode
+05c8 Unknown opcode
+05c9 Unknown opcode
+05ca Unknown opcode
+05cb LXI    B,#$44c2
+05ce MVI    B,#$23
+05d0 Unknown opcode
+05d1 Unknown opcode
+05d2 Unknown opcode
+05d3 MVI    B,#$3a
+05d5 Unknown opcode
+05d6 Unknown opcode
+05d7 Unknown opcode
+05d8 INX    B
+05d9 Unknown opcode
+05da Unknown opcode
+05db Unknown opcode
+05dc Unknown opcode
+05dd Unknown opcode
+05de Unknown opcode
+05df DCR    B
+05e0 Unknown opcode
+05e1 Unknown opcode
+05e2 Unknown opcode
+05e3 Unknown opcode
+05e4 Unknown opcode
+05e5 Unknown opcode
+05e6 Unknown opcode
+05e7 Unknown opcode
+05e8 Unknown opcode
+05e9 Unknown opcode
+05ea Unknown opcode
+05eb Unknown opcode
+05ec Unknown opcode
+05ed Unknown opcode
+05ee Unknown opcode
+05ef Unknown opcode
+05f0 Unknown opcode
+05f1 Unknown opcode
+05f2 MVI    B,#$3a
+05f4 Unknown opcode
+05f5 Unknown opcode
+05f6 Unknown opcode
+05f7 Unknown opcode
+05f8 Unknown opcode
+05f9 Unknown opcode
+05fa MVI    B,#$3a
+05fc Unknown opcode
+05fd Unknown opcode
+05fe Unknown opcode
+05ff Unknown opcode
+0600 Unknown opcode
+0601 Unknown opcode
+0602 Unknown opcode
+0603 Unknown opcode
+0604 Unknown opcode
+0605 Unknown opcode
+0606 Unknown opcode
+0607 MVI    B,#$fe
+0609 Unknown opcode
+060a NOP
+060b Unknown opcode
+060c Unknown opcode
+060d MVI    B,#$97
+060f Unknown opcode
+0610 Unknown opcode
+0611 Unknown opcode
+0612 Unknown opcode
+0613 Unknown opcode
+0614 Unknown opcode
+0615 Unknown opcode
+0616 LXI    B,#$7332
+0619 Unknown opcode
+061a Unknown opcode
+061b Unknown opcode
+061c Unknown opcode
+061d Unknown opcode
+061e Unknown opcode
+061f NOP
+0620 Unknown opcode
+0621 Unknown opcode
+0622 Unknown opcode
+0623 Unknown opcode
+0624 Unknown opcode
+0625 Unknown opcode
+0626 Unknown opcode
+0627 Unknown opcode
+0628 Unknown opcode
+0629 DCR    B
+062a Unknown opcode
+062b Unknown opcode
+062c JMP    $05a5
+062f Unknown opcode
+0630 Unknown opcode
+0631 Unknown opcode
+0632 Unknown opcode
+0633 Unknown opcode
+0634 Unknown opcode
+0635 Unknown opcode
+0636 DCR    B
+0637 Unknown opcode
+0638 Unknown opcode
+0639 Unknown opcode
+063a Unknown opcode
+063b Unknown opcode
+063c Unknown opcode
+063d Unknown opcode
+063e Unknown opcode
+063f Unknown opcode
+0640 Unknown opcode
+0641 Unknown opcode
+0642 MVI    B,#$c9
+0644 Unknown opcode
+0645 Unknown opcode
+0646 Unknown opcode
+0647 Unknown opcode
+0648 Unknown opcode
+0649 Unknown opcode
+064a INX    B
+064b Unknown opcode
+064c Unknown opcode
+064d MVI    B,#$cd
+064f Unknown opcode
+0650 MVI    B,#$21
+0652 Unknown opcode
+0653 Unknown opcode
+0654 Unknown opcode
+0655 Unknown opcode
+0656 Unknown opcode
+0657 Unknown opcode
+0658 Unknown opcode
+0659 Unknown opcode
+065a Unknown opcode
+065b Unknown opcode
+065c Unknown opcode
+065d Unknown opcode
+065e Unknown opcode
+065f MVI    A,#0x06
+0661 Unknown opcode
+0662 Unknown opcode
+0663 Unknown opcode
+0664 JMP    $066c
+0667 Unknown opcode
+0668 Unknown opcode
+0669 JMP    $0675
+066c Unknown opcode
+066d Unknown opcode
+066e Unknown opcode
+066f Unknown opcode
+0670 Unknown opcode
+0671 Unknown opcode
+0672 JMP    $1491
+0675 Unknown opcode
+0676 Unknown opcode
+0677 Unknown opcode
+0678 Unknown opcode
+0679 Unknown opcode
+067a Unknown opcode
+067b JMP    $1452
+067e Unknown opcode
+067f Unknown opcode
+0680 Unknown opcode
+0681 Unknown opcode
+0682 Unknown opcode
+0683 Unknown opcode
+0684 Unknown opcode
+0685 Unknown opcode
+0686 Unknown opcode
+0687 STAX   B
+0688 Unknown opcode
+0689 Unknown opcode
+068a Unknown opcode
+068b Unknown opcode
+068c Unknown opcode
+068d Unknown opcode
+068e Unknown opcode
+068f Unknown opcode
+0690 DCR    B
+0691 Unknown opcode
+0692 Unknown opcode
+0693 Unknown opcode
+0694 Unknown opcode
+0695 Unknown opcode
+0696 Unknown opcode
+0697 DCR    B
+0698 Unknown opcode
+0699 Unknown opcode
+069a Unknown opcode
+069b Unknown opcode
+069c Unknown opcode
+069d MVI    B,#$3a
+069f Unknown opcode
+06a0 Unknown opcode
+06a1 Unknown opcode
+06a2 NOP
+06a3 Unknown opcode
+06a4 Unknown opcode
+06a5 DCR    B
+06a6 Unknown opcode
+06a7 LXI    B,#$3ccd
+06aa RLC
+06ab Unknown opcode
+06ac Unknown opcode
+06ad Unknown opcode
+06ae Unknown opcode
+06af MVI    B,#$1a
+06b1 Unknown opcode
+06b2 Unknown opcode
+06b3 Unknown opcode
+06b4 Unknown opcode
+06b5 Unknown opcode
+06b6 Unknown opcode
+06b7 Unknown opcode
+06b8 Unknown opcode
+06b9 MVI    B,#$21
+06bb Unknown opcode
+06bc Unknown opcode
+06bd Unknown opcode
+06be Unknown opcode
+06bf Unknown opcode
+06c0 Unknown opcode
+06c1 Unknown opcode
+06c2 Unknown opcode
+06c3 Unknown opcode
+06c4 Unknown opcode
+06c5 Unknown opcode
+06c6 RLC
+06c7 Unknown opcode
+06c8 Unknown opcode
+06c9 Unknown opcode
+06ca Unknown opcode
+06cb Unknown opcode
+06cc Unknown opcode
+06cd Unknown opcode
+06ce Unknown opcode
+06cf MVI    B,#$fe
+06d1 Unknown opcode
+06d2 Unknown opcode
+06d3 Unknown opcode
+06d4 MVI    B,#$c9
+06d6 MVI    B,#$fe
+06d8 Unknown opcode
+06d9 Unknown opcode
+06da Unknown opcode
+06db Unknown opcode
+06dc Unknown opcode
+06dd Unknown opcode
+06de Unknown opcode
+06df Unknown opcode
+06e0 Unknown opcode
+06e1 Unknown opcode
+06e2 RLC
+06e3 Unknown opcode
+06e4 Unknown opcode
+06e5 Unknown opcode
+06e6 Unknown opcode
+06e7 RLC
+06e8 Unknown opcode
+06e9 Unknown opcode
+06ea MVI    B,#$ef
+06ec Unknown opcode
+06ed Unknown opcode
+06ee Unknown opcode
+06ef Unknown opcode
+06f0 Unknown opcode
+06f1 Unknown opcode
+06f2 Unknown opcode
+06f3 Unknown opcode
+06f4 Unknown opcode
+06f5 DCR    B
+06f6 NOP
+06f7 NOP
+06f8 NOP
+06f9 Unknown opcode
+06fa Unknown opcode
+06fb RLC
+06fc Unknown opcode
+06fd Unknown opcode
+06fe Unknown opcode
+06ff Unknown opcode
+0700 Unknown opcode
+0701 Unknown opcode
+0702 MVI    B,#$0a
+0704 Unknown opcode
+0705 Unknown opcode
+0706 RLC
+0707 MVI    B,#$fe
+0709 JMP    $19dc
+070c MVI    A,#0x01
+070e Unknown opcode
+070f Unknown opcode
+0710 Unknown opcode
+0711 Unknown opcode
+0712 Unknown opcode
+0713 Unknown opcode
+0714 Unknown opcode
+0715 Unknown opcode
+0716 INR    B
+0717 Unknown opcode
+0718 Unknown opcode
+0719 Unknown opcode
+071a Unknown opcode
+071b Unknown opcode
+071c Unknown opcode
+071d Unknown opcode
+071e Unknown opcode
+071f Unknown opcode
+0720 Unknown opcode
+0721 RLC
+0722 Unknown opcode
+0723 Unknown opcode
+0724 Unknown opcode
+0725 Unknown opcode
+0726 Unknown opcode
+0727 RLC
+0728 Unknown opcode
+0729 Unknown opcode
+072a Unknown opcode
+072b Unknown opcode
+072c Unknown opcode
+072d NOP
+072e Unknown opcode
+072f Unknown opcode
+0730 Unknown opcode
+0731 Unknown opcode
+0732 Unknown opcode
+0733 Unknown opcode
+0734 Unknown opcode
+0735 Unknown opcode
+0736 Unknown opcode
+0737 Unknown opcode
+0738 RLC
+0739 JMP    $08f1
+073c Unknown opcode
+073d Unknown opcode
+073e RLC
+073f JMP    $1439
+0742 Unknown opcode
+0743 Unknown opcode
+0744 Unknown opcode
+0745 Unknown opcode
+0746 Unknown opcode
+0747 Unknown opcode
+0748 JMP    $1a47
+074b MVI    B,#$10
+074d Unknown opcode
+074e Unknown opcode
+074f Unknown opcode
+0750 Unknown opcode
+0751 Unknown opcode
+0752 Unknown opcode
+0753 Unknown opcode
+0754 Unknown opcode
+0755 Unknown opcode
+0756 Unknown opcode
+0757 Unknown opcode
+0758 Unknown opcode
+0759 Unknown opcode
+075a Unknown opcode
+075b Unknown opcode
+075c JMP    $073c
+075f Unknown opcode
+0760 Unknown opcode
+0761 Unknown opcode
+0762 JMP    $1a32
+0765 MVI    A,#0x01
+0767 Unknown opcode
+0768 Unknown opcode
+0769 Unknown opcode
+076a Unknown opcode
+076b NOP
+076c Unknown opcode
+076d Unknown opcode
+076e Unknown opcode
+076f Unknown opcode
+0770 Unknown opcode
+0771 Unknown opcode
+0772 Unknown opcode
+0773 Unknown opcode
+0774 Unknown opcode
+0775 Unknown opcode
+0776 Unknown opcode
+0777 Unknown opcode
+0778 Unknown opcode
+0779 Unknown opcode
+077a Unknown opcode
+077b INR    B
+077c Unknown opcode
+077d Unknown opcode
+077e NOP
+077f Unknown opcode
+0780 Unknown opcode
+0781 Unknown opcode
+0782 Unknown opcode
+0783 Unknown opcode
+0784 Unknown opcode
+0785 Unknown opcode
+0786 Unknown opcode
+0787 Unknown opcode
+0788 Unknown opcode
+0789 Unknown opcode
+078a NOP
+078b Unknown opcode
+078c Unknown opcode
+078d Unknown opcode
+078e Unknown opcode
+078f Unknown opcode
+0790 NOP
+0791 Unknown opcode
+0792 LXI    B,#$04e6
+0795 Unknown opcode
+0796 Unknown opcode
+0797 RLC
+0798 MVI    B,#$99
+079a Unknown opcode
+079b Unknown opcode
+079c Unknown opcode
+079d Unknown opcode
+079e Unknown opcode
+079f Unknown opcode
+07a0 Unknown opcode
+07a1 Unknown opcode
+07a2 Unknown opcode
+07a3 Unknown opcode
+07a4 Unknown opcode
+07a5 Unknown opcode
+07a6 Unknown opcode
+07a7 Unknown opcode
+07a8 Unknown opcode
+07a9 Unknown opcode
+07aa NOP
+07ab NOP
+07ac Unknown opcode
+07ad Unknown opcode
+07ae Unknown opcode
+07af Unknown opcode
+07b0 Unknown opcode
+07b1 Unknown opcode
+07b2 Unknown opcode
+07b3 Unknown opcode
+07b4 Unknown opcode
+07b5 Unknown opcode
+07b6 Unknown opcode
+07b7 Unknown opcode
+07b8 Unknown opcode
+07b9 Unknown opcode
+07ba Unknown opcode
+07bb Unknown opcode
+07bc LXI    B,#$7c01
+07bf Unknown opcode
+07c0 Unknown opcode
+07c1 Unknown opcode
+07c2 Unknown opcode
+07c3 Unknown opcode
+07c4 Unknown opcode
+07c5 Unknown opcode
+07c6 Unknown opcode
+07c7 Unknown opcode
+07c8 Unknown opcode
+07c9 Unknown opcode
+07ca Unknown opcode
+07cb Unknown opcode
+07cc Unknown opcode
+07cd LXI    B,#$f5cd
+07d0 LXI    B,#$d1cd
+07d3 NOP
+07d4 Unknown opcode
+07d5 Unknown opcode
+07d6 Unknown opcode
+07d7 Unknown opcode
+07d8 Unknown opcode
+07d9 Unknown opcode
+07da Unknown opcode
+07db Unknown opcode
+07dc NOP
+07dd Unknown opcode
+07de Unknown opcode
+07df Unknown opcode
+07e0 Unknown opcode
+07e1 Unknown opcode
+07e2 Unknown opcode
+07e3 Unknown opcode
+07e4 Unknown opcode
+07e5 Unknown opcode
+07e6 LXI    B,#$04cd
+07e9 Unknown opcode
+07ea Unknown opcode
+07eb Unknown opcode
+07ec Unknown opcode
+07ed Unknown opcode
+07ee Unknown opcode
+07ef Unknown opcode
+07f0 Unknown opcode
+07f1 Unknown opcode
+07f2 Unknown opcode
+07f3 Unknown opcode
+07f4 Unknown opcode
+07f5 LXI    B,#$7fcd
+07f8 Unknown opcode
+07f9 Unknown opcode
+07fa Unknown opcode
+07fb NOP
+07fc Unknown opcode
+07fd Unknown opcode
+07fe Unknown opcode
+07ff NOP
+0800 Unknown opcode
+0801 Unknown opcode
+0802 Unknown opcode
+0803 Unknown opcode
+0804 Unknown opcode
+0805 Unknown opcode
+0806 LXI    B,#$673a
+0809 Unknown opcode
+080a Unknown opcode
+080b Unknown opcode
+080c Unknown opcode
+080d NOP
+080e Unknown opcode
+080f Unknown opcode
+0810 STAX   B
+0811 Unknown opcode
+0812 Unknown opcode
+0813 LXI    B,#$b1cd
+0816 NOP
+0817 Unknown opcode
+0818 Unknown opcode
+0819 Unknown opcode
+081a MVI    B,#$20
+081c Unknown opcode
+081d Unknown opcode
+081e Unknown opcode
+081f Unknown opcode
+0820 Unknown opcode
+0821 Unknown opcode
+0822 Unknown opcode
+0823 Unknown opcode
+0824 Unknown opcode
+0825 Unknown opcode
+0826 Unknown opcode
+0827 Unknown opcode
+0828 Unknown opcode
+0829 Unknown opcode
+082a Unknown opcode
+082b Unknown opcode
+082c Unknown opcode
+082d Unknown opcode
+082e Unknown opcode
+082f Unknown opcode
+0830 Unknown opcode
+0831 Unknown opcode
+0832 Unknown opcode
+0833 Unknown opcode
+0834 Unknown opcode
+0835 Unknown opcode
+0836 Unknown opcode
+0837 Unknown opcode
+0838 Unknown opcode
+0839 Unknown opcode
+083a NOP
+083b Unknown opcode
+083c Unknown opcode
+083d Unknown opcode
+083e Unknown opcode
+083f Unknown opcode
+0840 Unknown opcode
+0841 Unknown opcode
+0842 Unknown opcode
+0843 NOP
+0844 MVI    B,#$04
+0846 Unknown opcode
+0847 Unknown opcode
+0848 Unknown opcode
+0849 Unknown opcode
+084a Unknown opcode
+084b Unknown opcode
+084c Unknown opcode
+084d MVI    B,#$cd
+084f INR    B
+0850 Unknown opcode
+0851 JMP    $081f
+0854 NOP
+0855 NOP
+0856 NOP
+0857 Unknown opcode
+0858 Unknown opcode
+0859 Unknown opcode
+085a Unknown opcode
+085b Unknown opcode
+085c NOP
+085d MVI    B,#$98
+085f Unknown opcode
+0860 LXI    B,#$0f0f
+0863 Unknown opcode
+0864 Unknown opcode
+0865 NOP
+0866 Unknown opcode
+0867 Unknown opcode
+0868 Unknown opcode
+0869 RLC
+086a JMP    $077f
+086d MVI    A,#0x01
+086f JMP    $079b
+0872 Unknown opcode
+0873 Unknown opcode
+0874 STAX   B
+0875 JMP    $0814
+0878 Unknown opcode
+0879 NOP
+087a Unknown opcode
+087b Unknown opcode
+087c Unknown opcode
+087d Unknown opcode
+087e Unknown opcode
+087f Unknown opcode
+0880 JMP    $0886
+0883 NOP
+0884 NOP
+0885 NOP
+0886 Unknown opcode
+0887 Unknown opcode
+0888 Unknown opcode
+0889 Unknown opcode
+088a Unknown opcode
+088b Unknown opcode
+088c Unknown opcode
+088d Unknown opcode
+088e Unknown opcode
+088f Unknown opcode
+0890 Unknown opcode
+0891 Unknown opcode
+0892 Unknown opcode
+0893 Unknown opcode
+0894 Unknown opcode
+0895 Unknown opcode
+0896 Unknown opcode
+0897 NOP
+0898 Unknown opcode
+0899 Unknown opcode
+089a Unknown opcode
+089b Unknown opcode
+089c MVI    A,#0x1c
+089e Unknown opcode
+089f Unknown opcode
+08a0 Unknown opcode
+08a1 Unknown opcode
+08a2 Unknown opcode
+08a3 NOP
+08a4 MVI    A,#0xb0
+08a6 Unknown opcode
+08a7 Unknown opcode
+08a8 Unknown opcode
+08a9 Unknown opcode
+08aa Unknown opcode
+08ab Unknown opcode
+08ac Unknown opcode
+08ad Unknown opcode
+08ae Unknown opcode
+08af INR    B
+08b0 Unknown opcode
+08b1 Unknown opcode
+08b2 NOP
+08b3 Unknown opcode
+08b4 Unknown opcode
+08b5 Unknown opcode
+08b6 Unknown opcode
+08b7 Unknown opcode
+08b8 Unknown opcode
+08b9 JMP    $08a9
+08bc MVI    B,#$20
+08be Unknown opcode
+08bf Unknown opcode
+08c0 Unknown opcode
+08c1 Unknown opcode
+08c2 Unknown opcode
+08c3 Unknown opcode
+08c4 Unknown opcode
+08c5 Unknown opcode
+08c6 Unknown opcode
+08c7 NOP
+08c8 Unknown opcode
+08c9 Unknown opcode
+08ca Unknown opcode
+08cb Unknown opcode
+08cc Unknown opcode
+08cd Unknown opcode
+08ce JMP    $08a9
+08d1 Unknown opcode
+08d2 STAX   B
+08d3 Unknown opcode
+08d4 INX    B
+08d5 Unknown opcode
+08d6 INX    B
+08d7 Unknown opcode
+08d8 Unknown opcode
+08d9 Unknown opcode
+08da Unknown opcode
+08db Unknown opcode
+08dc Unknown opcode
+08dd Unknown opcode
+08de MVI    A,#0xfb
+08e0 Unknown opcode
+08e1 Unknown opcode
+08e2 Unknown opcode
+08e3 Unknown opcode
+08e4 Unknown opcode
+08e5 Unknown opcode
+08e6 Unknown opcode
+08e7 Unknown opcode
+08e8 Unknown opcode
+08e9 Unknown opcode
+08ea Unknown opcode
+08eb Unknown opcode
+08ec MVI    B,#$20
+08ee JMP    $14cb
+08f1 Unknown opcode
+08f2 INX    B
+08f3 Unknown opcode
+08f4 Unknown opcode
+08f5 Unknown opcode
+08f6 Unknown opcode
+08f7 NOP
+08f8 Unknown opcode
+08f9 Unknown opcode
+08fa Unknown opcode
+08fb Unknown opcode
+08fc Unknown opcode
+08fd NOP
+08fe Unknown opcode
+08ff Unknown opcode
+0900 NOP
+0901 Unknown opcode
+0902 Unknown opcode
+0903 Unknown opcode
+0904 NOP
+0905 Unknown opcode
+0906 Unknown opcode
+0907 Unknown opcode
+0908 Unknown opcode
+0909 Unknown opcode
+090a Unknown opcode
+090b Unknown opcode
+090c MVI    B,#$08
+090e Unknown opcode
+090f MVI    B,#$c3
+0911 Unknown opcode
+0912 Unknown opcode
+0913 Unknown opcode
+0914 Unknown opcode
+0915 Unknown opcode
+0916 Unknown opcode
+0917 Unknown opcode
+0918 Unknown opcode
+0919 Unknown opcode
+091a Unknown opcode
+091b Unknown opcode
+091c Unknown opcode
+091d Unknown opcode
+091e Unknown opcode
+091f Unknown opcode
+0920 Unknown opcode
+0921 Unknown opcode
+0922 NOP
+0923 MVI    B,#$3e
+0925 LXI    B,#$8332
+0928 Unknown opcode
+0929 Unknown opcode
+092a Unknown opcode
+092b Unknown opcode
+092c Unknown opcode
+092d Unknown opcode
+092e Unknown opcode
+092f Unknown opcode
+0930 Unknown opcode
+0931 Unknown opcode
+0932 Unknown opcode
+0933 Unknown opcode
+0934 Unknown opcode
+0935 Unknown opcode
+0936 Unknown opcode
+0937 Unknown opcode
+0938 Unknown opcode
+0939 Unknown opcode
+093a Unknown opcode
+093b Unknown opcode
+093c Unknown opcode
+093d MVI    B,#$15
+093f Unknown opcode
+0940 STAX   B
+0941 Unknown opcode
+0942 NOP
+0943 Unknown opcode
+0944 Unknown opcode
+0945 Unknown opcode
+0946 MVI    B,#$10
+0948 Unknown opcode
+0949 Unknown opcode
+094a Unknown opcode
+094b Unknown opcode
+094c Unknown opcode
+094d Unknown opcode
+094e Unknown opcode
+094f Unknown opcode
+0950 Unknown opcode
+0951 Unknown opcode
+0952 Unknown opcode
+0953 Unknown opcode
+0954 Unknown opcode
+0955 Unknown opcode
+0956 LXI    B,#$2425
+0959 Unknown opcode
+095a Unknown opcode
+095b Unknown opcode
+095c Unknown opcode
+095d Unknown opcode
+095e MVI    B,#$10
+0960 Unknown opcode
+0961 Unknown opcode
+0962 Unknown opcode
+0963 Unknown opcode
+0964 Unknown opcode
+0965 Unknown opcode
+0966 Unknown opcode
+0967 Unknown opcode
+0968 Unknown opcode
+0969 Unknown opcode
+096a Unknown opcode
+096b Unknown opcode
+096c Unknown opcode
+096d Unknown opcode
+096e Unknown opcode
+096f Unknown opcode
+0970 Unknown opcode
+0971 NOP
+0972 MVI    A,#0xff
+0974 Unknown opcode
+0975 Unknown opcode
+0976 Unknown opcode
+0977 MVI    B,#$10
+0979 JMP    $18fa
+097c Unknown opcode
+097d Unknown opcode
+097e Unknown opcode
+097f Unknown opcode
+0980 STAX   B
+0981 Unknown opcode
+0982 Unknown opcode
+0983 Unknown opcode
+0984 INR    B
+0985 Unknown opcode
+0986 Unknown opcode
+0987 Unknown opcode
+0988 Unknown opcode
+0989 Unknown opcode
+098a Unknown opcode
+098b Unknown opcode
+098c Unknown opcode
+098d Unknown opcode
+098e Unknown opcode
+098f Unknown opcode
+0990 Unknown opcode
+0991 Unknown opcode
+0992 Unknown opcode
+0993 Unknown opcode
+0994 Unknown opcode
+0995 Unknown opcode
+0996 Unknown opcode
+0997 Unknown opcode
+0998 Unknown opcode
+0999 Unknown opcode
+099a Unknown opcode
+099b Unknown opcode
+099c Unknown opcode
+099d Unknown opcode
+099e Unknown opcode
+099f Unknown opcode
+09a0 Unknown opcode
+09a1 Unknown opcode
+09a2 Unknown opcode
+09a3 Unknown opcode
+09a4 Unknown opcode
+09a5 Unknown opcode
+09a6 Unknown opcode
+09a7 Unknown opcode
+09a8 Unknown opcode
+09a9 Unknown opcode
+09aa JMP    $09ad
+09ad Unknown opcode
+09ae Unknown opcode
+09af Unknown opcode
+09b0 Unknown opcode
+09b1 Unknown opcode
+09b2 Unknown opcode
+09b3 Unknown opcode
+09b4 Unknown opcode
+09b5 Unknown opcode
+09b6 Unknown opcode
+09b7 Unknown opcode
+09b8 Unknown opcode
+09b9 Unknown opcode
+09ba Unknown opcode
+09bb Unknown opcode
+09bc Unknown opcode
+09bd Unknown opcode
+09be Unknown opcode
+09bf Unknown opcode
+09c0 Unknown opcode
+09c1 Unknown opcode
+09c2 Unknown opcode
+09c3 Unknown opcode
+09c4 Unknown opcode
+09c5 Unknown opcode
+09c6 Unknown opcode
+09c7 JMP    $08ff
+09ca Unknown opcode
+09cb Unknown opcode
+09cc Unknown opcode
+09cd Unknown opcode
+09ce Unknown opcode
+09cf Unknown opcode
+09d0 Unknown opcode
+09d1 Unknown opcode
+09d2 Unknown opcode
+09d3 Unknown opcode
+09d4 Unknown opcode
+09d5 Unknown opcode
+09d6 Unknown opcode
+09d7 STAX   B
+09d8 Unknown opcode
+09d9 Unknown opcode
+09da NOP
+09db Unknown opcode
+09dc Unknown opcode
+09dd Unknown opcode
+09de Unknown opcode
+09df Unknown opcode
+09e0 Unknown opcode
+09e1 Unknown opcode
+09e2 Unknown opcode
+09e3 Unknown opcode
+09e4 Unknown opcode
+09e5 MVI    B,#$00
+09e7 Unknown opcode
+09e8 Unknown opcode
+09e9 Unknown opcode
+09ea Unknown opcode
+09eb Unknown opcode
+09ec Unknown opcode
+09ed Unknown opcode
+09ee Unknown opcode
+09ef Unknown opcode
+09f0 Unknown opcode
+09f1 Unknown opcode
+09f2 Unknown opcode
+09f3 Unknown opcode
+09f4 Unknown opcode
+09f5 Unknown opcode
+09f6 Unknown opcode
+09f7 Unknown opcode
+09f8 Unknown opcode
+09f9 Unknown opcode
+09fa Unknown opcode
+09fb Unknown opcode
+09fc Unknown opcode
+09fd Unknown opcode
+09fe Unknown opcode
+09ff LXI    B,#$32f1
+0a02 Unknown opcode
+0a03 Unknown opcode
+0a04 Unknown opcode
+0a05 Unknown opcode
+0a06 Unknown opcode
+0a07 Unknown opcode
+0a08 Unknown opcode
+0a09 Unknown opcode
+0a0a Unknown opcode
+0a0b Unknown opcode
+0a0c Unknown opcode
+0a0d RLC
+0a0e Unknown opcode
+0a0f Unknown opcode
+0a10 Unknown opcode
+0a11 Unknown opcode
+0a12 Unknown opcode
+0a13 Unknown opcode
+0a14 Unknown opcode
+0a15 Unknown opcode
+0a16 Unknown opcode
+0a17 Unknown opcode
+0a18 Unknown opcode
+0a19 Unknown opcode
+0a1a Unknown opcode
+0a1b Unknown opcode
+0a1c Unknown opcode
+0a1d Unknown opcode
+0a1e Unknown opcode
+0a1f Unknown opcode
+0a20 Unknown opcode
+0a21 Unknown opcode
+0a22 Unknown opcode
+0a23 Unknown opcode
+0a24 Unknown opcode
+0a25 MVI    A,#0x21
+0a27 Unknown opcode
+0a28 Unknown opcode
+0a29 Unknown opcode
+0a2a Unknown opcode
+0a2b Unknown opcode
+0a2c LXI    B,#$04cd
+0a2f Unknown opcode
+0a30 JMP    $0804
+0a33 Unknown opcode
+0a34 Unknown opcode
+0a35 LXI    B,#$c0cd
+0a38 LXI    B,#$04c3
+0a3b NOP
+0a3c Unknown opcode
+0a3d Unknown opcode
+0a3e Unknown opcode
+0a3f Unknown opcode
+0a40 Unknown opcode
+0a41 Unknown opcode
+0a42 MVI    A,#0x30
+0a44 Unknown opcode
+0a45 Unknown opcode
+0a46 Unknown opcode
+0a47 Unknown opcode
+0a48 Unknown opcode
+0a49 Unknown opcode
+0a4a Unknown opcode
+0a4b Unknown opcode
+0a4c Unknown opcode
+0a4d Unknown opcode
+0a4e Unknown opcode
+0a4f Unknown opcode
+0a50 Unknown opcode
+0a51 Unknown opcode
+0a52 Unknown opcode
+0a53 Unknown opcode
+0a54 Unknown opcode
+0a55 Unknown opcode
+0a56 Unknown opcode
+0a57 Unknown opcode
+0a58 Unknown opcode
+0a59 Unknown opcode
+0a5a Unknown opcode
+0a5b Unknown opcode
+0a5c Unknown opcode
+0a5d Unknown opcode
+0a5e Unknown opcode
+0a5f Unknown opcode
+0a60 Unknown opcode
+0a61 Unknown opcode
+0a62 Unknown opcode
+0a63 Unknown opcode
+0a64 Unknown opcode
+0a65 Unknown opcode
+0a66 Unknown opcode
+0a67 MVI    B,#$08
+0a69 Unknown opcode
+0a6a Unknown opcode
+0a6b Unknown opcode
+0a6c Unknown opcode
+0a6d Unknown opcode
+0a6e Unknown opcode
+0a6f Unknown opcode
+0a70 Unknown opcode
+0a71 Unknown opcode
+0a72 Unknown opcode
+0a73 Unknown opcode
+0a74 Unknown opcode
+0a75 Unknown opcode
+0a76 NOP
+0a77 Unknown opcode
+0a78 Unknown opcode
+0a79 Unknown opcode
+0a7a Unknown opcode
+0a7b LXI    B,#$6221
+0a7e Unknown opcode
+0a7f Unknown opcode
+0a80 MVI    A,#0x02
+0a82 Unknown opcode
+0a83 Unknown opcode
+0a84 Unknown opcode
+0a85 Unknown opcode
+0a86 MVI    B,#$3a
+0a88 Unknown opcode
+0a89 Unknown opcode
+0a8a Unknown opcode
+0a8b Unknown opcode
+0a8c Unknown opcode
+0a8d Unknown opcode
+0a8e Unknown opcode
+0a8f Unknown opcode
+0a90 Unknown opcode
+0a91 Unknown opcode
+0a92 Unknown opcode
+0a93 Unknown opcode
+0a94 Unknown opcode
+0a95 Unknown opcode
+0a96 Unknown opcode
+0a97 NOP
+0a98 Unknown opcode
+0a99 MVI    A,#0x07
+0a9b Unknown opcode
+0a9c Unknown opcode
+0a9d Unknown opcode
+0a9e Unknown opcode
+0a9f Unknown opcode
+0aa0 Unknown opcode
+0aa1 Unknown opcode
+0aa2 Unknown opcode
+0aa3 Unknown opcode
+0aa4 Unknown opcode
+0aa5 Unknown opcode
+0aa6 Unknown opcode
+0aa7 Unknown opcode
+0aa8 Unknown opcode
+0aa9 Unknown opcode
+0aaa Unknown opcode
+0aab Unknown opcode
+0aac Unknown opcode
+0aad Unknown opcode
+0aae JMP    $024b
+0ab1 MVI    A,#0x40
+0ab3 JMP    $0ad7
+0ab6 MVI    A,#0x80
+0ab8 JMP    $0ad7
+0abb Unknown opcode
+0abc JMP    $0072
+0abf Unknown opcode
+0ac0 Unknown opcode
+0ac1 Unknown opcode
+0ac2 Unknown opcode
+0ac3 Unknown opcode
+0ac4 Unknown opcode
+0ac5 Unknown opcode
+0ac6 Unknown opcode
+0ac7 Unknown opcode
+0ac8 Unknown opcode
+0ac9 Unknown opcode
+0aca Unknown opcode
+0acb Unknown opcode
+0acc Unknown opcode
+0acd Unknown opcode
+0ace Unknown opcode
+0acf Unknown opcode
+0ad0 Unknown opcode
+0ad1 Unknown opcode
+0ad2 Unknown opcode
+0ad3 Unknown opcode
+0ad4 JMP    $0a93
+0ad7 Unknown opcode
+0ad8 Unknown opcode
+0ad9 Unknown opcode
+0ada Unknown opcode
+0adb Unknown opcode
+0adc Unknown opcode
+0add Unknown opcode
+0ade Unknown opcode
+0adf Unknown opcode
+0ae0 Unknown opcode
+0ae1 Unknown opcode
+0ae2 Unknown opcode
+0ae3 Unknown opcode
+0ae4 Unknown opcode
+0ae5 MVI    B,#$0c
+0ae7 JMP    $1a32
+0aea Unknown opcode
+0aeb Unknown opcode
+0aec INX    B
+0aed Unknown opcode
+0aee DCR    B
+0aef Unknown opcode
+0af0 Unknown opcode
+0af1 Unknown opcode
+0af2 Unknown opcode
+0af3 Unknown opcode
+0af4 Unknown opcode
+0af5 Unknown opcode
+0af6 Unknown opcode
+0af7 Unknown opcode
+0af8 Unknown opcode
+0af9 Unknown opcode
+0afa Unknown opcode
+0afb Unknown opcode
+0afc Unknown opcode
+0afd Unknown opcode
+0afe INR    B
+0aff Unknown opcode
+0b00 Unknown opcode
+0b01 Unknown opcode
+0b02 Unknown opcode
+0b03 Unknown opcode
+0b04 Unknown opcode
+0b05 Unknown opcode
+0b06 Unknown opcode
+0b07 Unknown opcode
+0b08 Unknown opcode
+0b09 Unknown opcode
+0b0a Unknown opcode
+0b0b Unknown opcode
+0b0c Unknown opcode
+0b0d Unknown opcode
+0b0e Unknown opcode
+0b0f Unknown opcode
+0b10 Unknown opcode
+0b11 Unknown opcode
+0b12 Unknown opcode
+0b13 Unknown opcode
+0b14 Unknown opcode
+0b15 Unknown opcode
+0b16 Unknown opcode
+0b17 Unknown opcode
+0b18 Unknown opcode
+0b19 Unknown opcode
+0b1a Unknown opcode
+0b1b Unknown opcode
+0b1c Unknown opcode
+0b1d Unknown opcode
+0b1e Unknown opcode
+0b1f Unknown opcode
+0b20 Unknown opcode
+0b21 Unknown opcode
+0b22 Unknown opcode
+0b23 Unknown opcode
+0b24 Unknown opcode
+0b25 Unknown opcode
+0b26 Unknown opcode
+0b27 Unknown opcode
+0b28 Unknown opcode
+0b29 Unknown opcode
+0b2a Unknown opcode
+0b2b Unknown opcode
+0b2c Unknown opcode
+0b2d Unknown opcode
+0b2e Unknown opcode
+0b2f Unknown opcode
+0b30 Unknown opcode
+0b31 Unknown opcode
+0b32 Unknown opcode
+0b33 Unknown opcode
+0b34 Unknown opcode
+0b35 Unknown opcode
+0b36 Unknown opcode
+0b37 Unknown opcode
+0b38 Unknown opcode
+0b39 Unknown opcode
+0b3a Unknown opcode
+0b3b Unknown opcode
+0b3c Unknown opcode
+0b3d Unknown opcode
+0b3e Unknown opcode
+0b3f Unknown opcode
+0b40 Unknown opcode
+0b41 Unknown opcode
+0b42 MVI    B,#$0a
+0b44 Unknown opcode
+0b45 Unknown opcode
+0b46 Unknown opcode
+0b47 Unknown opcode
+0b48 Unknown opcode
+0b49 Unknown opcode
+0b4a Unknown opcode
+0b4b Unknown opcode
+0b4c Unknown opcode
+0b4d Unknown opcode
+0b4e Unknown opcode
+0b4f Unknown opcode
+0b50 Unknown opcode
+0b51 Unknown opcode
+0b52 Unknown opcode
+0b53 Unknown opcode
+0b54 Unknown opcode
+0b55 Unknown opcode
+0b56 NOP
+0b57 Unknown opcode
+0b58 Unknown opcode
+0b59 Unknown opcode
+0b5a Unknown opcode
+0b5b Unknown opcode
+0b5c Unknown opcode
+0b5d Unknown opcode
+0b5e Unknown opcode
+0b5f LXI    B,#$c0cd
+0b62 LXI    B,#$efcd
+0b65 LXI    B,#$1acd
+0b68 STAX   B
+0b69 MVI    A,#0x01
+0b6b Unknown opcode
+0b6c Unknown opcode
+0b6d Unknown opcode
+0b6e Unknown opcode
+0b6f Unknown opcode
+0b70 LXI    B,#$18cd
+0b73 Unknown opcode
+0b74 Unknown opcode
+0b75 Unknown opcode
+0b76 Unknown opcode
+0b77 Unknown opcode
+0b78 MVI    B,#$cd
+0b7a Unknown opcode
+0b7b Unknown opcode
+0b7c Unknown opcode
+0b7d Unknown opcode
+0b7e Unknown opcode
+0b7f Unknown opcode
+0b80 Unknown opcode
+0b81 Unknown opcode
+0b82 Unknown opcode
+0b83 Unknown opcode
+0b84 Unknown opcode
+0b85 Unknown opcode
+0b86 Unknown opcode
+0b87 Unknown opcode
+0b88 Unknown opcode
+0b89 Unknown opcode
+0b8a Unknown opcode
+0b8b Unknown opcode
+0b8c Unknown opcode
+0b8d Unknown opcode
+0b8e Unknown opcode
+0b8f Unknown opcode
+0b90 Unknown opcode
+0b91 Unknown opcode
+0b92 Unknown opcode
+0b93 Unknown opcode
+0b94 Unknown opcode
+0b95 Unknown opcode
+0b96 Unknown opcode
+0b97 Unknown opcode
+0b98 Unknown opcode
+0b99 Unknown opcode
+0b9a Unknown opcode
+0b9b Unknown opcode
+0b9c Unknown opcode
+0b9d NOP
+0b9e Unknown opcode
+0b9f Unknown opcode
+0ba0 Unknown opcode
+0ba1 Unknown opcode
+0ba2 NOP
+0ba3 Unknown opcode
+0ba4 Unknown opcode
+0ba5 Unknown opcode
+0ba6 Unknown opcode
+0ba7 Unknown opcode
+0ba8 Unknown opcode
+0ba9 MVI    A,#0x02
+0bab Unknown opcode
+0bac Unknown opcode
+0bad NOP
+0bae LXI    B,#$1f9c
+0bb1 Unknown opcode
+0bb2 Unknown opcode
+0bb3 Unknown opcode
+0bb4 Unknown opcode
+0bb5 Unknown opcode
+0bb6 Unknown opcode
+0bb7 Unknown opcode
+0bb8 STAX   B
+0bb9 RLC
+0bba Unknown opcode
+0bbb JMP    $010b
+0bbe Unknown opcode
+0bbf Unknown opcode
+0bc0 Unknown opcode
+0bc1 Unknown opcode
+0bc2 Unknown opcode
+0bc3 Unknown opcode
+0bc4 Unknown opcode
+0bc5 Unknown opcode
+0bc6 Unknown opcode
+0bc7 Unknown opcode
+0bc8 Unknown opcode
+0bc9 Unknown opcode
+0bca NOP
+0bcb Unknown opcode
+0bcc Unknown opcode
+0bcd Unknown opcode
+0bce Unknown opcode
+0bcf Unknown opcode
+0bd0 Unknown opcode
+0bd1 Unknown opcode
+0bd2 Unknown opcode
+0bd3 Unknown opcode
+0bd4 Unknown opcode
+0bd5 Unknown opcode
+0bd6 Unknown opcode
+0bd7 Unknown opcode
+0bd8 Unknown opcode
+0bd9 Unknown opcode
+0bda Unknown opcode
+0bdb Unknown opcode
+0bdc Unknown opcode
+0bdd Unknown opcode
+0bde Unknown opcode
+0bdf Unknown opcode
+0be0 LXI    B,#$cd77
+0be3 Unknown opcode
+0be4 Unknown opcode
+0be5 JMP    $18df
+0be8 Unknown opcode
+0be9 Unknown opcode
+0bea Unknown opcode
+0beb Unknown opcode
+0bec Unknown opcode
+0bed Unknown opcode
+0bee JMP    $0b0b
+0bf1 Unknown opcode
+0bf2 Unknown opcode
+0bf3 Unknown opcode
+0bf4 JMP    $199a
+0bf7 Unknown opcode
+0bf8 NOP
+0bf9 NOP
+0bfa Unknown opcode
+0bfb Unknown opcode
+0bfc Unknown opcode
+0bfd STAX   B
+0bfe Unknown opcode
+0bff Unknown opcode
+0c00 NOP
+0c01 NOP
+0c02 NOP
+0c03 NOP
+0c04 NOP
+0c05 NOP
+0c06 NOP
+0c07 NOP
+0c08 NOP
+0c09 NOP
+0c0a NOP
+0c0b NOP
+0c0c NOP
+0c0d NOP
+0c0e NOP
+0c0f NOP
+0c10 NOP
+0c11 NOP
+0c12 NOP
+0c13 NOP
+0c14 NOP
+0c15 NOP
+0c16 NOP
+0c17 NOP
+0c18 NOP
+0c19 NOP
+0c1a NOP
+0c1b NOP
+0c1c NOP
+0c1d NOP
+0c1e NOP
+0c1f NOP
+0c20 NOP
+0c21 NOP
+0c22 NOP
+0c23 NOP
+0c24 NOP
+0c25 NOP
+0c26 NOP
+0c27 NOP
+0c28 NOP
+0c29 NOP
+0c2a NOP
+0c2b NOP
+0c2c NOP
+0c2d NOP
+0c2e NOP
+0c2f NOP
+0c30 NOP
+0c31 NOP
+0c32 NOP
+0c33 NOP
+0c34 NOP
+0c35 NOP
+0c36 NOP
+0c37 NOP
+0c38 NOP
+0c39 NOP
+0c3a NOP
+0c3b NOP
+0c3c NOP
+0c3d NOP
+0c3e NOP
+0c3f NOP
+0c40 NOP
+0c41 NOP
+0c42 NOP
+0c43 NOP
+0c44 NOP
+0c45 NOP
+0c46 NOP
+0c47 NOP
+0c48 NOP
+0c49 NOP
+0c4a NOP
+0c4b NOP
+0c4c NOP
+0c4d NOP
+0c4e NOP
+0c4f NOP
+0c50 NOP
+0c51 NOP
+0c52 NOP
+0c53 NOP
+0c54 NOP
+0c55 NOP
+0c56 NOP
+0c57 NOP
+0c58 NOP
+0c59 NOP
+0c5a NOP
+0c5b NOP
+0c5c NOP
+0c5d NOP
+0c5e NOP
+0c5f NOP
+0c60 NOP
+0c61 NOP
+0c62 NOP
+0c63 NOP
+0c64 NOP
+0c65 NOP
+0c66 NOP
+0c67 NOP
+0c68 NOP
+0c69 NOP
+0c6a NOP
+0c6b NOP
+0c6c NOP
+0c6d NOP
+0c6e NOP
+0c6f NOP
+0c70 NOP
+0c71 NOP
+0c72 NOP
+0c73 NOP
+0c74 NOP
+0c75 NOP
+0c76 NOP
+0c77 NOP
+0c78 NOP
+0c79 NOP
+0c7a NOP
+0c7b NOP
+0c7c NOP
+0c7d NOP
+0c7e NOP
+0c7f NOP
+0c80 NOP
+0c81 NOP
+0c82 NOP
+0c83 NOP
+0c84 NOP
+0c85 NOP
+0c86 NOP
+0c87 NOP
+0c88 NOP
+0c89 NOP
+0c8a NOP
+0c8b NOP
+0c8c NOP
+0c8d NOP
+0c8e NOP
+0c8f NOP
+0c90 NOP
+0c91 NOP
+0c92 NOP
+0c93 NOP
+0c94 NOP
+0c95 NOP
+0c96 NOP
+0c97 NOP
+0c98 NOP
+0c99 NOP
+0c9a NOP
+0c9b NOP
+0c9c NOP
+0c9d NOP
+0c9e NOP
+0c9f NOP
+0ca0 NOP
+0ca1 NOP
+0ca2 NOP
+0ca3 NOP
+0ca4 NOP
+0ca5 NOP
+0ca6 NOP
+0ca7 NOP
+0ca8 NOP
+0ca9 NOP
+0caa NOP
+0cab NOP
+0cac NOP
+0cad NOP
+0cae NOP
+0caf NOP
+0cb0 NOP
+0cb1 NOP
+0cb2 NOP
+0cb3 NOP
+0cb4 NOP
+0cb5 NOP
+0cb6 NOP
+0cb7 NOP
+0cb8 NOP
+0cb9 NOP
+0cba NOP
+0cbb NOP
+0cbc NOP
+0cbd NOP
+0cbe NOP
+0cbf NOP
+0cc0 NOP
+0cc1 NOP
+0cc2 NOP
+0cc3 NOP
+0cc4 NOP
+0cc5 NOP
+0cc6 NOP
+0cc7 NOP
+0cc8 NOP
+0cc9 NOP
+0cca NOP
+0ccb NOP
+0ccc NOP
+0ccd NOP
+0cce NOP
+0ccf NOP
+0cd0 NOP
+0cd1 NOP
+0cd2 NOP
+0cd3 NOP
+0cd4 NOP
+0cd5 NOP
+0cd6 NOP
+0cd7 NOP
+0cd8 NOP
+0cd9 NOP
+0cda NOP
+0cdb NOP
+0cdc NOP
+0cdd NOP
+0cde NOP
+0cdf NOP
+0ce0 NOP
+0ce1 NOP
+0ce2 NOP
+0ce3 NOP
+0ce4 NOP
+0ce5 NOP
+0ce6 NOP
+0ce7 NOP
+0ce8 NOP
+0ce9 NOP
+0cea NOP
+0ceb NOP
+0cec NOP
+0ced NOP
+0cee NOP
+0cef NOP
+0cf0 NOP
+0cf1 NOP
+0cf2 NOP
+0cf3 NOP
+0cf4 NOP
+0cf5 NOP
+0cf6 NOP
+0cf7 NOP
+0cf8 NOP
+0cf9 NOP
+0cfa NOP
+0cfb NOP
+0cfc NOP
+0cfd NOP
+0cfe NOP
+0cff NOP
+0d00 NOP
+0d01 NOP
+0d02 NOP
+0d03 NOP
+0d04 NOP
+0d05 NOP
+0d06 NOP
+0d07 NOP
+0d08 NOP
+0d09 NOP
+0d0a NOP
+0d0b NOP
+0d0c NOP
+0d0d NOP
+0d0e NOP
+0d0f NOP
+0d10 NOP
+0d11 NOP
+0d12 NOP
+0d13 NOP
+0d14 NOP
+0d15 NOP
+0d16 NOP
+0d17 NOP
+0d18 NOP
+0d19 NOP
+0d1a NOP
+0d1b NOP
+0d1c NOP
+0d1d NOP
+0d1e NOP
+0d1f NOP
+0d20 NOP
+0d21 NOP
+0d22 NOP
+0d23 NOP
+0d24 NOP
+0d25 NOP
+0d26 NOP
+0d27 NOP
+0d28 NOP
+0d29 NOP
+0d2a NOP
+0d2b NOP
+0d2c NOP
+0d2d NOP
+0d2e NOP
+0d2f NOP
+0d30 NOP
+0d31 NOP
+0d32 NOP
+0d33 NOP
+0d34 NOP
+0d35 NOP
+0d36 NOP
+0d37 NOP
+0d38 NOP
+0d39 NOP
+0d3a NOP
+0d3b NOP
+0d3c NOP
+0d3d NOP
+0d3e NOP
+0d3f NOP
+0d40 NOP
+0d41 NOP
+0d42 NOP
+0d43 NOP
+0d44 NOP
+0d45 NOP
+0d46 NOP
+0d47 NOP
+0d48 NOP
+0d49 NOP
+0d4a NOP
+0d4b NOP
+0d4c NOP
+0d4d NOP
+0d4e NOP
+0d4f NOP
+0d50 NOP
+0d51 NOP
+0d52 NOP
+0d53 NOP
+0d54 NOP
+0d55 NOP
+0d56 NOP
+0d57 NOP
+0d58 NOP
+0d59 NOP
+0d5a NOP
+0d5b NOP
+0d5c NOP
+0d5d NOP
+0d5e NOP
+0d5f NOP
+0d60 NOP
+0d61 NOP
+0d62 NOP
+0d63 NOP
+0d64 NOP
+0d65 NOP
+0d66 NOP
+0d67 NOP
+0d68 NOP
+0d69 NOP
+0d6a NOP
+0d6b NOP
+0d6c NOP
+0d6d NOP
+0d6e NOP
+0d6f NOP
+0d70 NOP
+0d71 NOP
+0d72 NOP
+0d73 NOP
+0d74 NOP
+0d75 NOP
+0d76 NOP
+0d77 NOP
+0d78 NOP
+0d79 NOP
+0d7a NOP
+0d7b NOP
+0d7c NOP
+0d7d NOP
+0d7e NOP
+0d7f NOP
+0d80 NOP
+0d81 NOP
+0d82 NOP
+0d83 NOP
+0d84 NOP
+0d85 NOP
+0d86 NOP
+0d87 NOP
+0d88 NOP
+0d89 NOP
+0d8a NOP
+0d8b NOP
+0d8c NOP
+0d8d NOP
+0d8e NOP
+0d8f NOP
+0d90 NOP
+0d91 NOP
+0d92 NOP
+0d93 NOP
+0d94 NOP
+0d95 NOP
+0d96 NOP
+0d97 NOP
+0d98 NOP
+0d99 NOP
+0d9a NOP
+0d9b NOP
+0d9c NOP
+0d9d NOP
+0d9e NOP
+0d9f NOP
+0da0 NOP
+0da1 NOP
+0da2 NOP
+0da3 NOP
+0da4 NOP
+0da5 NOP
+0da6 NOP
+0da7 NOP
+0da8 NOP
+0da9 NOP
+0daa NOP
+0dab NOP
+0dac NOP
+0dad NOP
+0dae NOP
+0daf NOP
+0db0 NOP
+0db1 NOP
+0db2 NOP
+0db3 NOP
+0db4 NOP
+0db5 NOP
+0db6 NOP
+0db7 NOP
+0db8 NOP
+0db9 NOP
+0dba NOP
+0dbb NOP
+0dbc NOP
+0dbd NOP
+0dbe NOP
+0dbf NOP
+0dc0 NOP
+0dc1 NOP
+0dc2 NOP
+0dc3 NOP
+0dc4 NOP
+0dc5 NOP
+0dc6 NOP
+0dc7 NOP
+0dc8 NOP
+0dc9 NOP
+0dca NOP
+0dcb NOP
+0dcc NOP
+0dcd NOP
+0dce NOP
+0dcf NOP
+0dd0 NOP
+0dd1 NOP
+0dd2 NOP
+0dd3 NOP
+0dd4 NOP
+0dd5 NOP
+0dd6 NOP
+0dd7 NOP
+0dd8 NOP
+0dd9 NOP
+0dda NOP
+0ddb NOP
+0ddc NOP
+0ddd NOP
+0dde NOP
+0ddf NOP
+0de0 NOP
+0de1 NOP
+0de2 NOP
+0de3 NOP
+0de4 NOP
+0de5 NOP
+0de6 NOP
+0de7 NOP
+0de8 NOP
+0de9 NOP
+0dea NOP
+0deb NOP
+0dec NOP
+0ded NOP
+0dee NOP
+0def NOP
+0df0 NOP
+0df1 NOP
+0df2 NOP
+0df3 NOP
+0df4 NOP
+0df5 NOP
+0df6 NOP
+0df7 NOP
+0df8 NOP
+0df9 NOP
+0dfa NOP
+0dfb NOP
+0dfc NOP
+0dfd NOP
+0dfe NOP
+0dff NOP
+0e00 NOP
+0e01 NOP
+0e02 NOP
+0e03 NOP
+0e04 NOP
+0e05 NOP
+0e06 NOP
+0e07 NOP
+0e08 NOP
+0e09 NOP
+0e0a NOP
+0e0b NOP
+0e0c NOP
+0e0d NOP
+0e0e NOP
+0e0f NOP
+0e10 NOP
+0e11 NOP
+0e12 NOP
+0e13 NOP
+0e14 NOP
+0e15 NOP
+0e16 NOP
+0e17 NOP
+0e18 NOP
+0e19 NOP
+0e1a NOP
+0e1b NOP
+0e1c NOP
+0e1d NOP
+0e1e NOP
+0e1f NOP
+0e20 NOP
+0e21 NOP
+0e22 NOP
+0e23 NOP
+0e24 NOP
+0e25 NOP
+0e26 NOP
+0e27 NOP
+0e28 NOP
+0e29 NOP
+0e2a NOP
+0e2b NOP
+0e2c NOP
+0e2d NOP
+0e2e NOP
+0e2f NOP
+0e30 NOP
+0e31 NOP
+0e32 NOP
+0e33 NOP
+0e34 NOP
+0e35 NOP
+0e36 NOP
+0e37 NOP
+0e38 NOP
+0e39 NOP
+0e3a NOP
+0e3b NOP
+0e3c NOP
+0e3d NOP
+0e3e NOP
+0e3f NOP
+0e40 NOP
+0e41 NOP
+0e42 NOP
+0e43 NOP
+0e44 NOP
+0e45 NOP
+0e46 NOP
+0e47 NOP
+0e48 NOP
+0e49 NOP
+0e4a NOP
+0e4b NOP
+0e4c NOP
+0e4d NOP
+0e4e NOP
+0e4f NOP
+0e50 NOP
+0e51 NOP
+0e52 NOP
+0e53 NOP
+0e54 NOP
+0e55 NOP
+0e56 NOP
+0e57 NOP
+0e58 NOP
+0e59 NOP
+0e5a NOP
+0e5b NOP
+0e5c NOP
+0e5d NOP
+0e5e NOP
+0e5f NOP
+0e60 NOP
+0e61 NOP
+0e62 NOP
+0e63 NOP
+0e64 NOP
+0e65 NOP
+0e66 NOP
+0e67 NOP
+0e68 NOP
+0e69 NOP
+0e6a NOP
+0e6b NOP
+0e6c NOP
+0e6d NOP
+0e6e NOP
+0e6f NOP
+0e70 NOP
+0e71 NOP
+0e72 NOP
+0e73 NOP
+0e74 NOP
+0e75 NOP
+0e76 NOP
+0e77 NOP
+0e78 NOP
+0e79 NOP
+0e7a NOP
+0e7b NOP
+0e7c NOP
+0e7d NOP
+0e7e NOP
+0e7f NOP
+0e80 NOP
+0e81 NOP
+0e82 NOP
+0e83 NOP
+0e84 NOP
+0e85 NOP
+0e86 NOP
+0e87 NOP
+0e88 NOP
+0e89 NOP
+0e8a NOP
+0e8b NOP
+0e8c NOP
+0e8d NOP
+0e8e NOP
+0e8f NOP
+0e90 NOP
+0e91 NOP
+0e92 NOP
+0e93 NOP
+0e94 NOP
+0e95 NOP
+0e96 NOP
+0e97 NOP
+0e98 NOP
+0e99 NOP
+0e9a NOP
+0e9b NOP
+0e9c NOP
+0e9d NOP
+0e9e NOP
+0e9f NOP
+0ea0 NOP
+0ea1 NOP
+0ea2 NOP
+0ea3 NOP
+0ea4 NOP
+0ea5 NOP
+0ea6 NOP
+0ea7 NOP
+0ea8 NOP
+0ea9 NOP
+0eaa NOP
+0eab NOP
+0eac NOP
+0ead NOP
+0eae NOP
+0eaf NOP
+0eb0 NOP
+0eb1 NOP
+0eb2 NOP
+0eb3 NOP
+0eb4 NOP
+0eb5 NOP
+0eb6 NOP
+0eb7 NOP
+0eb8 NOP
+0eb9 NOP
+0eba NOP
+0ebb NOP
+0ebc NOP
+0ebd NOP
+0ebe NOP
+0ebf NOP
+0ec0 NOP
+0ec1 NOP
+0ec2 NOP
+0ec3 NOP
+0ec4 NOP
+0ec5 NOP
+0ec6 NOP
+0ec7 NOP
+0ec8 NOP
+0ec9 NOP
+0eca NOP
+0ecb NOP
+0ecc NOP
+0ecd NOP
+0ece NOP
+0ecf NOP
+0ed0 NOP
+0ed1 NOP
+0ed2 NOP
+0ed3 NOP
+0ed4 NOP
+0ed5 NOP
+0ed6 NOP
+0ed7 NOP
+0ed8 NOP
+0ed9 NOP
+0eda NOP
+0edb NOP
+0edc NOP
+0edd NOP
+0ede NOP
+0edf NOP
+0ee0 NOP
+0ee1 NOP
+0ee2 NOP
+0ee3 NOP
+0ee4 NOP
+0ee5 NOP
+0ee6 NOP
+0ee7 NOP
+0ee8 NOP
+0ee9 NOP
+0eea NOP
+0eeb NOP
+0eec NOP
+0eed NOP
+0eee NOP
+0eef NOP
+0ef0 NOP
+0ef1 NOP
+0ef2 NOP
+0ef3 NOP
+0ef4 NOP
+0ef5 NOP
+0ef6 NOP
+0ef7 NOP
+0ef8 NOP
+0ef9 NOP
+0efa NOP
+0efb NOP
+0efc NOP
+0efd NOP
+0efe NOP
+0eff NOP
+0f00 NOP
+0f01 NOP
+0f02 NOP
+0f03 NOP
+0f04 NOP
+0f05 NOP
+0f06 NOP
+0f07 NOP
+0f08 NOP
+0f09 NOP
+0f0a NOP
+0f0b NOP
+0f0c NOP
+0f0d NOP
+0f0e NOP
+0f0f NOP
+0f10 NOP
+0f11 NOP
+0f12 NOP
+0f13 NOP
+0f14 NOP
+0f15 NOP
+0f16 NOP
+0f17 NOP
+0f18 NOP
+0f19 NOP
+0f1a NOP
+0f1b NOP
+0f1c NOP
+0f1d NOP
+0f1e NOP
+0f1f NOP
+0f20 NOP
+0f21 NOP
+0f22 NOP
+0f23 NOP
+0f24 NOP
+0f25 NOP
+0f26 NOP
+0f27 NOP
+0f28 NOP
+0f29 NOP
+0f2a NOP
+0f2b NOP
+0f2c NOP
+0f2d NOP
+0f2e NOP
+0f2f NOP
+0f30 NOP
+0f31 NOP
+0f32 NOP
+0f33 NOP
+0f34 NOP
+0f35 NOP
+0f36 NOP
+0f37 NOP
+0f38 NOP
+0f39 NOP
+0f3a NOP
+0f3b NOP
+0f3c NOP
+0f3d NOP
+0f3e NOP
+0f3f NOP
+0f40 NOP
+0f41 NOP
+0f42 NOP
+0f43 NOP
+0f44 NOP
+0f45 NOP
+0f46 NOP
+0f47 NOP
+0f48 NOP
+0f49 NOP
+0f4a NOP
+0f4b NOP
+0f4c NOP
+0f4d NOP
+0f4e NOP
+0f4f NOP
+0f50 NOP
+0f51 NOP
+0f52 NOP
+0f53 NOP
+0f54 NOP
+0f55 NOP
+0f56 NOP
+0f57 NOP
+0f58 NOP
+0f59 NOP
+0f5a NOP
+0f5b NOP
+0f5c NOP
+0f5d NOP
+0f5e NOP
+0f5f NOP
+0f60 NOP
+0f61 NOP
+0f62 NOP
+0f63 NOP
+0f64 NOP
+0f65 NOP
+0f66 NOP
+0f67 NOP
+0f68 NOP
+0f69 NOP
+0f6a NOP
+0f6b NOP
+0f6c NOP
+0f6d NOP
+0f6e NOP
+0f6f NOP
+0f70 NOP
+0f71 NOP
+0f72 NOP
+0f73 NOP
+0f74 NOP
+0f75 NOP
+0f76 NOP
+0f77 NOP
+0f78 NOP
+0f79 NOP
+0f7a NOP
+0f7b NOP
+0f7c NOP
+0f7d NOP
+0f7e NOP
+0f7f NOP
+0f80 NOP
+0f81 NOP
+0f82 NOP
+0f83 NOP
+0f84 NOP
+0f85 NOP
+0f86 NOP
+0f87 NOP
+0f88 NOP
+0f89 NOP
+0f8a NOP
+0f8b NOP
+0f8c NOP
+0f8d NOP
+0f8e NOP
+0f8f NOP
+0f90 NOP
+0f91 NOP
+0f92 NOP
+0f93 NOP
+0f94 NOP
+0f95 NOP
+0f96 NOP
+0f97 NOP
+0f98 NOP
+0f99 NOP
+0f9a NOP
+0f9b NOP
+0f9c NOP
+0f9d NOP
+0f9e NOP
+0f9f NOP
+0fa0 NOP
+0fa1 NOP
+0fa2 NOP
+0fa3 NOP
+0fa4 NOP
+0fa5 NOP
+0fa6 NOP
+0fa7 NOP
+0fa8 NOP
+0fa9 NOP
+0faa NOP
+0fab NOP
+0fac NOP
+0fad NOP
+0fae NOP
+0faf NOP
+0fb0 NOP
+0fb1 NOP
+0fb2 NOP
+0fb3 NOP
+0fb4 NOP
+0fb5 NOP
+0fb6 NOP
+0fb7 NOP
+0fb8 NOP
+0fb9 NOP
+0fba NOP
+0fbb NOP
+0fbc NOP
+0fbd NOP
+0fbe NOP
+0fbf NOP
+0fc0 NOP
+0fc1 NOP
+0fc2 NOP
+0fc3 NOP
+0fc4 NOP
+0fc5 NOP
+0fc6 NOP
+0fc7 NOP
+0fc8 NOP
+0fc9 NOP
+0fca NOP
+0fcb NOP
+0fcc NOP
+0fcd NOP
+0fce NOP
+0fcf NOP
+0fd0 NOP
+0fd1 NOP
+0fd2 NOP
+0fd3 NOP
+0fd4 NOP
+0fd5 NOP
+0fd6 NOP
+0fd7 NOP
+0fd8 NOP
+0fd9 NOP
+0fda NOP
+0fdb NOP
+0fdc NOP
+0fdd NOP
+0fde NOP
+0fdf NOP
+0fe0 NOP
+0fe1 NOP
+0fe2 NOP
+0fe3 NOP
+0fe4 NOP
+0fe5 NOP
+0fe6 NOP
+0fe7 NOP
+0fe8 NOP
+0fe9 NOP
+0fea NOP
+0feb NOP
+0fec NOP
+0fed NOP
+0fee NOP
+0fef NOP
+0ff0 NOP
+0ff1 NOP
+0ff2 NOP
+0ff3 NOP
+0ff4 NOP
+0ff5 NOP
+0ff6 NOP
+0ff7 NOP
+0ff8 NOP
+0ff9 NOP
+0ffa NOP
+0ffb NOP
+0ffc NOP
+0ffd NOP
+0ffe NOP
+0fff NOP
+1000 NOP
+1001 NOP
+1002 NOP
+1003 NOP
+1004 NOP
+1005 NOP
+1006 NOP
+1007 NOP
+1008 NOP
+1009 NOP
+100a NOP
+100b NOP
+100c NOP
+100d NOP
+100e NOP
+100f NOP
+1010 NOP
+1011 NOP
+1012 NOP
+1013 NOP
+1014 NOP
+1015 NOP
+1016 NOP
+1017 NOP
+1018 NOP
+1019 NOP
+101a NOP
+101b NOP
+101c NOP
+101d NOP
+101e NOP
+101f NOP
+1020 NOP
+1021 NOP
+1022 NOP
+1023 NOP
+1024 NOP
+1025 NOP
+1026 NOP
+1027 NOP
+1028 NOP
+1029 NOP
+102a NOP
+102b NOP
+102c NOP
+102d NOP
+102e NOP
+102f NOP
+1030 NOP
+1031 NOP
+1032 NOP
+1033 NOP
+1034 NOP
+1035 NOP
+1036 NOP
+1037 NOP
+1038 NOP
+1039 NOP
+103a NOP
+103b NOP
+103c NOP
+103d NOP
+103e NOP
+103f NOP
+1040 NOP
+1041 NOP
+1042 NOP
+1043 NOP
+1044 NOP
+1045 NOP
+1046 NOP
+1047 NOP
+1048 NOP
+1049 NOP
+104a NOP
+104b NOP
+104c NOP
+104d NOP
+104e NOP
+104f NOP
+1050 NOP
+1051 NOP
+1052 NOP
+1053 NOP
+1054 NOP
+1055 NOP
+1056 NOP
+1057 NOP
+1058 NOP
+1059 NOP
+105a NOP
+105b NOP
+105c NOP
+105d NOP
+105e NOP
+105f NOP
+1060 NOP
+1061 NOP
+1062 NOP
+1063 NOP
+1064 NOP
+1065 NOP
+1066 NOP
+1067 NOP
+1068 NOP
+1069 NOP
+106a NOP
+106b NOP
+106c NOP
+106d NOP
+106e NOP
+106f NOP
+1070 NOP
+1071 NOP
+1072 NOP
+1073 NOP
+1074 NOP
+1075 NOP
+1076 NOP
+1077 NOP
+1078 NOP
+1079 NOP
+107a NOP
+107b NOP
+107c NOP
+107d NOP
+107e NOP
+107f NOP
+1080 NOP
+1081 NOP
+1082 NOP
+1083 NOP
+1084 NOP
+1085 NOP
+1086 NOP
+1087 NOP
+1088 NOP
+1089 NOP
+108a NOP
+108b NOP
+108c NOP
+108d NOP
+108e NOP
+108f NOP
+1090 NOP
+1091 NOP
+1092 NOP
+1093 NOP
+1094 NOP
+1095 NOP
+1096 NOP
+1097 NOP
+1098 NOP
+1099 NOP
+109a NOP
+109b NOP
+109c NOP
+109d NOP
+109e NOP
+109f NOP
+10a0 NOP
+10a1 NOP
+10a2 NOP
+10a3 NOP
+10a4 NOP
+10a5 NOP
+10a6 NOP
+10a7 NOP
+10a8 NOP
+10a9 NOP
+10aa NOP
+10ab NOP
+10ac NOP
+10ad NOP
+10ae NOP
+10af NOP
+10b0 NOP
+10b1 NOP
+10b2 NOP
+10b3 NOP
+10b4 NOP
+10b5 NOP
+10b6 NOP
+10b7 NOP
+10b8 NOP
+10b9 NOP
+10ba NOP
+10bb NOP
+10bc NOP
+10bd NOP
+10be NOP
+10bf NOP
+10c0 NOP
+10c1 NOP
+10c2 NOP
+10c3 NOP
+10c4 NOP
+10c5 NOP
+10c6 NOP
+10c7 NOP
+10c8 NOP
+10c9 NOP
+10ca NOP
+10cb NOP
+10cc NOP
+10cd NOP
+10ce NOP
+10cf NOP
+10d0 NOP
+10d1 NOP
+10d2 NOP
+10d3 NOP
+10d4 NOP
+10d5 NOP
+10d6 NOP
+10d7 NOP
+10d8 NOP
+10d9 NOP
+10da NOP
+10db NOP
+10dc NOP
+10dd NOP
+10de NOP
+10df NOP
+10e0 NOP
+10e1 NOP
+10e2 NOP
+10e3 NOP
+10e4 NOP
+10e5 NOP
+10e6 NOP
+10e7 NOP
+10e8 NOP
+10e9 NOP
+10ea NOP
+10eb NOP
+10ec NOP
+10ed NOP
+10ee NOP
+10ef NOP
+10f0 NOP
+10f1 NOP
+10f2 NOP
+10f3 NOP
+10f4 NOP
+10f5 NOP
+10f6 NOP
+10f7 NOP
+10f8 NOP
+10f9 NOP
+10fa NOP
+10fb NOP
+10fc NOP
+10fd NOP
+10fe NOP
+10ff NOP
+1100 NOP
+1101 NOP
+1102 NOP
+1103 NOP
+1104 NOP
+1105 NOP
+1106 NOP
+1107 NOP
+1108 NOP
+1109 NOP
+110a NOP
+110b NOP
+110c NOP
+110d NOP
+110e NOP
+110f NOP
+1110 NOP
+1111 NOP
+1112 NOP
+1113 NOP
+1114 NOP
+1115 NOP
+1116 NOP
+1117 NOP
+1118 NOP
+1119 NOP
+111a NOP
+111b NOP
+111c NOP
+111d NOP
+111e NOP
+111f NOP
+1120 NOP
+1121 NOP
+1122 NOP
+1123 NOP
+1124 NOP
+1125 NOP
+1126 NOP
+1127 NOP
+1128 NOP
+1129 NOP
+112a NOP
+112b NOP
+112c NOP
+112d NOP
+112e NOP
+112f NOP
+1130 NOP
+1131 NOP
+1132 NOP
+1133 NOP
+1134 NOP
+1135 NOP
+1136 NOP
+1137 NOP
+1138 NOP
+1139 NOP
+113a NOP
+113b NOP
+113c NOP
+113d NOP
+113e NOP
+113f NOP
+1140 NOP
+1141 NOP
+1142 NOP
+1143 NOP
+1144 NOP
+1145 NOP
+1146 NOP
+1147 NOP
+1148 NOP
+1149 NOP
+114a NOP
+114b NOP
+114c NOP
+114d NOP
+114e NOP
+114f NOP
+1150 NOP
+1151 NOP
+1152 NOP
+1153 NOP
+1154 NOP
+1155 NOP
+1156 NOP
+1157 NOP
+1158 NOP
+1159 NOP
+115a NOP
+115b NOP
+115c NOP
+115d NOP
+115e NOP
+115f NOP
+1160 NOP
+1161 NOP
+1162 NOP
+1163 NOP
+1164 NOP
+1165 NOP
+1166 NOP
+1167 NOP
+1168 NOP
+1169 NOP
+116a NOP
+116b NOP
+116c NOP
+116d NOP
+116e NOP
+116f NOP
+1170 NOP
+1171 NOP
+1172 NOP
+1173 NOP
+1174 NOP
+1175 NOP
+1176 NOP
+1177 NOP
+1178 NOP
+1179 NOP
+117a NOP
+117b NOP
+117c NOP
+117d NOP
+117e NOP
+117f NOP
+1180 NOP
+1181 NOP
+1182 NOP
+1183 NOP
+1184 NOP
+1185 NOP
+1186 NOP
+1187 NOP
+1188 NOP
+1189 NOP
+118a NOP
+118b NOP
+118c NOP
+118d NOP
+118e NOP
+118f NOP
+1190 NOP
+1191 NOP
+1192 NOP
+1193 NOP
+1194 NOP
+1195 NOP
+1196 NOP
+1197 NOP
+1198 NOP
+1199 NOP
+119a NOP
+119b NOP
+119c NOP
+119d NOP
+119e NOP
+119f NOP
+11a0 NOP
+11a1 NOP
+11a2 NOP
+11a3 NOP
+11a4 NOP
+11a5 NOP
+11a6 NOP
+11a7 NOP
+11a8 NOP
+11a9 NOP
+11aa NOP
+11ab NOP
+11ac NOP
+11ad NOP
+11ae NOP
+11af NOP
+11b0 NOP
+11b1 NOP
+11b2 NOP
+11b3 NOP
+11b4 NOP
+11b5 NOP
+11b6 NOP
+11b7 NOP
+11b8 NOP
+11b9 NOP
+11ba NOP
+11bb NOP
+11bc NOP
+11bd NOP
+11be NOP
+11bf NOP
+11c0 NOP
+11c1 NOP
+11c2 NOP
+11c3 NOP
+11c4 NOP
+11c5 NOP
+11c6 NOP
+11c7 NOP
+11c8 NOP
+11c9 NOP
+11ca NOP
+11cb NOP
+11cc NOP
+11cd NOP
+11ce NOP
+11cf NOP
+11d0 NOP
+11d1 NOP
+11d2 NOP
+11d3 NOP
+11d4 NOP
+11d5 NOP
+11d6 NOP
+11d7 NOP
+11d8 NOP
+11d9 NOP
+11da NOP
+11db NOP
+11dc NOP
+11dd NOP
+11de NOP
+11df NOP
+11e0 NOP
+11e1 NOP
+11e2 NOP
+11e3 NOP
+11e4 NOP
+11e5 NOP
+11e6 NOP
+11e7 NOP
+11e8 NOP
+11e9 NOP
+11ea NOP
+11eb NOP
+11ec NOP
+11ed NOP
+11ee NOP
+11ef NOP
+11f0 NOP
+11f1 NOP
+11f2 NOP
+11f3 NOP
+11f4 NOP
+11f5 NOP
+11f6 NOP
+11f7 NOP
+11f8 NOP
+11f9 NOP
+11fa NOP
+11fb NOP
+11fc NOP
+11fd NOP
+11fe NOP
+11ff NOP
+1200 NOP
+1201 NOP
+1202 NOP
+1203 NOP
+1204 NOP
+1205 NOP
+1206 NOP
+1207 NOP
+1208 NOP
+1209 NOP
+120a NOP
+120b NOP
+120c NOP
+120d NOP
+120e NOP
+120f NOP
+1210 NOP
+1211 NOP
+1212 NOP
+1213 NOP
+1214 NOP
+1215 NOP
+1216 NOP
+1217 NOP
+1218 NOP
+1219 NOP
+121a NOP
+121b NOP
+121c NOP
+121d NOP
+121e NOP
+121f NOP
+1220 NOP
+1221 NOP
+1222 NOP
+1223 NOP
+1224 NOP
+1225 NOP
+1226 NOP
+1227 NOP
+1228 NOP
+1229 NOP
+122a NOP
+122b NOP
+122c NOP
+122d NOP
+122e NOP
+122f NOP
+1230 NOP
+1231 NOP
+1232 NOP
+1233 NOP
+1234 NOP
+1235 NOP
+1236 NOP
+1237 NOP
+1238 NOP
+1239 NOP
+123a NOP
+123b NOP
+123c NOP
+123d NOP
+123e NOP
+123f NOP
+1240 NOP
+1241 NOP
+1242 NOP
+1243 NOP
+1244 NOP
+1245 NOP
+1246 NOP
+1247 NOP
+1248 NOP
+1249 NOP
+124a NOP
+124b NOP
+124c NOP
+124d NOP
+124e NOP
+124f NOP
+1250 NOP
+1251 NOP
+1252 NOP
+1253 NOP
+1254 NOP
+1255 NOP
+1256 NOP
+1257 NOP
+1258 NOP
+1259 NOP
+125a NOP
+125b NOP
+125c NOP
+125d NOP
+125e NOP
+125f NOP
+1260 NOP
+1261 NOP
+1262 NOP
+1263 NOP
+1264 NOP
+1265 NOP
+1266 NOP
+1267 NOP
+1268 NOP
+1269 NOP
+126a NOP
+126b NOP
+126c NOP
+126d NOP
+126e NOP
+126f NOP
+1270 NOP
+1271 NOP
+1272 NOP
+1273 NOP
+1274 NOP
+1275 NOP
+1276 NOP
+1277 NOP
+1278 NOP
+1279 NOP
+127a NOP
+127b NOP
+127c NOP
+127d NOP
+127e NOP
+127f NOP
+1280 NOP
+1281 NOP
+1282 NOP
+1283 NOP
+1284 NOP
+1285 NOP
+1286 NOP
+1287 NOP
+1288 NOP
+1289 NOP
+128a NOP
+128b NOP
+128c NOP
+128d NOP
+128e NOP
+128f NOP
+1290 NOP
+1291 NOP
+1292 NOP
+1293 NOP
+1294 NOP
+1295 NOP
+1296 NOP
+1297 NOP
+1298 NOP
+1299 NOP
+129a NOP
+129b NOP
+129c NOP
+129d NOP
+129e NOP
+129f NOP
+12a0 NOP
+12a1 NOP
+12a2 NOP
+12a3 NOP
+12a4 NOP
+12a5 NOP
+12a6 NOP
+12a7 NOP
+12a8 NOP
+12a9 NOP
+12aa NOP
+12ab NOP
+12ac NOP
+12ad NOP
+12ae NOP
+12af NOP
+12b0 NOP
+12b1 NOP
+12b2 NOP
+12b3 NOP
+12b4 NOP
+12b5 NOP
+12b6 NOP
+12b7 NOP
+12b8 NOP
+12b9 NOP
+12ba NOP
+12bb NOP
+12bc NOP
+12bd NOP
+12be NOP
+12bf NOP
+12c0 NOP
+12c1 NOP
+12c2 NOP
+12c3 NOP
+12c4 NOP
+12c5 NOP
+12c6 NOP
+12c7 NOP
+12c8 NOP
+12c9 NOP
+12ca NOP
+12cb NOP
+12cc NOP
+12cd NOP
+12ce NOP
+12cf NOP
+12d0 NOP
+12d1 NOP
+12d2 NOP
+12d3 NOP
+12d4 NOP
+12d5 NOP
+12d6 NOP
+12d7 NOP
+12d8 NOP
+12d9 NOP
+12da NOP
+12db NOP
+12dc NOP
+12dd NOP
+12de NOP
+12df NOP
+12e0 NOP
+12e1 NOP
+12e2 NOP
+12e3 NOP
+12e4 NOP
+12e5 NOP
+12e6 NOP
+12e7 NOP
+12e8 NOP
+12e9 NOP
+12ea NOP
+12eb NOP
+12ec NOP
+12ed NOP
+12ee NOP
+12ef NOP
+12f0 NOP
+12f1 NOP
+12f2 NOP
+12f3 NOP
+12f4 NOP
+12f5 NOP
+12f6 NOP
+12f7 NOP
+12f8 NOP
+12f9 NOP
+12fa NOP
+12fb NOP
+12fc NOP
+12fd NOP
+12fe NOP
+12ff NOP
+1300 NOP
+1301 NOP
+1302 NOP
+1303 NOP
+1304 NOP
+1305 NOP
+1306 NOP
+1307 NOP
+1308 NOP
+1309 NOP
+130a NOP
+130b NOP
+130c NOP
+130d NOP
+130e NOP
+130f NOP
+1310 NOP
+1311 NOP
+1312 NOP
+1313 NOP
+1314 NOP
+1315 NOP
+1316 NOP
+1317 NOP
+1318 NOP
+1319 NOP
+131a NOP
+131b NOP
+131c NOP
+131d NOP
+131e NOP
+131f NOP
+1320 NOP
+1321 NOP
+1322 NOP
+1323 NOP
+1324 NOP
+1325 NOP
+1326 NOP
+1327 NOP
+1328 NOP
+1329 NOP
+132a NOP
+132b NOP
+132c NOP
+132d NOP
+132e NOP
+132f NOP
+1330 NOP
+1331 NOP
+1332 NOP
+1333 NOP
+1334 NOP
+1335 NOP
+1336 NOP
+1337 NOP
+1338 NOP
+1339 NOP
+133a NOP
+133b NOP
+133c NOP
+133d NOP
+133e NOP
+133f NOP
+1340 NOP
+1341 NOP
+1342 NOP
+1343 NOP
+1344 NOP
+1345 NOP
+1346 NOP
+1347 NOP
+1348 NOP
+1349 NOP
+134a NOP
+134b NOP
+134c NOP
+134d NOP
+134e NOP
+134f NOP
+1350 NOP
+1351 NOP
+1352 NOP
+1353 NOP
+1354 NOP
+1355 NOP
+1356 NOP
+1357 NOP
+1358 NOP
+1359 NOP
+135a NOP
+135b NOP
+135c NOP
+135d NOP
+135e NOP
+135f NOP
+1360 NOP
+1361 NOP
+1362 NOP
+1363 NOP
+1364 NOP
+1365 NOP
+1366 NOP
+1367 NOP
+1368 NOP
+1369 NOP
+136a NOP
+136b NOP
+136c NOP
+136d NOP
+136e NOP
+136f NOP
+1370 NOP
+1371 NOP
+1372 NOP
+1373 NOP
+1374 NOP
+1375 NOP
+1376 NOP
+1377 NOP
+1378 NOP
+1379 NOP
+137a NOP
+137b NOP
+137c NOP
+137d NOP
+137e NOP
+137f NOP
+1380 NOP
+1381 NOP
+1382 NOP
+1383 NOP
+1384 NOP
+1385 NOP
+1386 NOP
+1387 NOP
+1388 NOP
+1389 NOP
+138a NOP
+138b NOP
+138c NOP
+138d NOP
+138e NOP
+138f NOP
+1390 NOP
+1391 NOP
+1392 NOP
+1393 NOP
+1394 NOP
+1395 NOP
+1396 NOP
+1397 NOP
+1398 NOP
+1399 NOP
+139a NOP
+139b NOP
+139c NOP
+139d NOP
+139e NOP
+139f NOP
+13a0 NOP
+13a1 NOP
+13a2 NOP
+13a3 NOP
+13a4 NOP
+13a5 NOP
+13a6 NOP
+13a7 NOP
+13a8 NOP
+13a9 NOP
+13aa NOP
+13ab NOP
+13ac NOP
+13ad NOP
+13ae NOP
+13af NOP
+13b0 NOP
+13b1 NOP
+13b2 NOP
+13b3 NOP
+13b4 NOP
+13b5 NOP
+13b6 NOP
+13b7 NOP
+13b8 NOP
+13b9 NOP
+13ba NOP
+13bb NOP
+13bc NOP
+13bd NOP
+13be NOP
+13bf NOP
+13c0 NOP
+13c1 NOP
+13c2 NOP
+13c3 NOP
+13c4 NOP
+13c5 NOP
+13c6 NOP
+13c7 NOP
+13c8 NOP
+13c9 NOP
+13ca NOP
+13cb NOP
+13cc NOP
+13cd NOP
+13ce NOP
+13cf NOP
+13d0 NOP
+13d1 NOP
+13d2 NOP
+13d3 NOP
+13d4 NOP
+13d5 NOP
+13d6 NOP
+13d7 NOP
+13d8 NOP
+13d9 NOP
+13da NOP
+13db NOP
+13dc NOP
+13dd NOP
+13de NOP
+13df NOP
+13e0 NOP
+13e1 NOP
+13e2 NOP
+13e3 NOP
+13e4 NOP
+13e5 NOP
+13e6 NOP
+13e7 NOP
+13e8 NOP
+13e9 NOP
+13ea NOP
+13eb NOP
+13ec NOP
+13ed NOP
+13ee NOP
+13ef NOP
+13f0 NOP
+13f1 NOP
+13f2 NOP
+13f3 NOP
+13f4 NOP
+13f5 NOP
+13f6 NOP
+13f7 NOP
+13f8 NOP
+13f9 NOP
+13fa NOP
+13fb NOP
+13fc NOP
+13fd NOP
+13fe NOP
+13ff NOP
+1400 NOP
+1401 Unknown opcode
+1402 Unknown opcode
+1403 Unknown opcode
+1404 NOP
+1405 Unknown opcode
+1406 Unknown opcode
+1407 Unknown opcode
+1408 Unknown opcode
+1409 INR    B
+140a Unknown opcode
+140b INX    B
+140c Unknown opcode
+140d Unknown opcode
+140e Unknown opcode
+140f Unknown opcode
+1410 Unknown opcode
+1411 Unknown opcode
+1412 INR    B
+1413 Unknown opcode
+1414 INX    B
+1415 Unknown opcode
+1416 Unknown opcode
+1417 Unknown opcode
+1418 LXI    B,#$0020
+141b Unknown opcode
+141c Unknown opcode
+141d DCR    B
+141e Unknown opcode
+141f DCR    B
+1420 Unknown opcode
+1421 Unknown opcode
+1422 NOP
+1423 NOP
+1424 Unknown opcode
+1425 Unknown opcode
+1426 Unknown opcode
+1427 Unknown opcode
+1428 Unknown opcode
+1429 Unknown opcode
+142a Unknown opcode
+142b Unknown opcode
+142c Unknown opcode
+142d Unknown opcode
+142e Unknown opcode
+142f LXI    B,#$0020
+1432 Unknown opcode
+1433 Unknown opcode
+1434 DCR    B
+1435 Unknown opcode
+1436 Unknown opcode
+1437 Unknown opcode
+1438 Unknown opcode
+1439 Unknown opcode
+143a Unknown opcode
+143b Unknown opcode
+143c Unknown opcode
+143d LXI    B,#$0020
+1440 Unknown opcode
+1441 Unknown opcode
+1442 DCR    B
+1443 Unknown opcode
+1444 Unknown opcode
+1445 Unknown opcode
+1446 Unknown opcode
+1447 NOP
+1448 NOP
+1449 NOP
+144a NOP
+144b NOP
+144c NOP
+144d NOP
+144e NOP
+144f NOP
+1450 NOP
+1451 NOP
+1452 Unknown opcode
+1453 Unknown opcode
+1454 Unknown opcode
+1455 Unknown opcode
+1456 Unknown opcode
+1457 Unknown opcode
+1458 Unknown opcode
+1459 INR    B
+145a Unknown opcode
+145b INX    B
+145c Unknown opcode
+145d Unknown opcode
+145e Unknown opcode
+145f Unknown opcode
+1460 Unknown opcode
+1461 Unknown opcode
+1462 Unknown opcode
+1463 INR    B
+1464 Unknown opcode
+1465 INX    B
+1466 Unknown opcode
+1467 Unknown opcode
+1468 Unknown opcode
+1469 Unknown opcode
+146a LXI    B,#$0020
+146d Unknown opcode
+146e Unknown opcode
+146f DCR    B
+1470 Unknown opcode
+1471 Unknown opcode
+1472 Unknown opcode
+1473 Unknown opcode
+1474 Unknown opcode
+1475 Unknown opcode
+1476 RLC
+1477 Unknown opcode
+1478 STAX   B
+1479 JMP    $1a47
+147c Unknown opcode
+147d Unknown opcode
+147e Unknown opcode
+147f Unknown opcode
+1480 Unknown opcode
+1481 Unknown opcode
+1482 Unknown opcode
+1483 Unknown opcode
+1484 Unknown opcode
+1485 Unknown opcode
+1486 Unknown opcode
+1487 LXI    B,#$0020
+148a Unknown opcode
+148b Unknown opcode
+148c DCR    B
+148d Unknown opcode
+148e Unknown opcode
+148f Unknown opcode
+1490 Unknown opcode
+1491 Unknown opcode
+1492 Unknown opcode
+1493 Unknown opcode
+1494 Unknown opcode
+1495 Unknown opcode
+1496 Unknown opcode
+1497 Unknown opcode
+1498 Unknown opcode
+1499 Unknown opcode
+149a Unknown opcode
+149b Unknown opcode
+149c INR    B
+149d Unknown opcode
+149e INX    B
+149f Unknown opcode
+14a0 Unknown opcode
+14a1 Unknown opcode
+14a2 Unknown opcode
+14a3 Unknown opcode
+14a4 MVI    A,#0x01
+14a6 Unknown opcode
+14a7 Unknown opcode
+14a8 Unknown opcode
+14a9 Unknown opcode
+14aa Unknown opcode
+14ab Unknown opcode
+14ac Unknown opcode
+14ad Unknown opcode
+14ae Unknown opcode
+14af Unknown opcode
+14b0 INR    B
+14b1 Unknown opcode
+14b2 INX    B
+14b3 Unknown opcode
+14b4 Unknown opcode
+14b5 Unknown opcode
+14b6 Unknown opcode
+14b7 Unknown opcode
+14b8 MVI    A,#0x01
+14ba Unknown opcode
+14bb Unknown opcode
+14bc Unknown opcode
+14bd Unknown opcode
+14be Unknown opcode
+14bf Unknown opcode
+14c0 Unknown opcode
+14c1 LXI    B,#$0020
+14c4 Unknown opcode
+14c5 Unknown opcode
+14c6 DCR    B
+14c7 Unknown opcode
+14c8 Unknown opcode
+14c9 Unknown opcode
+14ca Unknown opcode
+14cb Unknown opcode
+14cc Unknown opcode
+14cd Unknown opcode
+14ce LXI    B,#$0020
+14d1 Unknown opcode
+14d2 Unknown opcode
+14d3 DCR    B
+14d4 Unknown opcode
+14d5 Unknown opcode
+14d6 Unknown opcode
+14d7 Unknown opcode
+14d8 Unknown opcode
+14d9 Unknown opcode
+14da Unknown opcode
+14db Unknown opcode
+14dc DCR    B
+14dd Unknown opcode
+14de Unknown opcode
+14df STAX   B
+14e0 Unknown opcode
+14e1 Unknown opcode
+14e2 Unknown opcode
+14e3 Unknown opcode
+14e4 Unknown opcode
+14e5 Unknown opcode
+14e6 Unknown opcode
+14e7 Unknown opcode
+14e8 Unknown opcode
+14e9 Unknown opcode
+14ea Unknown opcode
+14eb STAX   B
+14ec Unknown opcode
+14ed Unknown opcode
+14ee Unknown opcode
+14ef Unknown opcode
+14f0 Unknown opcode
+14f1 Unknown opcode
+14f2 Unknown opcode
+14f3 Unknown opcode
+14f4 Unknown opcode
+14f5 Unknown opcode
+14f6 MVI    B,#$47
+14f8 Unknown opcode
+14f9 Unknown opcode
+14fa Unknown opcode
+14fb Unknown opcode
+14fc Unknown opcode
+14fd Unknown opcode
+14fe INR    B
+14ff Unknown opcode
+1500 Unknown opcode
+1501 Unknown opcode
+1502 Unknown opcode
+1503 Unknown opcode
+1504 Unknown opcode
+1505 Unknown opcode
+1506 Unknown opcode
+1507 Unknown opcode
+1508 Unknown opcode
+1509 Unknown opcode
+150a Unknown opcode
+150b Unknown opcode
+150c Unknown opcode
+150d Unknown opcode
+150e Unknown opcode
+150f Unknown opcode
+1510 Unknown opcode
+1511 Unknown opcode
+1512 MVI    A,#0x05
+1514 Unknown opcode
+1515 Unknown opcode
+1516 Unknown opcode
+1517 Unknown opcode
+1518 Unknown opcode
+1519 Unknown opcode
+151a Unknown opcode
+151b Unknown opcode
+151c Unknown opcode
+151d Unknown opcode
+151e Unknown opcode
+151f Unknown opcode
+1520 NOP
+1521 Unknown opcode
+1522 Unknown opcode
+1523 Unknown opcode
+1524 Unknown opcode
+1525 Unknown opcode
+1526 Unknown opcode
+1527 Unknown opcode
+1528 Unknown opcode
+1529 Unknown opcode
+152a MVI    A,#0x10
+152c Unknown opcode
+152d INX    B
+152e Unknown opcode
+152f Unknown opcode
+1530 MVI    A,#0x03
+1532 Unknown opcode
+1533 Unknown opcode
+1534 Unknown opcode
+1535 JMP    $154a
+1538 Unknown opcode
+1539 INX    B
+153a Unknown opcode
+153b Unknown opcode
+153c Unknown opcode
+153d Unknown opcode
+153e Unknown opcode
+153f Unknown opcode
+1540 MVI    B,#$10
+1542 Unknown opcode
+1543 Unknown opcode
+1544 Unknown opcode
+1545 MVI    A,#0x04
+1547 Unknown opcode
+1548 Unknown opcode
+1549 Unknown opcode
+154a Unknown opcode
+154b Unknown opcode
+154c STAX   B
+154d Unknown opcode
+154e MVI    B,#$f7
+1550 JMP    $19dc
+1553 NOP
+1554 Unknown opcode
+1555 NOP
+1556 Unknown opcode
+1557 Unknown opcode
+1558 Unknown opcode
+1559 Unknown opcode
+155a Unknown opcode
+155b Unknown opcode
+155c Unknown opcode
+155d Unknown opcode
+155e Unknown opcode
+155f JMP    $155a
+1562 Unknown opcode
+1563 Unknown opcode
+1564 Unknown opcode
+1565 Unknown opcode
+1566 Unknown opcode
+1567 Unknown opcode
+1568 Unknown opcode
+1569 Unknown opcode
+156a DCR    B
+156b Unknown opcode
+156c Unknown opcode
+156d Unknown opcode
+156e Unknown opcode
+156f Unknown opcode
+1570 Unknown opcode
+1571 Unknown opcode
+1572 Unknown opcode
+1573 Unknown opcode
+1574 Unknown opcode
+1575 Unknown opcode
+1576 Unknown opcode
+1577 Unknown opcode
+1578 Unknown opcode
+1579 MVI    A,#0x01
+157b Unknown opcode
+157c Unknown opcode
+157d Unknown opcode
+157e JMP    $1545
+1581 Unknown opcode
+1582 RLC
+1583 RLC
+1584 RLC
+1585 Unknown opcode
+1586 Unknown opcode
+1587 Unknown opcode
+1588 Unknown opcode
+1589 Unknown opcode
+158a Unknown opcode
+158b Unknown opcode
+158c Unknown opcode
+158d Unknown opcode
+158e Unknown opcode
+158f Unknown opcode
+1590 Unknown opcode
+1591 Unknown opcode
+1592 Unknown opcode
+1593 Unknown opcode
+1594 Unknown opcode
+1595 Unknown opcode
+1596 Unknown opcode
+1597 Unknown opcode
+1598 Unknown opcode
+1599 Unknown opcode
+159a Unknown opcode
+159b Unknown opcode
+159c Unknown opcode
+159d Unknown opcode
+159e Unknown opcode
+159f Unknown opcode
+15a0 MVI    A,#0xcd
+15a2 Unknown opcode
+15a3 Unknown opcode
+15a4 Unknown opcode
+15a5 MVI    B,#$fe
+15a7 MVI    A,#0x01
+15a9 Unknown opcode
+15aa Unknown opcode
+15ab Unknown opcode
+15ac Unknown opcode
+15ad Unknown opcode
+15ae NOP
+15af Unknown opcode
+15b0 Unknown opcode
+15b1 Unknown opcode
+15b2 Unknown opcode
+15b3 Unknown opcode
+15b4 RLC
+15b5 Unknown opcode
+15b6 Unknown opcode
+15b7 Unknown opcode
+15b8 Unknown opcode
+15b9 Unknown opcode
+15ba Unknown opcode
+15bb Unknown opcode
+15bc Unknown opcode
+15bd Unknown opcode
+15be Unknown opcode
+15bf Unknown opcode
+15c0 Unknown opcode
+15c1 Unknown opcode
+15c2 JMP    $15a9
+15c5 MVI    B,#$17
+15c7 Unknown opcode
+15c8 Unknown opcode
+15c9 Unknown opcode
+15ca Unknown opcode
+15cb Unknown opcode
+15cc Unknown opcode
+15cd DCR    B
+15ce Unknown opcode
+15cf Unknown opcode
+15d0 Unknown opcode
+15d1 Unknown opcode
+15d2 NOP
+15d3 Unknown opcode
+15d4 Unknown opcode
+15d5 Unknown opcode
+15d6 Unknown opcode
+15d7 Unknown opcode
+15d8 Unknown opcode
+15d9 Unknown opcode
+15da Unknown opcode
+15db INR    B
+15dc Unknown opcode
+15dd INX    B
+15de Unknown opcode
+15df Unknown opcode
+15e0 Unknown opcode
+15e1 Unknown opcode
+15e2 Unknown opcode
+15e3 INR    B
+15e4 Unknown opcode
+15e5 INX    B
+15e6 Unknown opcode
+15e7 Unknown opcode
+15e8 LXI    B,#$0020
+15eb Unknown opcode
+15ec Unknown opcode
+15ed DCR    B
+15ee Unknown opcode
+15ef Unknown opcode
+15f0 Unknown opcode
+15f1 Unknown opcode
+15f2 Unknown opcode
+15f3 Unknown opcode
+15f4 Unknown opcode
+15f5 Unknown opcode
+15f6 LXI    B,#$3700
+15f9 Unknown opcode
+15fa Unknown opcode
+15fb Unknown opcode
+15fc Unknown opcode
+15fd Unknown opcode
+15fe Unknown opcode
+15ff Unknown opcode
+1600 DCR    B
+1601 Unknown opcode
+1602 Unknown opcode
+1603 Unknown opcode
+1604 Unknown opcode
+1605 Unknown opcode
+1606 Unknown opcode
+1607 Unknown opcode
+1608 Unknown opcode
+1609 LXI    B,#$21c0
+160c Unknown opcode
+160d Unknown opcode
+160e Unknown opcode
+160f LXI    B,#$2ec9
+1612 NOP
+1613 Unknown opcode
+1614 Unknown opcode
+1615 Unknown opcode
+1616 Unknown opcode
+1617 Unknown opcode
+1618 Unknown opcode
+1619 Unknown opcode
+161a Unknown opcode
+161b Unknown opcode
+161c Unknown opcode
+161d Unknown opcode
+161e Unknown opcode
+161f Unknown opcode
+1620 Unknown opcode
+1621 Unknown opcode
+1622 Unknown opcode
+1623 Unknown opcode
+1624 Unknown opcode
+1625 Unknown opcode
+1626 Unknown opcode
+1627 Unknown opcode
+1628 Unknown opcode
+1629 Unknown opcode
+162a Unknown opcode
+162b Unknown opcode
+162c Unknown opcode
+162d Unknown opcode
+162e Unknown opcode
+162f Unknown opcode
+1630 Unknown opcode
+1631 Unknown opcode
+1632 Unknown opcode
+1633 Unknown opcode
+1634 Unknown opcode
+1635 Unknown opcode
+1636 Unknown opcode
+1637 Unknown opcode
+1638 Unknown opcode
+1639 Unknown opcode
+163a Unknown opcode
+163b Unknown opcode
+163c Unknown opcode
+163d Unknown opcode
+163e Unknown opcode
+163f MVI    A,#0x01
+1641 Unknown opcode
+1642 Unknown opcode
+1643 Unknown opcode
+1644 Unknown opcode
+1645 Unknown opcode
+1646 Unknown opcode
+1647 Unknown opcode
+1648 Unknown opcode
+1649 Unknown opcode
+164a Unknown opcode
+164b Unknown opcode
+164c Unknown opcode
+164d Unknown opcode
+164e Unknown opcode
+164f Unknown opcode
+1650 Unknown opcode
+1651 Unknown opcode
+1652 Unknown opcode
+1653 Unknown opcode
+1654 Unknown opcode
+1655 Unknown opcode
+1656 LXI    B,#$ed2a
+1659 Unknown opcode
+165a Unknown opcode
+165b Unknown opcode
+165c Unknown opcode
+165d Unknown opcode
+165e Unknown opcode
+165f Unknown opcode
+1660 Unknown opcode
+1661 Unknown opcode
+1662 Unknown opcode
+1663 Unknown opcode
+1664 Unknown opcode
+1665 Unknown opcode
+1666 Unknown opcode
+1667 Unknown opcode
+1668 Unknown opcode
+1669 Unknown opcode
+166a Unknown opcode
+166b Unknown opcode
+166c Unknown opcode
+166d Unknown opcode
+166e Unknown opcode
+166f Unknown opcode
+1670 Unknown opcode
+1671 Unknown opcode
+1672 Unknown opcode
+1673 Unknown opcode
+1674 Unknown opcode
+1675 NOP
+1676 Unknown opcode
+1677 Unknown opcode
+1678 Unknown opcode
+1679 Unknown opcode
+167a Unknown opcode
+167b Unknown opcode
+167c Unknown opcode
+167d Unknown opcode
+167e Unknown opcode
+167f Unknown opcode
+1680 Unknown opcode
+1681 Unknown opcode
+1682 Unknown opcode
+1683 Unknown opcode
+1684 Unknown opcode
+1685 Unknown opcode
+1686 Unknown opcode
+1687 Unknown opcode
+1688 JMP    $168f
+168b Unknown opcode
+168c Unknown opcode
+168d Unknown opcode
+168e Unknown opcode
+168f Unknown opcode
+1690 Unknown opcode
+1691 Unknown opcode
+1692 Unknown opcode
+1693 Unknown opcode
+1694 Unknown opcode
+1695 Unknown opcode
+1696 Unknown opcode
+1697 Unknown opcode
+1698 Unknown opcode
+1699 Unknown opcode
+169a Unknown opcode
+169b Unknown opcode
+169c Unknown opcode
+169d Unknown opcode
+169e Unknown opcode
+169f Unknown opcode
+16a0 INX    B
+16a1 Unknown opcode
+16a2 Unknown opcode
+16a3 Unknown opcode
+16a4 Unknown opcode
+16a5 Unknown opcode
+16a6 Unknown opcode
+16a7 Unknown opcode
+16a8 Unknown opcode
+16a9 Unknown opcode
+16aa Unknown opcode
+16ab Unknown opcode
+16ac MVI    B,#$1b
+16ae Unknown opcode
+16af Unknown opcode
+16b0 Unknown opcode
+16b1 Unknown opcode
+16b2 Unknown opcode
+16b3 Unknown opcode
+16b4 Unknown opcode
+16b5 MVI    B,#$1c
+16b7 Unknown opcode
+16b8 Unknown opcode
+16b9 Unknown opcode
+16ba NOP
+16bb Unknown opcode
+16bc Unknown opcode
+16bd Unknown opcode
+16be Unknown opcode
+16bf Unknown opcode
+16c0 Unknown opcode
+16c1 Unknown opcode
+16c2 Unknown opcode
+16c3 Unknown opcode
+16c4 Unknown opcode
+16c5 Unknown opcode
+16c6 JMP    $02ed
+16c9 Unknown opcode
+16ca Unknown opcode
+16cb Unknown opcode
+16cc Unknown opcode
+16cd Unknown opcode
+16ce Unknown opcode
+16cf Unknown opcode
+16d0 Unknown opcode
+16d1 Unknown opcode
+16d2 Unknown opcode
+16d3 Unknown opcode
+16d4 Unknown opcode
+16d5 Unknown opcode
+16d6 Unknown opcode
+16d7 Unknown opcode
+16d8 Unknown opcode
+16d9 Unknown opcode
+16da Unknown opcode
+16db Unknown opcode
+16dc Unknown opcode
+16dd Unknown opcode
+16de Unknown opcode
+16df DCR    B
+16e0 Unknown opcode
+16e1 Unknown opcode
+16e2 Unknown opcode
+16e3 JMP    $0b89
+16e6 Unknown opcode
+16e7 NOP
+16e8 Unknown opcode
+16e9 Unknown opcode
+16ea Unknown opcode
+16eb Unknown opcode
+16ec Unknown opcode
+16ed Unknown opcode
+16ee Unknown opcode
+16ef Unknown opcode
+16f0 Unknown opcode
+16f1 MVI    B,#$04
+16f3 Unknown opcode
+16f4 Unknown opcode
+16f5 Unknown opcode
+16f6 Unknown opcode
+16f7 Unknown opcode
+16f8 Unknown opcode
+16f9 Unknown opcode
+16fa Unknown opcode
+16fb Unknown opcode
+16fc Unknown opcode
+16fd Unknown opcode
+16fe Unknown opcode
+16ff Unknown opcode
+1700 LXI    B,#$cd27
+1703 Unknown opcode
+1704 Unknown opcode
+1705 Unknown opcode
+1706 Unknown opcode
+1707 Unknown opcode
+1708 Unknown opcode
+1709 MVI    B,#$fb
+170b JMP    $196b
+170e Unknown opcode
+170f Unknown opcode
+1710 Unknown opcode
+1711 Unknown opcode
+1712 Unknown opcode
+1713 Unknown opcode
+1714 Unknown opcode
+1715 Unknown opcode
+1716 Unknown opcode
+1717 Unknown opcode
+1718 Unknown opcode
+1719 Unknown opcode
+171a INR    B
+171b Unknown opcode
+171c Unknown opcode
+171d Unknown opcode
+171e Unknown opcode
+171f Unknown opcode
+1720 Unknown opcode
+1721 Unknown opcode
+1722 Unknown opcode
+1723 Unknown opcode
+1724 Unknown opcode
+1725 Unknown opcode
+1726 Unknown opcode
+1727 Unknown opcode
+1728 Unknown opcode
+1729 Unknown opcode
+172a Unknown opcode
+172b Unknown opcode
+172c Unknown opcode
+172d Unknown opcode
+172e Unknown opcode
+172f Unknown opcode
+1730 NOP
+1731 Unknown opcode
+1732 Unknown opcode
+1733 Unknown opcode
+1734 MVI    B,#$fd
+1736 JMP    $19dc
+1739 MVI    B,#$02
+173b JMP    $18fa
+173e NOP
+173f NOP
+1740 Unknown opcode
+1741 Unknown opcode
+1742 Unknown opcode
+1743 Unknown opcode
+1744 Unknown opcode
+1745 Unknown opcode
+1746 Unknown opcode
+1747 Unknown opcode
+1748 Unknown opcode
+1749 Unknown opcode
+174a Unknown opcode
+174b Unknown opcode
+174c Unknown opcode
+174d Unknown opcode
+174e Unknown opcode
+174f Unknown opcode
+1750 Unknown opcode
+1751 Unknown opcode
+1752 Unknown opcode
+1753 Unknown opcode
+1754 Unknown opcode
+1755 Unknown opcode
+1756 Unknown opcode
+1757 Unknown opcode
+1758 DCR    B
+1759 Unknown opcode
+175a Unknown opcode
+175b Unknown opcode
+175c Unknown opcode
+175d Unknown opcode
+175e Unknown opcode
+175f Unknown opcode
+1760 Unknown opcode
+1761 Unknown opcode
+1762 Unknown opcode
+1763 Unknown opcode
+1764 Unknown opcode
+1765 Unknown opcode
+1766 LXI    B,#$043e
+1769 Unknown opcode
+176a Unknown opcode
+176b Unknown opcode
+176c Unknown opcode
+176d Unknown opcode
+176e Unknown opcode
+176f Unknown opcode
+1770 Unknown opcode
+1771 Unknown opcode
+1772 Unknown opcode
+1773 DCR    B
+1774 Unknown opcode
+1775 Unknown opcode
+1776 Unknown opcode
+1777 Unknown opcode
+1778 Unknown opcode
+1779 Unknown opcode
+177a Unknown opcode
+177b Unknown opcode
+177c Unknown opcode
+177d Unknown opcode
+177e Unknown opcode
+177f Unknown opcode
+1780 Unknown opcode
+1781 Unknown opcode
+1782 Unknown opcode
+1783 Unknown opcode
+1784 Unknown opcode
+1785 Unknown opcode
+1786 Unknown opcode
+1787 Unknown opcode
+1788 Unknown opcode
+1789 Unknown opcode
+178a Unknown opcode
+178b JMP    $1785
+178e Unknown opcode
+178f Unknown opcode
+1790 Unknown opcode
+1791 Unknown opcode
+1792 Unknown opcode
+1793 Unknown opcode
+1794 Unknown opcode
+1795 Unknown opcode
+1796 Unknown opcode
+1797 Unknown opcode
+1798 Unknown opcode
+1799 Unknown opcode
+179a Unknown opcode
+179b Unknown opcode
+179c RLC
+179d Unknown opcode
+179e Unknown opcode
+179f Unknown opcode
+17a0 Unknown opcode
+17a1 Unknown opcode
+17a2 MVI    A,#0x01
+17a4 Unknown opcode
+17a5 Unknown opcode
+17a6 Unknown opcode
+17a7 Unknown opcode
+17a8 Unknown opcode
+17a9 Unknown opcode
+17aa Unknown opcode
+17ab Unknown opcode
+17ac Unknown opcode
+17ad Unknown opcode
+17ae Unknown opcode
+17af MVI    B,#$ef
+17b1 JMP    $19dc
+17b4 MVI    B,#$ef
+17b6 Unknown opcode
+17b7 Unknown opcode
+17b8 Unknown opcode
+17b9 Unknown opcode
+17ba Unknown opcode
+17bb Unknown opcode
+17bc Unknown opcode
+17bd DCR    B
+17be Unknown opcode
+17bf NOP
+17c0 Unknown opcode
+17c1 Unknown opcode
+17c2 Unknown opcode
+17c3 Unknown opcode
+17c4 Unknown opcode
+17c5 Unknown opcode
+17c6 Unknown opcode
+17c7 Unknown opcode
+17c8 LXI    B,#$dbc9
+17cb STAX   B
+17cc Unknown opcode
+17cd Unknown opcode
+17ce STAX   B
+17cf Unknown opcode
+17d0 INR    B
+17d1 Unknown opcode
+17d2 Unknown opcode
+17d3 Unknown opcode
+17d4 Unknown opcode
+17d5 Unknown opcode
+17d6 Unknown opcode
+17d7 Unknown opcode
+17d8 NOP
+17d9 Unknown opcode
+17da MVI    B,#$04
+17dc Unknown opcode
+17dd Unknown opcode
+17de Unknown opcode
+17df DCR    B
+17e0 Unknown opcode
+17e1 Unknown opcode
+17e2 Unknown opcode
+17e3 MVI    A,#0x01
+17e5 Unknown opcode
+17e6 Unknown opcode
+17e7 Unknown opcode
+17e8 Unknown opcode
+17e9 Unknown opcode
+17ea Unknown opcode
+17eb Unknown opcode
+17ec Unknown opcode
+17ed Unknown opcode
+17ee Unknown opcode
+17ef Unknown opcode
+17f0 Unknown opcode
+17f1 Unknown opcode
+17f2 Unknown opcode
+17f3 INR    B
+17f4 Unknown opcode
+17f5 Unknown opcode
+17f6 Unknown opcode
+17f7 Unknown opcode
+17f8 Unknown opcode
+17f9 Unknown opcode
+17fa Unknown opcode
+17fb Unknown opcode
+17fc Unknown opcode
+17fd Unknown opcode
+17fe Unknown opcode
+17ff Unknown opcode
+1800 Unknown opcode
+1801 JMP    $16c9
+1804 Unknown opcode
+1805 Unknown opcode
+1806 Unknown opcode
+1807 Unknown opcode
+1808 Unknown opcode
+1809 Unknown opcode
+180a RLC
+180b RLC
+180c Unknown opcode
+180d Unknown opcode
+180e Unknown opcode
+180f Unknown opcode
+1810 MVI    B,#$01
+1812 JMP    $18fa
+1815 Unknown opcode
+1816 Unknown opcode
+1817 Unknown opcode
+1818 Unknown opcode
+1819 Unknown opcode
+181a Unknown opcode
+181b Unknown opcode
+181c Unknown opcode
+181d Unknown opcode
+181e Unknown opcode
+181f NOP
+1820 MVI    A,#0x0a
+1822 Unknown opcode
+1823 Unknown opcode
+1824 Unknown opcode
+1825 LXI    B,#$1dbe
+1828 Unknown opcode
+1829 Unknown opcode
+182a Unknown opcode
+182b Unknown opcode
+182c Unknown opcode
+182d Unknown opcode
+182e Unknown opcode
+182f Unknown opcode
+1830 Unknown opcode
+1831 JMP    $1828
+1834 Unknown opcode
+1835 Unknown opcode
+1836 Unknown opcode
+1837 LXI    B,#$1dcf
+183a Unknown opcode
+183b Unknown opcode
+183c Unknown opcode
+183d Unknown opcode
+183e Unknown opcode
+183f Unknown opcode
+1840 Unknown opcode
+1841 JMP    $183a
+1844 Unknown opcode
+1845 MVI    B,#$10
+1847 Unknown opcode
+1848 Unknown opcode
+1849 Unknown opcode
+184a Unknown opcode
+184b Unknown opcode
+184c Unknown opcode
+184d Unknown opcode
+184e Unknown opcode
+184f Unknown opcode
+1850 Unknown opcode
+1851 Unknown opcode
+1852 Unknown opcode
+1853 Unknown opcode
+1854 Unknown opcode
+1855 Unknown opcode
+1856 Unknown opcode
+1857 Unknown opcode
+1858 Unknown opcode
+1859 Unknown opcode
+185a Unknown opcode
+185b Unknown opcode
+185c INX    B
+185d Unknown opcode
+185e Unknown opcode
+185f INX    B
+1860 Unknown opcode
+1861 Unknown opcode
+1862 INX    B
+1863 Unknown opcode
+1864 Unknown opcode
+1865 INX    B
+1866 Unknown opcode
+1867 Unknown opcode
+1868 Unknown opcode
+1869 Unknown opcode
+186a Unknown opcode
+186b Unknown opcode
+186c Unknown opcode
+186d Unknown opcode
+186e Unknown opcode
+186f Unknown opcode
+1870 LXI    B,#$3a47
+1873 Unknown opcode
+1874 Unknown opcode
+1875 Unknown opcode
+1876 Unknown opcode
+1877 Unknown opcode
+1878 Unknown opcode
+1879 Unknown opcode
+187a Unknown opcode
+187b Unknown opcode
+187c Unknown opcode
+187d INR    B
+187e Unknown opcode
+187f Unknown opcode
+1880 Unknown opcode
+1881 Unknown opcode
+1882 Unknown opcode
+1883 Unknown opcode
+1884 Unknown opcode
+1885 Unknown opcode
+1886 NOP
+1887 Unknown opcode
+1888 Unknown opcode
+1889 Unknown opcode
+188a Unknown opcode
+188b Unknown opcode
+188c Unknown opcode
+188d Unknown opcode
+188e Unknown opcode
+188f Unknown opcode
+1890 Unknown opcode
+1891 Unknown opcode
+1892 JMP    $15d3
+1895 NOP
+1896 NOP
+1897 NOP
+1898 MVI    A,#0x01
+189a Unknown opcode
+189b Unknown opcode
+189c Unknown opcode
+189d Unknown opcode
+189e Unknown opcode
+189f Unknown opcode
+18a0 Unknown opcode
+18a1 Unknown opcode
+18a2 Unknown opcode
+18a3 Unknown opcode
+18a4 MVI    B,#$10
+18a6 Unknown opcode
+18a7 Unknown opcode
+18a8 Unknown opcode
+18a9 MVI    A,#0x02
+18ab Unknown opcode
+18ac Unknown opcode
+18ad Unknown opcode
+18ae MVI    A,#0xff
+18b0 Unknown opcode
+18b1 Unknown opcode
+18b2 Unknown opcode
+18b3 MVI    A,#0x04
+18b5 Unknown opcode
+18b6 Unknown opcode
+18b7 Unknown opcode
+18b8 Unknown opcode
+18b9 Unknown opcode
+18ba Unknown opcode
+18bb Unknown opcode
+18bc LXI    B,#$b8ca
+18bf Unknown opcode
+18c0 Unknown opcode
+18c1 Unknown opcode
+18c2 Unknown opcode
+18c3 Unknown opcode
+18c4 LXI    B,#$c0c2
+18c7 Unknown opcode
+18c8 Unknown opcode
+18c9 Unknown opcode
+18ca Unknown opcode
+18cb MVI    A,#0x26
+18cd NOP
+18ce Unknown opcode
+18cf Unknown opcode
+18d0 NOP
+18d1 JMP    $0ab6
+18d4 Unknown opcode
+18d5 NOP
+18d6 Unknown opcode
+18d7 MVI    B,#$00
+18d9 Unknown opcode
+18da Unknown opcode
+18db LXI    B,#$56cd
+18de Unknown opcode
+18df MVI    A,#0x08
+18e1 Unknown opcode
+18e2 Unknown opcode
+18e3 Unknown opcode
+18e4 JMP    $0aea
+18e7 Unknown opcode
+18e8 Unknown opcode
+18e9 Unknown opcode
+18ea Unknown opcode
+18eb Unknown opcode
+18ec Unknown opcode
+18ed Unknown opcode
+18ee Unknown opcode
+18ef Unknown opcode
+18f0 Unknown opcode
+18f1 MVI    B,#$02
+18f3 Unknown opcode
+18f4 Unknown opcode
+18f5 Unknown opcode
+18f6 Unknown opcode
+18f7 Unknown opcode
+18f8 INR    B
+18f9 Unknown opcode
+18fa Unknown opcode
+18fb Unknown opcode
+18fc Unknown opcode
+18fd Unknown opcode
+18fe Unknown opcode
+18ff Unknown opcode
+1900 Unknown opcode
+1901 Unknown opcode
+1902 INX    B
+1903 Unknown opcode
+1904 Unknown opcode
+1905 NOP
+1906 Unknown opcode
+1907 JMP    $01c3
+190a Unknown opcode
+190b Unknown opcode
+190c Unknown opcode
+190d JMP    $1597
+1910 Unknown opcode
+1911 Unknown opcode
+1912 Unknown opcode
+1913 Unknown opcode
+1914 Unknown opcode
+1915 Unknown opcode
+1916 Unknown opcode
+1917 Unknown opcode
+1918 Unknown opcode
+1919 Unknown opcode
+191a Unknown opcode
+191b Unknown opcode
+191c Unknown opcode
+191d Unknown opcode
+191e Unknown opcode
+191f Unknown opcode
+1920 Unknown opcode
+1921 Unknown opcode
+1922 JMP    $08f3
+1925 Unknown opcode
+1926 Unknown opcode
+1927 Unknown opcode
+1928 JMP    $1931
+192b Unknown opcode
+192c Unknown opcode
+192d Unknown opcode
+192e JMP    $1931
+1931 Unknown opcode
+1932 Unknown opcode
+1933 Unknown opcode
+1934 Unknown opcode
+1935 Unknown opcode
+1936 Unknown opcode
+1937 Unknown opcode
+1938 Unknown opcode
+1939 JMP    $09ad
+193c Unknown opcode
+193d RLC
+193e Unknown opcode
+193f LXI    B,#$1135
+1942 Unknown opcode
+1943 Unknown opcode
+1944 JMP    $08f3
+1947 Unknown opcode
+1948 Unknown opcode
+1949 Unknown opcode
+194a Unknown opcode
+194b LXI    B,#$c33c
+194e Unknown opcode
+194f Unknown opcode
+1950 Unknown opcode
+1951 Unknown opcode
+1952 Unknown opcode
+1953 JMP    $1931
+1956 Unknown opcode
+1957 Unknown opcode
+1958 Unknown opcode
+1959 Unknown opcode
+195a Unknown opcode
+195b Unknown opcode
+195c Unknown opcode
+195d Unknown opcode
+195e Unknown opcode
+195f Unknown opcode
+1960 Unknown opcode
+1961 Unknown opcode
+1962 Unknown opcode
+1963 Unknown opcode
+1964 Unknown opcode
+1965 Unknown opcode
+1966 Unknown opcode
+1967 Unknown opcode
+1968 JMP    $1947
+196b Unknown opcode
+196c Unknown opcode
+196d Unknown opcode
+196e JMP    $1671
+1971 MVI    A,#0x01
+1973 Unknown opcode
+1974 Unknown opcode
+1975 Unknown opcode
+1976 JMP    $16e6
+1979 Unknown opcode
+197a Unknown opcode
+197b Unknown opcode
+197c Unknown opcode
+197d Unknown opcode
+197e Unknown opcode
+197f JMP    $193c
+1982 Unknown opcode
+1983 Unknown opcode
+1984 Unknown opcode
+1985 Unknown opcode
+1986 Unknown opcode
+1987 Unknown opcode
+1988 JMP    $09d6
+198b Unknown opcode
+198c INX    B
+198d Unknown opcode
+198e Unknown opcode
+198f Unknown opcode
+1990 Unknown opcode
+1991 Unknown opcode
+1992 Unknown opcode
+1993 JMP    $08f3
+1996 NOP
+1997 NOP
+1998 NOP
+1999 NOP
+199a Unknown opcode
+199b Unknown opcode
+199c Unknown opcode
+199d Unknown opcode
+199e Unknown opcode
+199f Unknown opcode
+19a0 Unknown opcode
+19a1 Unknown opcode
+19a2 LXI    B,#$76e6
+19a5 Unknown opcode
+19a6 Unknown opcode
+19a7 Unknown opcode
+19a8 Unknown opcode
+19a9 Unknown opcode
+19aa Unknown opcode
+19ab Unknown opcode
+19ac Unknown opcode
+19ad LXI    B,#$76e6
+19b0 Unknown opcode
+19b1 Unknown opcode
+19b2 Unknown opcode
+19b3 Unknown opcode
+19b4 Unknown opcode
+19b5 Unknown opcode
+19b6 Unknown opcode
+19b7 Unknown opcode
+19b8 Unknown opcode
+19b9 Unknown opcode
+19ba Unknown opcode
+19bb JMP    $08f3
+19be Unknown opcode
+19bf Unknown opcode
+19c0 NOP
+19c1 NOP
+19c2 Unknown opcode
+19c3 Unknown opcode
+19c4 Unknown opcode
+19c5 STAX   B
+19c6 Unknown opcode
+19c7 Unknown opcode
+19c8 Unknown opcode
+19c9 Unknown opcode
+19ca Unknown opcode
+19cb NOP
+19cc Unknown opcode
+19cd NOP
+19ce Unknown opcode
+19cf Unknown opcode
+19d0 Unknown opcode
+19d1 MVI    A,#0x01
+19d3 Unknown opcode
+19d4 Unknown opcode
+19d5 Unknown opcode
+19d6 Unknown opcode
+19d7 Unknown opcode
+19d8 JMP    $19d3
+19db NOP
+19dc Unknown opcode
+19dd Unknown opcode
+19de Unknown opcode
+19df Unknown opcode
+19e0 Unknown opcode
+19e1 Unknown opcode
+19e2 Unknown opcode
+19e3 Unknown opcode
+19e4 INX    B
+19e5 Unknown opcode
+19e6 Unknown opcode
+19e7 LXI    B,#$ca27
+19ea Unknown opcode
+19eb Unknown opcode
+19ec Unknown opcode
+19ed Unknown opcode
+19ee Unknown opcode
+19ef MVI    B,#$10
+19f1 Unknown opcode
+19f2 Unknown opcode
+19f3 Unknown opcode
+19f4 Unknown opcode
+19f5 Unknown opcode
+19f6 Unknown opcode
+19f7 Unknown opcode
+19f8 Unknown opcode
+19f9 Unknown opcode
+19fa MVI    B,#$10
+19fc Unknown opcode
+19fd Unknown opcode
+19fe Unknown opcode
+19ff Unknown opcode
+1a00 Unknown opcode
+1a01 Unknown opcode
+1a02 Unknown opcode
+1a03 Unknown opcode
+1a04 Unknown opcode
+1a05 Unknown opcode
+1a06 Unknown opcode
+1a07 Unknown opcode
+1a08 Unknown opcode
+1a09 Unknown opcode
+1a0a Unknown opcode
+1a0b Unknown opcode
+1a0c Unknown opcode
+1a0d Unknown opcode
+1a0e Unknown opcode
+1a0f Unknown opcode
+1a10 Unknown opcode
+1a11 Unknown opcode
+1a12 Unknown opcode
+1a13 Unknown opcode
+1a14 Unknown opcode
+1a15 Unknown opcode
+1a16 Unknown opcode
+1a17 Unknown opcode
+1a18 Unknown opcode
+1a19 NOP
+1a1a RLC
+1a1b MVI    B,#$05
+1a1d INR    B
+1a1e INX    B
+1a1f STAX   B
+1a20 LXI    B,#$2e34
+1a23 Unknown opcode
+1a24 Unknown opcode
+1a25 Unknown opcode
+1a26 Unknown opcode
+1a27 Unknown opcode
+1a28 Unknown opcode
+1a29 Unknown opcode
+1a2a Unknown opcode
+1a2b Unknown opcode
+1a2c Unknown opcode
+1a2d Unknown opcode
+1a2e Unknown opcode
+1a2f RLC
+1a30 DCR    B
+1a31 Unknown opcode
+1a32 Unknown opcode
+1a33 Unknown opcode
+1a34 Unknown opcode
+1a35 Unknown opcode
+1a36 DCR    B
+1a37 Unknown opcode
+1a38 Unknown opcode
+1a39 Unknown opcode
+1a3a Unknown opcode
+1a3b Unknown opcode
+1a3c Unknown opcode
+1a3d Unknown opcode
+1a3e Unknown opcode
+1a3f Unknown opcode
+1a40 Unknown opcode
+1a41 Unknown opcode
+1a42 Unknown opcode
+1a43 Unknown opcode
+1a44 Unknown opcode
+1a45 Unknown opcode
+1a46 Unknown opcode
+1a47 Unknown opcode
+1a48 MVI    B,#$03
+1a4a Unknown opcode
+1a4b Unknown opcode
+1a4c Unknown opcode
+1a4d Unknown opcode
+1a4e Unknown opcode
+1a4f Unknown opcode
+1a50 DCR    B
+1a51 Unknown opcode
+1a52 Unknown opcode
+1a53 Unknown opcode
+1a54 Unknown opcode
+1a55 Unknown opcode
+1a56 Unknown opcode
+1a57 Unknown opcode
+1a58 Unknown opcode
+1a59 Unknown opcode
+1a5a Unknown opcode
+1a5b Unknown opcode
+1a5c Unknown opcode
+1a5d NOP
+1a5e Unknown opcode
+1a5f Unknown opcode
+1a60 NOP
+1a61 Unknown opcode
+1a62 Unknown opcode
+1a63 Unknown opcode
+1a64 Unknown opcode
+1a65 Unknown opcode
+1a66 Unknown opcode
+1a67 Unknown opcode
+1a68 Unknown opcode
+1a69 Unknown opcode
+1a6a Unknown opcode
+1a6b Unknown opcode
+1a6c Unknown opcode
+1a6d Unknown opcode
+1a6e Unknown opcode
+1a6f Unknown opcode
+1a70 Unknown opcode
+1a71 Unknown opcode
+1a72 Unknown opcode
+1a73 Unknown opcode
+1a74 Unknown opcode
+1a75 LXI    B,#$0020
+1a78 Unknown opcode
+1a79 Unknown opcode
+1a7a DCR    B
+1a7b Unknown opcode
+1a7c Unknown opcode
+1a7d Unknown opcode
+1a7e Unknown opcode
+1a7f Unknown opcode
+1a80 Unknown opcode
+1a81 Unknown opcode
+1a82 Unknown opcode
+1a83 Unknown opcode
+1a84 Unknown opcode
+1a85 Unknown opcode
+1a86 Unknown opcode
+1a87 Unknown opcode
+1a88 Unknown opcode
+1a89 Unknown opcode
+1a8a Unknown opcode
+1a8b Unknown opcode
+1a8c LXI    B,#$e625
+1a8f Unknown opcode
+1a90 JMP    $09c5
+1a93 NOP
+1a94 NOP
+1a95 NOP
+1a96 NOP
+1a97 Unknown opcode
+1a98 Unknown opcode
+1a99 Unknown opcode
+1a9a Unknown opcode
+1a9b Unknown opcode
+1a9c Unknown opcode
+1a9d Unknown opcode
+1a9e NOP
+1a9f Unknown opcode
+1aa0 Unknown opcode
+1aa1 Unknown opcode
+1aa2 Unknown opcode
+1aa3 Unknown opcode
+1aa4 NOP
+1aa5 RLC
+1aa6 MVI    B,#$00
+1aa8 Unknown opcode
+1aa9 INR    B
+1aaa Unknown opcode
+1aab Unknown opcode
+1aac Unknown opcode
+1aad INR    B
+1aae Unknown opcode
+1aaf Unknown opcode
+1ab0 Unknown opcode
+1ab1 Unknown opcode
+1ab2 Unknown opcode
+1ab3 NOP
+1ab4 Unknown opcode
+1ab5 INR    B
+1ab6 Unknown opcode
+1ab7 Unknown opcode
+1ab8 Unknown opcode
+1ab9 Unknown opcode
+1aba Unknown opcode
+1abb Unknown opcode
+1abc Unknown opcode
+1abd Unknown opcode
+1abe Unknown opcode
+1abf Unknown opcode
+1ac0 Unknown opcode
+1ac1 Unknown opcode
+1ac2 NOP
+1ac3 Unknown opcode
+1ac4 INR    B
+1ac5 Unknown opcode
+1ac6 Unknown opcode
+1ac7 Unknown opcode
+1ac8 LXI    B,#$1314
+1acb Unknown opcode
+1acc Unknown opcode
+1acd Unknown opcode
+1ace Unknown opcode
+1acf Unknown opcode
+1ad0 Unknown opcode
+1ad1 Unknown opcode
+1ad2 Unknown opcode
+1ad3 Unknown opcode
+1ad4 Unknown opcode
+1ad5 Unknown opcode
+1ad6 Unknown opcode
+1ad7 NOP
+1ad8 Unknown opcode
+1ad9 INR    B
+1ada Unknown opcode
+1adb Unknown opcode
+1adc Unknown opcode
+1add LXI    B,#$1314
+1ae0 Unknown opcode
+1ae1 Unknown opcode
+1ae2 Unknown opcode
+1ae3 Unknown opcode
+1ae4 Unknown opcode
+1ae5 Unknown opcode
+1ae6 STAX   B
+1ae7 Unknown opcode
+1ae8 Unknown opcode
+1ae9 INR    B
+1aea Unknown opcode
+1aeb Unknown opcode
+1aec Unknown opcode
+1aed Unknown opcode
+1aee RLC
+1aef NOP
+1af0 Unknown opcode
+1af1 Unknown opcode
+1af2 STAX   B
+1af3 Unknown opcode
+1af4 Unknown opcode
+1af5 INR    B
+1af6 Unknown opcode
+1af7 Unknown opcode
+1af8 STAX   B
+1af9 Unknown opcode
+1afa Unknown opcode
+1afb INR    B
+1afc Unknown opcode
+1afd Unknown opcode
+1afe Unknown opcode
+1aff Unknown opcode
+1b00 LXI    B,#$0000
+1b03 Unknown opcode
+1b04 NOP
+1b05 NOP
+1b06 NOP
+1b07 NOP
+1b08 STAX   B
+1b09 Unknown opcode
+1b0a Unknown opcode
+1b0b Unknown opcode
+1b0c Unknown opcode
+1b0d NOP
+1b0e Unknown opcode
+1b0f NOP
+1b10 NOP
+1b11 Unknown opcode
+1b12 NOP
+1b13 Unknown opcode
+1b14 STAX   B
+1b15 Unknown opcode
+1b16 DCR    B
+1b17 Unknown opcode
+1b18 Unknown opcode
+1b19 Unknown opcode
+1b1a Unknown opcode
+1b1b Unknown opcode
+1b1c Unknown opcode
+1b1d LXI    B,#$0000
+1b20 NOP
+1b21 NOP
+1b22 NOP
+1b23 Unknown opcode
+1b24 INX    B
+1b25 NOP
+1b26 Unknown opcode
+1b27 Unknown opcode
+1b28 Unknown opcode
+1b29 Unknown opcode
+1b2a Unknown opcode
+1b2b LXI    B,#$0004
+1b2e Unknown opcode
+1b2f Unknown opcode
+1b30 NOP
+1b31 NOP
+1b32 STAX   B
+1b33 Unknown opcode
+1b34 INR    B
+1b35 NOP
+1b36 NOP
+1b37 NOP
+1b38 NOP
+1b39 NOP
+1b3a INR    B
+1b3b Unknown opcode
+1b3c Unknown opcode
+1b3d NOP
+1b3e NOP
+1b3f INX    B
+1b40 NOP
+1b41 NOP
+1b42 NOP
+1b43 Unknown opcode
+1b44 INR    B
+1b45 NOP
+1b46 NOP
+1b47 LXI    B,#$1d00
+1b4a INR    B
+1b4b Unknown opcode
+1b4c Unknown opcode
+1b4d NOP
+1b4e NOP
+1b4f INX    B
+1b50 NOP
+1b51 NOP
+1b52 NOP
+1b53 Unknown opcode
+1b54 MVI    B,#$00
+1b56 NOP
+1b57 LXI    B,#$1d06
+1b5a INR    B
+1b5b Unknown opcode
+1b5c Unknown opcode
+1b5d NOP
+1b5e NOP
+1b5f INX    B
+1b60 Unknown opcode
+1b61 NOP
+1b62 Unknown opcode
+1b63 Unknown opcode
+1b64 NOP
+1b65 NOP
+1b66 Unknown opcode
+1b67 Unknown opcode
+1b68 LXI    B,#$3000
+1b6b NOP
+1b6c Unknown opcode
+1b6d NOP
+1b6e NOP
+1b6f NOP
+1b70 Unknown opcode
+1b71 Unknown opcode
+1b72 NOP
+1b73 Unknown opcode
+1b74 Unknown opcode
+1b75 Unknown opcode
+1b76 Unknown opcode
+1b77 NOP
+1b78 Unknown opcode
+1b79 INR    B
+1b7a Unknown opcode
+1b7b Unknown opcode
+1b7c Unknown opcode
+1b7d Unknown opcode
+1b7e Unknown opcode
+1b7f NOP
+1b80 LXI    B,#$ffff
+1b83 NOP
+1b84 NOP
+1b85 NOP
+1b86 Unknown opcode
+1b87 Unknown opcode
+1b88 Unknown opcode
+1b89 Unknown opcode
+1b8a Unknown opcode
+1b8b Unknown opcode
+1b8c STAX   B
+1b8d Unknown opcode
+1b8e Unknown opcode
+1b8f NOP
+1b90 NOP
+1b91 NOP
+1b92 MVI    B,#$00
+1b94 NOP
+1b95 LXI    B,#$0040
+1b98 LXI    B,#$0000
+1b9b Unknown opcode
+1b9c Unknown opcode
+1b9d NOP
+1b9e Unknown opcode
+1b9f Unknown opcode
+1ba0 NOP
+1ba1 INX    B
+1ba2 INR    B
+1ba3 Unknown opcode
+1ba4 Unknown opcode
+1ba5 Unknown opcode
+1ba6 NOP
+1ba7 Unknown opcode
+1ba8 Unknown opcode
+1ba9 Unknown opcode
+1baa Unknown opcode
+1bab Unknown opcode
+1bac Unknown opcode
+1bad Unknown opcode
+1bae Unknown opcode
+1baf NOP
+1bb0 NOP
+1bb1 NOP
+1bb2 LXI    B,#$98b8
+1bb5 Unknown opcode
+1bb6 Unknown opcode
+1bb7 Unknown opcode
+1bb8 Unknown opcode
+1bb9 NOP
+1bba Unknown opcode
+1bbb Unknown opcode
+1bbc NOP
+1bbd NOP
+1bbe NOP
+1bbf NOP
+1bc0 NOP
+1bc1 Unknown opcode
+1bc2 NOP
+1bc3 Unknown opcode
+1bc4 DCR    B
+1bc5 NOP
+1bc6 NOP
+1bc7 NOP
+1bc8 NOP
+1bc9 NOP
+1bca RLC
+1bcb Unknown opcode
+1bcc Unknown opcode
+1bcd Unknown opcode
+1bce Unknown opcode
+1bcf INX    B
+1bd0 NOP
+1bd1 NOP
+1bd2 INX    B
+1bd3 INR    B
+1bd4 Unknown opcode
+1bd5 Unknown opcode
+1bd6 Unknown opcode
+1bd7 Unknown opcode
+1bd8 Unknown opcode
+1bd9 Unknown opcode
+1bda Unknown opcode
+1bdb Unknown opcode
+1bdc Unknown opcode
+1bdd Unknown opcode
+1bde Unknown opcode
+1bdf NOP
+1be0 NOP
+1be1 NOP
+1be2 NOP
+1be3 NOP
+1be4 NOP
+1be5 NOP
+1be6 NOP
+1be7 NOP
+1be8 NOP
+1be9 LXI    B,#$0000
+1bec LXI    B,#$1f74
+1bef NOP
+1bf0 Unknown opcode
+1bf1 NOP
+1bf2 NOP
+1bf3 NOP
+1bf4 NOP
+1bf5 NOP
+1bf6 Unknown opcode
+1bf7 Unknown opcode
+1bf8 NOP
+1bf9 NOP
+1bfa Unknown opcode
+1bfb Unknown opcode
+1bfc NOP
+1bfd NOP
+1bfe Unknown opcode
+1bff Unknown opcode
+1c00 NOP
+1c01 NOP
+1c02 Unknown opcode
+1c03 Unknown opcode
+1c04 Unknown opcode
+1c05 Unknown opcode
+1c06 Unknown opcode
+1c07 Unknown opcode
+1c08 Unknown opcode
+1c09 Unknown opcode
+1c0a Unknown opcode
+1c0b Unknown opcode
+1c0c Unknown opcode
+1c0d Unknown opcode
+1c0e NOP
+1c0f NOP
+1c10 NOP
+1c11 NOP
+1c12 NOP
+1c13 Unknown opcode
+1c14 Unknown opcode
+1c15 Unknown opcode
+1c16 Unknown opcode
+1c17 Unknown opcode
+1c18 Unknown opcode
+1c19 Unknown opcode
+1c1a Unknown opcode
+1c1b Unknown opcode
+1c1c Unknown opcode
+1c1d Unknown opcode
+1c1e NOP
+1c1f NOP
+1c20 NOP
+1c21 NOP
+1c22 NOP
+1c23 NOP
+1c24 Unknown opcode
+1c25 Unknown opcode
+1c26 Unknown opcode
+1c27 Unknown opcode
+1c28 Unknown opcode
+1c29 Unknown opcode
+1c2a Unknown opcode
+1c2b Unknown opcode
+1c2c NOP
+1c2d NOP
+1c2e NOP
+1c2f NOP
+1c30 NOP
+1c31 NOP
+1c32 Unknown opcode
+1c33 Unknown opcode
+1c34 Unknown opcode
+1c35 Unknown opcode
+1c36 Unknown opcode
+1c37 Unknown opcode
+1c38 Unknown opcode
+1c39 Unknown opcode
+1c3a Unknown opcode
+1c3b Unknown opcode
+1c3c Unknown opcode
+1c3d Unknown opcode
+1c3e NOP
+1c3f NOP
+1c40 NOP
+1c41 NOP
+1c42 NOP
+1c43 Unknown opcode
+1c44 Unknown opcode
+1c45 Unknown opcode
+1c46 Unknown opcode
+1c47 Unknown opcode
+1c48 Unknown opcode
+1c49 Unknown opcode
+1c4a Unknown opcode
+1c4b Unknown opcode
+1c4c Unknown opcode
+1c4d Unknown opcode
+1c4e NOP
+1c4f NOP
+1c50 NOP
+1c51 NOP
+1c52 NOP
+1c53 NOP
+1c54 Unknown opcode
+1c55 Unknown opcode
+1c56 Unknown opcode
+1c57 Unknown opcode
+1c58 Unknown opcode
+1c59 Unknown opcode
+1c5a Unknown opcode
+1c5b Unknown opcode
+1c5c NOP
+1c5d NOP
+1c5e NOP
+1c5f NOP
+1c60 NOP
+1c61 NOP
+1c62 Unknown opcode
+1c63 Unknown opcode
+1c64 Unknown opcode
+1c65 Unknown opcode
+1c66 Unknown opcode
+1c67 Unknown opcode
+1c68 Unknown opcode
+1c69 Unknown opcode
+1c6a Unknown opcode
+1c6b Unknown opcode
+1c6c Unknown opcode
+1c6d Unknown opcode
+1c6e Unknown opcode
+1c6f NOP
+1c70 NOP
+1c71 INR    B
+1c72 LXI    B,#$0313
+1c75 RLC
+1c76 Unknown opcode
+1c77 Unknown opcode
+1c78 Unknown opcode
+1c79 INX    B
+1c7a Unknown opcode
+1c7b Unknown opcode
+1c7c INR    B
+1c7d INX    B
+1c7e NOP
+1c7f LXI    B,#$0840
+1c82 DCR    B
+1c83 Unknown opcode
+1c84 Unknown opcode
+1c85 INX    B
+1c86 Unknown opcode
+1c87 Unknown opcode
+1c88 Unknown opcode
+1c89 Unknown opcode
+1c8a Unknown opcode
+1c8b Unknown opcode
+1c8c Unknown opcode
+1c8d Unknown opcode
+1c8e Unknown opcode
+1c8f Unknown opcode
+1c90 Unknown opcode
+1c91 Unknown opcode
+1c92 Unknown opcode
+1c93 Unknown opcode
+1c94 Unknown opcode
+1c95 Unknown opcode
+1c96 MVI    A,#0x7c
+1c98 Unknown opcode
+1c99 Unknown opcode
+1c9a Unknown opcode
+1c9b Unknown opcode
+1c9c Unknown opcode
+1c9d Unknown opcode
+1c9e Unknown opcode
+1c9f NOP
+1ca0 Unknown opcode
+1ca1 Unknown opcode
+1ca2 Unknown opcode
+1ca3 Unknown opcode
+1ca4 Unknown opcode
+1ca5 STAX   B
+1ca6 Unknown opcode
+1ca7 Unknown opcode
+1ca8 INR    B
+1ca9 Unknown opcode
+1caa NOP
+1cab INX    B
+1cac Unknown opcode
+1cad NOP
+1cae Unknown opcode
+1caf STAX   B
+1cb0 INR    B
+1cb1 Unknown opcode
+1cb2 Unknown opcode
+1cb3 NOP
+1cb4 LXI    B,#$040b
+1cb7 Unknown opcode
+1cb8 STAX   B
+1cb9 Unknown opcode
+1cba Unknown opcode
+1cbb Unknown opcode
+1cbc Unknown opcode
+1cbd NOP
+1cbe Unknown opcode
+1cbf Unknown opcode
+1cc0 NOP
+1cc1 NOP
+1cc2 Unknown opcode
+1cc3 Unknown opcode
+1cc4 Unknown opcode
+1cc5 Unknown opcode
+1cc6 Unknown opcode
+1cc7 NOP
+1cc8 Unknown opcode
+1cc9 Unknown opcode
+1cca Unknown opcode
+1ccb Unknown opcode
+1ccc Unknown opcode
+1ccd NOP
+1cce NOP
+1ccf NOP
+1cd0 Unknown opcode
+1cd1 Unknown opcode
+1cd2 Unknown opcode
+1cd3 Unknown opcode
+1cd4 Unknown opcode
+1cd5 Unknown opcode
+1cd6 Unknown opcode
+1cd7 Unknown opcode
+1cd8 Unknown opcode
+1cd9 Unknown opcode
+1cda Unknown opcode
+1cdb Unknown opcode
+1cdc Unknown opcode
+1cdd Unknown opcode
+1cde Unknown opcode
+1cdf Unknown opcode
+1ce0 Unknown opcode
+1ce1 Unknown opcode
+1ce2 INR    B
+1ce3 Unknown opcode
+1ce4 INR    B
+1ce5 Unknown opcode
+1ce6 Unknown opcode
+1ce7 Unknown opcode
+1ce8 Unknown opcode
+1ce9 Unknown opcode
+1cea Unknown opcode
+1ceb Unknown opcode
+1cec Unknown opcode
+1ced Unknown opcode
+1cee NOP
+1cef Unknown opcode
+1cf0 NOP
+1cf1 Unknown opcode
+1cf2 Unknown opcode
+1cf3 Unknown opcode
+1cf4 NOP
+1cf5 Unknown opcode
+1cf6 NOP
+1cf7 Unknown opcode
+1cf8 Unknown opcode
+1cf9 Unknown opcode
+1cfa Unknown opcode
+1cfb Unknown opcode
+1cfc NOP
+1cfd Unknown opcode
+1cfe NOP
+1cff NOP
+1d00 LXI    B,#$0107
+1d03 LXI    B,#$0401
+1d06 Unknown opcode
+1d07 LXI    B,#$0306
+1d0a LXI    B,#$0b01
+1d0d Unknown opcode
+1d0e STAX   B
+1d0f NOP
+1d10 STAX   B
+1d11 Unknown opcode
+1d12 INR    B
+1d13 RLC
+1d14 Unknown opcode
+1d15 DCR    B
+1d16 STAX   B
+1d17 DCR    B
+1d18 INR    B
+1d19 MVI    B,#$07
+1d1b NOP
+1d1c Unknown opcode
+1d1d MVI    B,#$0a
+1d1f INX    B
+1d20 Unknown opcode
+1d21 Unknown opcode
+1d22 Unknown opcode
+1d23 Unknown opcode
+1d24 Unknown opcode
+1d25 Unknown opcode
+1d26 Unknown opcode
+1d27 Unknown opcode
+1d28 Unknown opcode
+1d29 Unknown opcode
+1d2a Unknown opcode
+1d2b Unknown opcode
+1d2c Unknown opcode
+1d2d Unknown opcode
+1d2e Unknown opcode
+1d2f Unknown opcode
+1d30 Unknown opcode
+1d31 Unknown opcode
+1d32 Unknown opcode
+1d33 Unknown opcode
+1d34 Unknown opcode
+1d35 Unknown opcode
+1d36 Unknown opcode
+1d37 Unknown opcode
+1d38 Unknown opcode
+1d39 Unknown opcode
+1d3a Unknown opcode
+1d3b Unknown opcode
+1d3c Unknown opcode
+1d3d Unknown opcode
+1d3e Unknown opcode
+1d3f Unknown opcode
+1d40 Unknown opcode
+1d41 Unknown opcode
+1d42 Unknown opcode
+1d43 Unknown opcode
+1d44 Unknown opcode
+1d45 Unknown opcode
+1d46 Unknown opcode
+1d47 Unknown opcode
+1d48 Unknown opcode
+1d49 Unknown opcode
+1d4a Unknown opcode
+1d4b Unknown opcode
+1d4c DCR    B
+1d4d Unknown opcode
+1d4e Unknown opcode
+1d4f Unknown opcode
+1d50 Unknown opcode
+1d51 Unknown opcode
+1d52 Unknown opcode
+1d53 Unknown opcode
+1d54 Unknown opcode
+1d55 DCR    B
+1d56 DCR    B
+1d57 Unknown opcode
+1d58 Unknown opcode
+1d59 Unknown opcode
+1d5a Unknown opcode
+1d5b DCR    B
+1d5c Unknown opcode
+1d5d Unknown opcode
+1d5e Unknown opcode
+1d5f Unknown opcode
+1d60 DCR    B
+1d61 Unknown opcode
+1d62 Unknown opcode
+1d63 DCR    B
+1d64 NOP
+1d65 NOP
+1d66 NOP
+1d67 NOP
+1d68 INR    B
+1d69 Unknown opcode
+1d6a Unknown opcode
+1d6b Unknown opcode
+1d6c MVI    A,#0x7c
+1d6e Unknown opcode
+1d6f Unknown opcode
+1d70 Unknown opcode
+1d71 Unknown opcode
+1d72 Unknown opcode
+1d73 MVI    A,#0x37
+1d75 Unknown opcode
+1d76 Unknown opcode
+1d77 INR    B
+1d78 NOP
+1d79 NOP
+1d7a NOP
+1d7b NOP
+1d7c NOP
+1d7d Unknown opcode
+1d7e NOP
+1d7f Unknown opcode
+1d80 Unknown opcode
+1d81 NOP
+1d82 Unknown opcode
+1d83 Unknown opcode
+1d84 Unknown opcode
+1d85 Unknown opcode
+1d86 Unknown opcode
+1d87 Unknown opcode
+1d88 Unknown opcode
+1d89 Unknown opcode
+1d8a Unknown opcode
+1d8b Unknown opcode
+1d8c Unknown opcode
+1d8d Unknown opcode
+1d8e NOP
+1d8f Unknown opcode
+1d90 Unknown opcode
+1d91 NOP
+1d92 NOP
+1d93 NOP
+1d94 Unknown opcode
+1d95 Unknown opcode
+1d96 Unknown opcode
+1d97 Unknown opcode
+1d98 Unknown opcode
+1d99 Unknown opcode
+1d9a Unknown opcode
+1d9b Unknown opcode
+1d9c Unknown opcode
+1d9d Unknown opcode
+1d9e Unknown opcode
+1d9f Unknown opcode
+1da0 Unknown opcode
+1da1 Unknown opcode
+1da2 Unknown opcode
+1da3 Unknown opcode
+1da4 Unknown opcode
+1da5 Unknown opcode
+1da6 Unknown opcode
+1da7 Unknown opcode
+1da8 Unknown opcode
+1da9 Unknown opcode
+1daa Unknown opcode
+1dab Unknown opcode
+1dac Unknown opcode
+1dad NOP
+1dae Unknown opcode
+1daf Unknown opcode
+1db0 Unknown opcode
+1db1 NOP
+1db2 STAX   B
+1db3 INR    B
+1db4 Unknown opcode
+1db5 Unknown opcode
+1db6 NOP
+1db7 Unknown opcode
+1db8 Unknown opcode
+1db9 NOP
+1dba INX    B
+1dbb INR    B
+1dbc Unknown opcode
+1dbd Unknown opcode
+1dbe Unknown opcode
+1dbf Unknown opcode
+1dc0 Unknown opcode
+1dc1 Unknown opcode
+1dc2 Unknown opcode
+1dc3 Unknown opcode
+1dc4 Unknown opcode
+1dc5 Unknown opcode
+1dc6 Unknown opcode
+1dc7 Unknown opcode
+1dc8 Unknown opcode
+1dc9 Unknown opcode
+1dca NOP
+1dcb Unknown opcode
+1dcc NOP
+1dcd Unknown opcode
+1dce Unknown opcode
+1dcf Unknown opcode
+1dd0 Unknown opcode
+1dd1 Unknown opcode
+1dd2 Unknown opcode
+1dd3 Unknown opcode
+1dd4 Unknown opcode
+1dd5 Unknown opcode
+1dd6 Unknown opcode
+1dd7 Unknown opcode
+1dd8 Unknown opcode
+1dd9 Unknown opcode
+1dda Unknown opcode
+1ddb NOP
+1ddc Unknown opcode
+1ddd Unknown opcode
+1dde Unknown opcode
+1ddf Unknown opcode
+1de0 Unknown opcode
+1de1 Unknown opcode
+1de2 Unknown opcode
+1de3 Unknown opcode
+1de4 Unknown opcode
+1de5 Unknown opcode
+1de6 Unknown opcode
+1de7 INR    B
+1de8 Unknown opcode
+1de9 Unknown opcode
+1dea Unknown opcode
+1deb Unknown opcode
+1dec Unknown opcode
+1ded Unknown opcode
+1dee Unknown opcode
+1def Unknown opcode
+1df0 NOP
+1df1 Unknown opcode
+1df2 Unknown opcode
+1df3 Unknown opcode
+1df4 Unknown opcode
+1df5 Unknown opcode
+1df6 Unknown opcode
+1df7 Unknown opcode
+1df8 Unknown opcode
+1df9 Unknown opcode
+1dfa NOP
+1dfb Unknown opcode
+1dfc Unknown opcode
+1dfd Unknown opcode
+1dfe NOP
+1dff NOP
+1e00 NOP
+1e01 Unknown opcode
+1e02 Unknown opcode
+1e03 Unknown opcode
+1e04 Unknown opcode
+1e05 Unknown opcode
+1e06 NOP
+1e07 NOP
+1e08 NOP
+1e09 Unknown opcode
+1e0a Unknown opcode
+1e0b Unknown opcode
+1e0c Unknown opcode
+1e0d Unknown opcode
+1e0e NOP
+1e0f NOP
+1e10 NOP
+1e11 MVI    A,#0x41
+1e13 Unknown opcode
+1e14 Unknown opcode
+1e15 Unknown opcode
+1e16 NOP
+1e17 NOP
+1e18 NOP
+1e19 Unknown opcode
+1e1a Unknown opcode
+1e1b Unknown opcode
+1e1c Unknown opcode
+1e1d MVI    A,#0x00
+1e1f NOP
+1e20 NOP
+1e21 Unknown opcode
+1e22 Unknown opcode
+1e23 Unknown opcode
+1e24 Unknown opcode
+1e25 Unknown opcode
+1e26 NOP
+1e27 NOP
+1e28 NOP
+1e29 Unknown opcode
+1e2a Unknown opcode
+1e2b Unknown opcode
+1e2c Unknown opcode
+1e2d Unknown opcode
+1e2e NOP
+1e2f NOP
+1e30 NOP
+1e31 MVI    A,#0x41
+1e33 Unknown opcode
+1e34 Unknown opcode
+1e35 Unknown opcode
+1e36 NOP
+1e37 NOP
+1e38 NOP
+1e39 Unknown opcode
+1e3a NOP
+1e3b NOP
+1e3c NOP
+1e3d Unknown opcode
+1e3e NOP
+1e3f NOP
+1e40 NOP
+1e41 NOP
+1e42 Unknown opcode
+1e43 Unknown opcode
+1e44 Unknown opcode
+1e45 NOP
+1e46 NOP
+1e47 NOP
+1e48 NOP
+1e49 STAX   B
+1e4a LXI    B,#$0101
+1e4d Unknown opcode
+1e4e NOP
+1e4f NOP
+1e50 NOP
+1e51 Unknown opcode
+1e52 NOP
+1e53 Unknown opcode
+1e54 Unknown opcode
+1e55 Unknown opcode
+1e56 NOP
+1e57 NOP
+1e58 NOP
+1e59 Unknown opcode
+1e5a LXI    B,#$0101
+1e5d LXI    B,#$0000
+1e60 NOP
+1e61 Unknown opcode
+1e62 Unknown opcode
+1e63 Unknown opcode
+1e64 Unknown opcode
+1e65 Unknown opcode
+1e66 NOP
+1e67 NOP
+1e68 NOP
+1e69 Unknown opcode
+1e6a Unknown opcode
+1e6b NOP
+1e6c INR    B
+1e6d Unknown opcode
+1e6e NOP
+1e6f NOP
+1e70 NOP
+1e71 MVI    A,#0x41
+1e73 Unknown opcode
+1e74 Unknown opcode
+1e75 MVI    A,#0x00
+1e77 NOP
+1e78 NOP
+1e79 Unknown opcode
+1e7a Unknown opcode
+1e7b Unknown opcode
+1e7c Unknown opcode
+1e7d Unknown opcode
+1e7e NOP
+1e7f NOP
+1e80 NOP
+1e81 MVI    A,#0x41
+1e83 Unknown opcode
+1e84 Unknown opcode
+1e85 Unknown opcode
+1e86 NOP
+1e87 NOP
+1e88 NOP
+1e89 Unknown opcode
+1e8a Unknown opcode
+1e8b Unknown opcode
+1e8c Unknown opcode
+1e8d Unknown opcode
+1e8e NOP
+1e8f NOP
+1e90 NOP
+1e91 Unknown opcode
+1e92 Unknown opcode
+1e93 Unknown opcode
+1e94 Unknown opcode
+1e95 Unknown opcode
+1e96 NOP
+1e97 NOP
+1e98 NOP
+1e99 Unknown opcode
+1e9a Unknown opcode
+1e9b Unknown opcode
+1e9c Unknown opcode
+1e9d Unknown opcode
+1e9e NOP
+1e9f NOP
+1ea0 NOP
+1ea1 Unknown opcode
+1ea2 LXI    B,#$0101
+1ea5 Unknown opcode
+1ea6 NOP
+1ea7 NOP
+1ea8 NOP
+1ea9 Unknown opcode
+1eaa STAX   B
+1eab LXI    B,#$7c02
+1eae NOP
+1eaf NOP
+1eb0 NOP
+1eb1 Unknown opcode
+1eb2 STAX   B
+1eb3 Unknown opcode
+1eb4 STAX   B
+1eb5 Unknown opcode
+1eb6 NOP
+1eb7 NOP
+1eb8 NOP
+1eb9 Unknown opcode
+1eba Unknown opcode
+1ebb NOP
+1ebc Unknown opcode
+1ebd Unknown opcode
+1ebe NOP
+1ebf NOP
+1ec0 NOP
+1ec1 Unknown opcode
+1ec2 Unknown opcode
+1ec3 Unknown opcode
+1ec4 Unknown opcode
+1ec5 Unknown opcode
+1ec6 NOP
+1ec7 NOP
+1ec8 NOP
+1ec9 Unknown opcode
+1eca Unknown opcode
+1ecb Unknown opcode
+1ecc Unknown opcode
+1ecd Unknown opcode
+1ece NOP
+1ecf NOP
+1ed0 NOP
+1ed1 MVI    A,#0x45
+1ed3 Unknown opcode
+1ed4 Unknown opcode
+1ed5 MVI    A,#0x00
+1ed7 NOP
+1ed8 NOP
+1ed9 NOP
+1eda Unknown opcode
+1edb Unknown opcode
+1edc LXI    B,#$0000
+1edf NOP
+1ee0 NOP
+1ee1 Unknown opcode
+1ee2 Unknown opcode
+1ee3 Unknown opcode
+1ee4 Unknown opcode
+1ee5 Unknown opcode
+1ee6 NOP
+1ee7 NOP
+1ee8 NOP
+1ee9 Unknown opcode
+1eea Unknown opcode
+1eeb Unknown opcode
+1eec Unknown opcode
+1eed Unknown opcode
+1eee NOP
+1eef NOP
+1ef0 NOP
+1ef1 Unknown opcode
+1ef2 Unknown opcode
+1ef3 Unknown opcode
+1ef4 Unknown opcode
+1ef5 INR    B
+1ef6 NOP
+1ef7 NOP
+1ef8 NOP
+1ef9 Unknown opcode
+1efa Unknown opcode
+1efb Unknown opcode
+1efc Unknown opcode
+1efd Unknown opcode
+1efe NOP
+1eff NOP
+1f00 NOP
+1f01 Unknown opcode
+1f02 Unknown opcode
+1f03 Unknown opcode
+1f04 Unknown opcode
+1f05 Unknown opcode
+1f06 NOP
+1f07 NOP
+1f08 NOP
+1f09 Unknown opcode
+1f0a Unknown opcode
+1f0b Unknown opcode
+1f0c Unknown opcode
+1f0d Unknown opcode
+1f0e NOP
+1f0f NOP
+1f10 NOP
+1f11 Unknown opcode
+1f12 Unknown opcode
+1f13 Unknown opcode
+1f14 Unknown opcode
+1f15 Unknown opcode
+1f16 NOP
+1f17 NOP
+1f18 NOP
+1f19 Unknown opcode
+1f1a Unknown opcode
+1f1b Unknown opcode
+1f1c Unknown opcode
+1f1d Unknown opcode
+1f1e NOP
+1f1f NOP
+1f20 NOP
+1f21 NOP
+1f22 Unknown opcode
+1f23 Unknown opcode
+1f24 Unknown opcode
+1f25 NOP
+1f26 NOP
+1f27 NOP
+1f28 NOP
+1f29 NOP
+1f2a Unknown opcode
+1f2b Unknown opcode
+1f2c Unknown opcode
+1f2d NOP
+1f2e NOP
+1f2f NOP
+1f30 NOP
+1f31 NOP
+1f32 NOP
+1f33 NOP
+1f34 NOP
+1f35 NOP
+1f36 NOP
+1f37 NOP
+1f38 NOP
+1f39 Unknown opcode
+1f3a Unknown opcode
+1f3b Unknown opcode
+1f3c Unknown opcode
+1f3d Unknown opcode
+1f3e NOP
+1f3f NOP
+1f40 NOP
+1f41 Unknown opcode
+1f42 Unknown opcode
+1f43 Unknown opcode
+1f44 Unknown opcode
+1f45 Unknown opcode
+1f46 NOP
+1f47 NOP
+1f48 NOP
+1f49 INX    B
+1f4a INR    B
+1f4b Unknown opcode
+1f4c INR    B
+1f4d INX    B
+1f4e NOP
+1f4f NOP
+1f50 Unknown opcode
+1f51 Unknown opcode
+1f52 Unknown opcode
+1f53 Unknown opcode
+1f54 Unknown opcode
+1f55 Unknown opcode
+1f56 Unknown opcode
+1f57 Unknown opcode
+1f58 Unknown opcode
+1f59 Unknown opcode
+1f5a NOP
+1f5b Unknown opcode
+1f5c INR    B
+1f5d Unknown opcode
+1f5e Unknown opcode
+1f5f Unknown opcode
+1f60 Unknown opcode
+1f61 Unknown opcode
+1f62 Unknown opcode
+1f63 Unknown opcode
+1f64 Unknown opcode
+1f65 Unknown opcode
+1f66 Unknown opcode
+1f67 NOP
+1f68 Unknown opcode
+1f69 INR    B
+1f6a Unknown opcode
+1f6b Unknown opcode
+1f6c Unknown opcode
+1f6d Unknown opcode
+1f6e Unknown opcode
+1f6f STAX   B
+1f70 Unknown opcode
+1f71 NOP
+1f72 Unknown opcode
+1f73 Unknown opcode
+1f74 LXI    B,#$0001
+1f77 NOP
+1f78 LXI    B,#$0200
+1f7b LXI    B,#$0200
+1f7e LXI    B,#$6000
+1f81 Unknown opcode
+1f82 Unknown opcode
+1f83 Unknown opcode
+1f84 Unknown opcode
+1f85 Unknown opcode
+1f86 Unknown opcode
+1f87 Unknown opcode
+1f88 Unknown opcode
+1f89 Unknown opcode
+1f8a Unknown opcode
+1f8b Unknown opcode
+1f8c Unknown opcode
+1f8d Unknown opcode
+1f8e Unknown opcode
+1f8f NOP
+1f90 NOP
+1f91 Unknown opcode
+1f92 Unknown opcode
+1f93 INR    B
+1f94 Unknown opcode
+1f95 Unknown opcode
+1f96 Unknown opcode
+1f97 Unknown opcode
+1f98 STAX   B
+1f99 Unknown opcode
+1f9a NOP
+1f9b Unknown opcode
+1f9c Unknown opcode
+1f9d Unknown opcode
+1f9e Unknown opcode
+1f9f Unknown opcode
+1fa0 Unknown opcode
+1fa1 Unknown opcode
+1fa2 Unknown opcode
+1fa3 Unknown opcode
+1fa4 RLC
+1fa5 Unknown opcode
+1fa6 Unknown opcode
+1fa7 Unknown opcode
+1fa8 Unknown opcode
+1fa9 STAX   B
+1faa Unknown opcode
+1fab INR    B
+1fac INX    B
+1fad NOP
+1fae Unknown opcode
+1faf Unknown opcode
+1fb0 NOP
+1fb1 Unknown opcode
+1fb2 Unknown opcode
+1fb3 Unknown opcode
+1fb4 Unknown opcode
+1fb5 Unknown opcode
+1fb6 Unknown opcode
+1fb7 Unknown opcode
+1fb8 Unknown opcode
+1fb9 Unknown opcode
+1fba Unknown opcode
+1fbb Unknown opcode
+1fbc Unknown opcode
+1fbd Unknown opcode
+1fbe Unknown opcode
+1fbf NOP
+1fc0 NOP
+1fc1 Unknown opcode
+1fc2 Unknown opcode
+1fc3 Unknown opcode
+1fc4 Unknown opcode
+1fc5 Unknown opcode
+1fc6 NOP
+1fc7 NOP
+1fc8 NOP
+1fc9 NOP
+1fca NOP
+1fcb Unknown opcode
+1fcc Unknown opcode
+1fcd Unknown opcode
+1fce Unknown opcode
+1fcf Unknown opcode
+1fd0 Unknown opcode
+1fd1 Unknown opcode
+1fd2 NOP
+1fd3 Unknown opcode
+1fd4 Unknown opcode
+1fd5 NOP
+1fd6 NOP
+1fd7 LXI    B,#$22d0
+1fda Unknown opcode
+1fdb Unknown opcode
+1fdc Unknown opcode
+1fdd Unknown opcode
+1fde NOP
+1fdf Unknown opcode
+1fe0 Unknown opcode
+1fe1 Unknown opcode
+1fe2 Unknown opcode
+1fe3 Unknown opcode
+1fe4 Unknown opcode
+1fe5 Unknown opcode
+1fe6 NOP
+1fe7 Unknown opcode
+1fe8 INR    B
+1fe9 Unknown opcode
+1fea Unknown opcode
+1feb Unknown opcode
+1fec Unknown opcode
+1fed Unknown opcode
+1fee STAX   B
+1fef Unknown opcode
+1ff0 NOP
+1ff1 Unknown opcode
+1ff2 Unknown opcode
+1ff3 Unknown opcode
+1ff4 Unknown opcode
+1ff5 Unknown opcode
+1ff6 RLC
+1ff7 Unknown opcode
+1ff8 NOP
+1ff9 NOP
+1ffa NOP
+1ffb NOP
+1ffc NOP
+1ffd NOP
+1ffe NOP
+1fff NOP

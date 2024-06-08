@@ -15,18 +15,36 @@ pub enum Opcodes {
     NOP,
     INX_B,
     INX_D,
+    INX_H,
+    INX_SP,
     INR_B,
+    INR_D,
+    INR_E,
+    INR_H,
+    INR_L,
+    INR_M,
+    INR_A,
+    DCR_A,
     DCR_B,
+    DCR_C,
+    DCR_D,
+    DCR_E,
+    DCR_H,
+    DCR_L,
+    DCR_M,
+
     RLC,
     DAD_B,
+    DAD_D,
+    DAD_H,
+    DAD_SP,
     DCX_B,
-    INR_C,
-    DCR_C,
-    RRC,
     DCX_D,
+    DCX_H,
+    DCX_SP,
+    INR_C,
+    RRC,
     RAR,
-    INX_H,
-    INR_H,
     CMA,
     STC,
     CMC,
@@ -106,6 +124,7 @@ pub enum Opcodes {
     LXI_H,
     LXI_SP,
     LDA,
+    ACI,
     STA,
     LHLD,
     SHLD,
@@ -124,6 +143,34 @@ pub enum Opcodes {
     Add_H,
     Add_L,
     Add_M,
+
+
+    ADC_B,
+    ADC_C,
+    ADC_D,
+    ADC_E,
+    ADC_H,
+    ADC_L,
+    ADC_M,
+    ADC_A,
+
+    SUB_B,
+    SUB_C,
+    SUB_D,
+    SUB_E,
+    SUB_H,
+    SUB_L,
+    SUB_M,
+    SUB_A,
+
+    SBB_B,
+    SBB_C,
+    SBB_D,
+    SBB_E,
+    SBB_H,
+    SBB_L,
+    SBB_M,
+    SBB_A,
 
     CMP_B,
     CMP_C,
@@ -160,6 +207,8 @@ pub enum Opcodes {
     SPHL,
     JM,
     CPI,
+    SUI,
+    DAA,
     RST_7,
 }
 impl Opcodes {
@@ -184,24 +233,42 @@ impl Opcodes {
             0x11 => Opcodes::LXI_D,
             0x12 => Opcodes::STAX_D,
             0x13 => Opcodes::INX_D,
+            0x14 => Opcodes::INR_D,
+            0x15 => Opcodes::DCR_D,
             0x16 => Opcodes::MVI_D,
+            0x19 => Opcodes::DAD_D,
             0x1a => Opcodes::LDAX_D,
             0x1b => Opcodes::DCX_D,
+            0x1c => Opcodes::INR_E,
+            0x1d => Opcodes::DCR_E,
             0x1e => Opcodes::MVI_E,
             0x1f => Opcodes::RAR,
             0x21 => Opcodes::LXI_H,
             0x22 => Opcodes::SHLD,
             0x23 => Opcodes::INX_H,
             0x24 => Opcodes::INR_H,
+            0x25 => Opcodes::DCR_H,
             0x26 => Opcodes::MVI_H,
+            0x27 => Opcodes::DAA,
+            0x29 => Opcodes::DAD_H,
             0x2a => Opcodes::LHLD,
+            0x2b => Opcodes::DCX_H,
+            0x2c => Opcodes::INR_L,
+            0x2d => Opcodes::DCR_L,
             0x2e => Opcodes::MVI_L,
             0x2f => Opcodes::CMA,
             0x31 => Opcodes::LXI_SP,
             0x32 => Opcodes::STA,
+            0x33 => Opcodes::INX_SP,
+            0x34 => Opcodes::INR_M,
+            0x35 => Opcodes::DCR_M,
             0x36 => Opcodes::MVI_M,
             0x37 => Opcodes::STC,
+            0x39 => Opcodes::DAD_SP,
             0x3a => Opcodes::LDA,
+            0x3b => Opcodes::DCX_SP,
+            0x3c => Opcodes::INR_A,
+            0x3d => Opcodes::DCR_A,
             0x3e => Opcodes::MVI_A,
             0x3f => Opcodes::CMC,
             0x40 => Opcodes::MOV_B_B,
@@ -276,8 +343,35 @@ impl Opcodes {
             0x84 => Opcodes::Add_H,
             0x85 => Opcodes::Add_L,
             0x86 => Opcodes::Add_M,
+            0x87 => Opcodes::Add_A,
 
+            0x88 => Opcodes::ADC_B,
+            0x89 => Opcodes::ADC_C,
+            0x8a => Opcodes::ADC_D,
+            0x8b => Opcodes::ADC_E,
+            0x8c => Opcodes::ADC_H,
+            0x8d => Opcodes::ADC_L,
+            0x8e => Opcodes::ADC_M,
+            0x8f => Opcodes::ADC_A,
             
+            0x90 => Opcodes::SUB_B,
+            0x91 => Opcodes::SUB_C,
+            0x92 => Opcodes::SUB_D,
+            0x93 => Opcodes::SUB_E,
+            0x94 => Opcodes::SUB_H,
+            0x95 => Opcodes::SUB_L,
+            0x96 => Opcodes::SUB_M,
+            0x97 => Opcodes::SUB_A,
+
+            0x98 => Opcodes::SBB_B,
+            0x99 => Opcodes::SBB_C,
+            0x9a => Opcodes::SBB_D,
+            0x9b => Opcodes::SBB_E,
+            0x9c => Opcodes::SBB_H,
+            0x9d => Opcodes::SBB_L,
+            0x9e => Opcodes::SBB_M,
+            0x9f => Opcodes::SBB_A,
+    
 
             0xb8 => Opcodes::CMP_B,
             0xb9 => Opcodes::CMP_C,
@@ -295,8 +389,10 @@ impl Opcodes {
             0xc9 => Opcodes::RET,
             0xca => Opcodes::JZ, 
             0xcd => Opcodes::CALL,
+            0xce => Opcodes::ACI,
             0xcf => Opcodes::RST_1,                      
             0xd2 => Opcodes::JNC, 
+            0xd6 => Opcodes::SUI,
             0xd7 => Opcodes::RST_2,                       
             0xda => Opcodes::JC,  
             0xdf => Opcodes::RST_3,                    
@@ -548,6 +644,7 @@ pub fn add_r(state: &mut Cpu, dest:Registers){
 
 pub fn add_m(state: &mut Cpu){
     let offset = state.get_register_pair(Registers::H, Registers::L);
+
     let val = state.registers[Registers::A as usize];
     let val2 = state.memory[offset as usize];
     update_conditions_add(state, val, val2, false);
@@ -555,103 +652,254 @@ pub fn add_m(state: &mut Cpu){
     state.registers[Registers::A as usize] = result;
 }
 
+pub fn adc_r(state: &mut Cpu, dest:Registers){
+    let val = state.registers[Registers::A as usize];
+    update_conditions_add(state, val, state.registers[dest.clone() as usize], true);
+    let carry = state.cc[&ConditionCodes::CY] as u8;
+    let result = state.registers[dest as usize].wrapping_add(carry);
+    state.registers[Registers::A as usize] = val.wrapping_add(result);
+}
 
-fn inx(state: &mut Cpu, dest: Registers) {
+pub fn adc_m(state: &mut Cpu){
+    let val = state.registers[Registers::A as usize];
+    let offset = state.get_register_pair(Registers::H, Registers::L);
+    let val2 = state.memory[offset as usize];
+    update_conditions_add(state, val, val2, true);
+    let carry = state.cc[&ConditionCodes::CY] as u8;
+    let result = val2.wrapping_add(carry);
+    state.registers[Registers::A as usize] = val.wrapping_add(result);
+}
+
+pub fn aci(state: &mut Cpu, operand: u8){
+    let val = state.registers[Registers::A as usize];
+    update_conditions_add(state, val, operand, true);
+    let carry = state.cc[&ConditionCodes::CY] as u8;
+    let result = operand.wrapping_add(carry);
+    state.registers[Registers::A as usize] = val.wrapping_add(result);
+}
+
+pub fn sub_r(state: &mut Cpu, dest:Registers){
+    let val = state.registers[Registers::A as usize];
+    update_conditions_sub(state, val, state.registers[dest.clone() as usize], false);
+    let result = val.wrapping_sub(state.registers[dest as usize]);
+    state.registers[Registers::A as usize] = result;
+}
+
+pub fn sub_m(state: &mut Cpu){
+    let val = state.registers[Registers::A as usize];
+    let offset = state.get_register_pair(Registers::H, Registers::L);
+    let val2 = state.memory[offset as usize];
+    update_conditions_sub(state, val, val2, false);
+    let result = val.wrapping_sub(val2);
+    state.registers[Registers::A as usize] = result;
+}
+
+pub fn sui(state: &mut Cpu, operand: u8){
+    let val = state.registers[Registers::A as usize];
+    update_conditions_sub(state, val, operand, false);
+    let result = val.wrapping_sub(operand);
+    state.registers[Registers::A as usize] = result;
+}
+
+pub fn sbb_r(state: &mut Cpu, dest:Registers){
+    let val = state.registers[Registers::A as usize];
+    update_conditions_sub(state, val, state.registers[dest.clone() as usize], true);
+    let carry = state.cc[&ConditionCodes::CY] as u8;
+    let result = state.registers[dest as usize].wrapping_add(carry);
+    state.registers[Registers::A as usize] = val.wrapping_sub(result);
+}
+
+pub fn sbb_m(state: &mut Cpu){
+    let val = state.registers[Registers::A as usize];
+    let offset = state.get_register_pair(Registers::H, Registers::L);
+    let val2 = state.memory[offset as usize];
+    update_conditions_sub(state, val, val2, true);
+    let carry = state.cc[&ConditionCodes::CY] as u8;
+    let result = val2.wrapping_add(carry);
+    state.registers[Registers::A as usize] = val.wrapping_sub(result);
+}
+
+pub fn inr_r (state: &mut Cpu, dest:Registers){
+    let val = state.registers[dest.clone() as usize];
+    update_conditions_inc(state, val);
+    state.registers[dest as usize] = val.wrapping_add(1);
+}
+
+pub fn inr_m(state: &mut Cpu){
+    let offset = state.get_register_pair(Registers::H, Registers::L);
+    let val = state.memory[offset as usize];
+    update_conditions_inc(state, val);
+    state.memory[offset as usize] = val.wrapping_add(1);
+}
+
+pub fn dcr_r(state: &mut Cpu, dest:Registers){
+    let val = state.registers[dest.clone() as usize];
+    update_conditions_dcr(state, val);
+    state.registers[dest as usize] = val.wrapping_sub(1);
+}
+
+pub fn dcr_m(state: &mut Cpu){
+    let offset = state.get_register_pair(Registers::H, Registers::L);
+    let val = state.memory[offset as usize];
+    update_conditions_dcr(state, val);
+    state.memory[offset as usize] = val.wrapping_sub(1);
+}
+
+pub fn inx_rp(state: &mut Cpu, dest: Registers) {
     let mut result = state.get_register_pair(dest.clone(), dest.clone().next());
-    result += 1;
-    state.registers[dest.clone() as usize] = (result >> 8) as u8;
-    state.registers[dest.clone().next() as usize] = (result & 0xff) as u8;
+    result = result.wrapping_add(1);
+    state.set_register_pair(dest.clone(), dest.clone().next(), result);
 }
 
-fn jmp(state: &mut Cpu) {
-    let offset = (state.memory[state.pc + 2] as u16) << 8 | state.memory[state.pc + 1] as u16;
-    state.pc = offset as usize;
+pub fn inx_sp (state: &mut Cpu){
+    state.sp = state.sp.wrapping_add(1);
 }
 
-fn call(state: &mut Cpu) {
-    let ret = state.pc + 2;
-    state.memory[state.sp as usize - 1] = ((ret >> 8) & 0xff) as u8;
-    state.memory[state.sp as usize - 2] = (ret & 0xff) as u8;
-    state.sp -= 2;
-    jmp(state)
+pub fn dcx_rp(state: &mut Cpu, dest: Registers) {
+    let mut result = state.get_register_pair(dest.clone(), dest.clone().next());
+    result = result.wrapping_sub(1);
+    state.set_register_pair(dest.clone(), dest.clone().next(), result);
 }
 
-fn ret(state: &mut Cpu) {
-    let offset = (state.memory[state.sp as usize] as u16)
-        | (state.memory[state.sp as usize + 1] as u16) << 8;
-    state.sp += 2;
-    state.pc = offset as usize;
+pub fn dcx_sp (state: &mut Cpu){
+    state.sp = state.sp.wrapping_sub(1);
 }
 
-fn phcl(state: &mut Cpu) {
-    state.pc = state.get_register_pair(Registers::H, Registers::L) as usize;
+pub fn dad_rp(state: &mut Cpu, dest: Registers) {
+    let result = (state.get_register_pair(Registers::H, Registers::L) as u32)
+    .wrapping_add((state.get_register_pair(dest.clone(), dest.clone().next()) as u32));
+    set_state_condition_code(state, ConditionCodes::CY, result > 0xffff);
+    
+    state.set_register_pair(Registers::H, Registers::L, result as u16);
 }
 
-fn rst_n(state: &mut Cpu, n: u8) {
-    state.memory[state.sp as usize - 1] = (state.pc >> 8) as u8;
-    state.memory[state.sp as usize - 2] = (state.pc & 0xff) as u8;
-    state.sp -= 2;
-    state.pc = (n * 8) as usize; //TODO: Check if this is correct
+pub fn dad_sp(state: &mut Cpu) {
+    let result = (state.get_register_pair(Registers::H, Registers::L) as u32)
+    .wrapping_add(state.sp as u32);
+    set_state_condition_code(state, ConditionCodes::CY, result > 0xffff);
+    
+    state.set_register_pair(Registers::H, Registers::L, result as u16);
 }
 
-fn pop(state: &mut Cpu, dest: Registers) {
-    let offset = state.sp;
-    state.registers[dest.clone().next() as usize] = state.memory[offset as usize];
-    state.registers[dest.clone() as usize] = state.memory[(offset as usize) + 1];
-    state.sp += 2;
-}
+pub fn daa (state: &mut Cpu){
+ let mut val : u8 = 0;
+ let msb = state.registers[Registers::A as usize] >> 4;
+ let lsb = state.registers[Registers::A as usize] & 0xf;
 
-// 10
-fn pop_psw(state: &mut Cpu) {
-    let offset = state.sp;
-    state.registers[Registers::A as usize] = state.memory[offset as usize + 1];
-    let psw = state.memory[offset as usize];
-    *state.cc.entry(ConditionCodes::Z).or_insert(false) = 0x01 == (psw & 0x01);
-    *state.cc.entry(ConditionCodes::S).or_insert(false) = 0x02 == (psw & 0x02);
-    *state.cc.entry(ConditionCodes::P).or_insert(false) = 0x04 == (psw & 0x04);
-    *state.cc.entry(ConditionCodes::CY).or_insert(false) = 0x08 == (psw & 0x08);
-    *state.cc.entry(ConditionCodes::AC).or_insert(false) = 0x10 == (psw & 0x10);
-    state.sp += 2;
-}
-
-fn sphl(state: &mut Cpu) {
-    state.sp = state.get_register_pair(Registers::H, Registers::L);
-}
-
-fn xthl(state: &mut Cpu) {
-    let h = state.registers[Registers::H as usize];
-    let l = state.registers[Registers::L as usize];
-    state.registers[Registers::H as usize] = state.memory[state.sp as usize + 1];
-    state.registers[Registers::L as usize] = state.memory[state.sp as usize];
-    state.memory[state.sp as usize + 1] = h;
-    state.memory[state.sp as usize] = l;
-}
-
-fn push_psw(state: &mut Cpu) {
-    state.memory[state.sp as usize - 1] = state.registers[Registers::A as usize];
-    let psw: u8 = (state.cc[&ConditionCodes::Z] as u8)
-        | (state.cc[&ConditionCodes::S] as u8) << 1
-        | (state.cc[&ConditionCodes::P] as u8) << 2
-        | (state.cc[&ConditionCodes::CY] as u8) << 3
-        | (state.cc[&ConditionCodes::AC] as u8) << 4;
-    state.memory[state.sp as usize - 2] = psw;
-    state.sp -= 2;
-}
-
-fn push(state: &mut Cpu, src: Registers) {
-    let offset = state.sp;
-    state.memory[offset as usize - 1] = state.registers[src.clone() as usize];
-    state.memory[offset as usize - 2] = state.registers[src.next() as usize];
-    state.sp -= 2;
-}
-
-fn jcc(state: &mut Cpu, condition: ConditionCodes, comp: bool) {
-    if state.cc[&condition] == comp {
-        jmp(state);
-    } else {
-        state.pc += 2;
+    if state.cc[&ConditionCodes::AC] || lsb > 9 {
+        val = val.wrapping_add(0x06);
     }
+
+    if state.cc[&ConditionCodes::CY] || msb > 9 || (msb >= 9 && lsb > 9) {
+        val = val.wrapping_add(0x60);
+        set_state_condition_code(state, ConditionCodes::CY, true);
+    }
+
+    let result = state.registers[Registers::A as usize].wrapping_add(val);
+    set_z_condition(state, result);
+    set_p_condition(state, result);
+    set_s_condition(state, result);
+    set_ac_condition_add(state, state.registers[Registers::A as usize], val, 0);
+    state.registers[Registers::A as usize] = result;
+
 }
+
+// fn inx(state: &mut Cpu, dest: Registers) {
+//     let mut result = state.get_register_pair(dest.clone(), dest.clone().next());
+//     result += 1;
+//     state.registers[dest.clone() as usize] = (result >> 8) as u8;
+//     state.registers[dest.clone().next() as usize] = (result & 0xff) as u8;
+// }
+
+// fn jmp(state: &mut Cpu) {
+//     let offset = (state.memory[state.pc + 2] as u16) << 8 | state.memory[state.pc + 1] as u16;
+//     state.pc = offset as usize;
+// }
+
+// fn call(state: &mut Cpu) {
+//     let ret = state.pc + 2;
+//     state.memory[state.sp as usize - 1] = ((ret >> 8) & 0xff) as u8;
+//     state.memory[state.sp as usize - 2] = (ret & 0xff) as u8;
+//     state.sp -= 2;
+//     jmp(state)
+// }
+
+// fn ret(state: &mut Cpu) {
+//     let offset = (state.memory[state.sp as usize] as u16)
+//         | (state.memory[state.sp as usize + 1] as u16) << 8;
+//     state.sp += 2;
+//     state.pc = offset as usize;
+// }
+
+// fn phcl(state: &mut Cpu) {
+//     state.pc = state.get_register_pair(Registers::H, Registers::L) as usize;
+// }
+
+// fn rst_n(state: &mut Cpu, n: u8) {
+//     state.memory[state.sp as usize - 1] = (state.pc >> 8) as u8;
+//     state.memory[state.sp as usize - 2] = (state.pc & 0xff) as u8;
+//     state.sp -= 2;
+//     state.pc = (n * 8) as usize; //TODO: Check if this is correct
+// }
+
+// fn pop(state: &mut Cpu, dest: Registers) {
+//     let offset = state.sp;
+//     state.registers[dest.clone().next() as usize] = state.memory[offset as usize];
+//     state.registers[dest.clone() as usize] = state.memory[(offset as usize) + 1];
+//     state.sp += 2;
+// }
+
+// // 10
+// fn pop_psw(state: &mut Cpu) {
+//     let offset = state.sp;
+//     state.registers[Registers::A as usize] = state.memory[offset as usize + 1];
+//     let psw = state.memory[offset as usize];
+//     *state.cc.entry(ConditionCodes::Z).or_insert(false) = 0x01 == (psw & 0x01);
+//     *state.cc.entry(ConditionCodes::S).or_insert(false) = 0x02 == (psw & 0x02);
+//     *state.cc.entry(ConditionCodes::P).or_insert(false) = 0x04 == (psw & 0x04);
+//     *state.cc.entry(ConditionCodes::CY).or_insert(false) = 0x08 == (psw & 0x08);
+//     *state.cc.entry(ConditionCodes::AC).or_insert(false) = 0x10 == (psw & 0x10);
+//     state.sp += 2;
+// }
+
+// fn sphl(state: &mut Cpu) {
+//     state.sp = state.get_register_pair(Registers::H, Registers::L);
+// }
+
+// fn xthl(state: &mut Cpu) {
+//     let h = state.registers[Registers::H as usize];
+//     let l = state.registers[Registers::L as usize];
+//     state.registers[Registers::H as usize] = state.memory[state.sp as usize + 1];
+//     state.registers[Registers::L as usize] = state.memory[state.sp as usize];
+//     state.memory[state.sp as usize + 1] = h;
+//     state.memory[state.sp as usize] = l;
+// }
+
+// fn push_psw(state: &mut Cpu) {
+//     state.memory[state.sp as usize - 1] = state.registers[Registers::A as usize];
+//     let psw: u8 = (state.cc[&ConditionCodes::Z] as u8)
+//         | (state.cc[&ConditionCodes::S] as u8) << 1
+//         | (state.cc[&ConditionCodes::P] as u8) << 2
+//         | (state.cc[&ConditionCodes::CY] as u8) << 3
+//         | (state.cc[&ConditionCodes::AC] as u8) << 4;
+//     state.memory[state.sp as usize - 2] = psw;
+//     state.sp -= 2;
+// }
+
+// fn push(state: &mut Cpu, src: Registers) {
+//     let offset = state.sp;
+//     state.memory[offset as usize - 1] = state.registers[src.clone() as usize];
+//     state.memory[offset as usize - 2] = state.registers[src.next() as usize];
+//     state.sp -= 2;
+// }
+
+// fn jcc(state: &mut Cpu, condition: ConditionCodes, comp: bool) {
+//     if state.cc[&condition] == comp {
+//         jmp(state);
+//     } else {
+//         state.pc += 2;
+//     }
+// }
 
 // fn ani(state: &mut Cpu) {
 //     let A = state.registers[Registers::A as usize];
@@ -739,44 +987,71 @@ fn jcc(state: &mut Cpu, condition: ConditionCodes, comp: bool) {
 //     state.pc += 1;
 // }
 
-fn rar(state: &mut Cpu) {
-    let A = state.registers[Registers::A as usize];
-    set_state_condition_code(state, ConditionCodes::CY, (A & 1) == 1);
-    let result = (A >> 1) | (A & 0x80);
-    state.registers[Registers::A as usize] = (result & 0xff) as u8;
-}
+// fn rar(state: &mut Cpu) {
+//     let A = state.registers[Registers::A as usize];
+//     set_state_condition_code(state, ConditionCodes::CY, (A & 1) == 1);
+//     let result = (A >> 1) | (A & 0x80);
+//     state.registers[Registers::A as usize] = (result & 0xff) as u8;
+// }
 
-//0x09
-fn dad(state: &mut Cpu, src: Registers) {
-    let result = state.get_register_pair(Registers::H, Registers::L) as u32
-        + state.get_register_pair(src.clone(), src.next()) as u32;
-    set_state_condition_code(state, ConditionCodes::CY, (result > 0xffff).into());
-    state.set_register_pair(Registers::H, Registers::L, result as u16);
-}
+// //0x09
+// fn dad(state: &mut Cpu, src: Registers) {
+//     let result = state.get_register_pair(Registers::H, Registers::L) as u32
+//         + state.get_register_pair(src.clone(), src.next()) as u32;
+//     set_state_condition_code(state, ConditionCodes::CY, (result > 0xffff).into());
+//     state.set_register_pair(Registers::H, Registers::L, result as u16);
+// }
 
 
 
-// 0x0b
-fn dcx(state: &mut Cpu, dest: Registers) {
-    let mut result = state.get_register_pair(dest.clone(), dest.clone().next());
-    if result == 0 {
-        println!("Error: DCX underflow at {}", state.pc);
-    }
-    result -= 1;
-    state.set_register_pair(dest.clone(), dest.next(), result);
-}
+// // 0x0b
+// fn dcx(state: &mut Cpu, dest: Registers) {
+//     let mut result = state.get_register_pair(dest.clone(), dest.clone().next());
+//     if result == 0 {
+//         println!("Error: DCX underflow at {}", state.pc);
+//     }
+//     result -= 1;
+//     state.set_register_pair(dest.clone(), dest.next(), result);
+// }
 
 
 
 fn update_conditions_add(state: &mut Cpu, val1: u8, val2:u8, carry : bool){
     let car = (carry && state.cc[&ConditionCodes::CY]) as u8;
-    let res = val1.wrapping_add(val2) + car;
+    let res = val1.wrapping_add(val2).wrapping_add(car);
 
     set_z_condition(state, res);
     set_p_condition(state, res);
     set_s_condition(state, res);
     set_ac_condition_add(state, val1, val2, car);
     set_cy_condition_add(state, val1, val2, car)
+}
+
+fn update_conditions_sub(state: &mut Cpu, val1: u8, val2:u8, carry : bool){
+    let car = (carry && state.cc[&ConditionCodes::CY]) as u8;
+    let res = val1.wrapping_sub(val2).wrapping_sub(car);
+
+    set_z_condition(state, res);
+    set_p_condition(state, res);
+    set_s_condition(state, res);
+    set_ac_condition_sub(state, val1, val2, car==1);
+    set_cy_condition_sub(state, val1, val2, car==1)
+}
+
+fn update_conditions_inc(state: &mut Cpu, val: u8){
+    let res = val.wrapping_add(1);
+    set_z_condition(state, res);
+    set_p_condition(state, res);
+    set_s_condition(state, res);
+    set_ac_condition_add(state, val, 1, 0);
+}
+
+fn update_conditions_dcr(state: &mut Cpu, val: u8){
+    let res = val.wrapping_sub(1);
+    set_z_condition(state, res);
+    set_p_condition(state, res);
+    set_s_condition(state, res);
+    set_ac_condition_add(state, val, 1, 0);
 }
 
 
@@ -804,7 +1079,19 @@ fn set_ac_condition_add(state: &mut Cpu, val1: u8, val2: u8, add_carry : u8) {
 
 fn set_cy_condition_add(state: &mut Cpu, val1: u8, val2: u8, add_carry : u8) {
     let carry = (add_carry == 1 && state.cc[&ConditionCodes::CY]) as u8;
-    let result = val1 as u16 + val2 as u16 + add_carry as u16;
+    let result = val1.wrapping_add(val2).wrapping_add(add_carry);
+    return set_state_condition_code(state, ConditionCodes::CY, result > 0xff);
+}
+
+fn set_ac_condition_sub(state: &mut Cpu, val1: u8, val2: u8, sub_carry : bool) {
+    let carry = (sub_carry && state.cc[&ConditionCodes::CY]) as u8;
+    let ac_val = (val1 & 0xf).wrapping_add(!val2 & 0xf).wrapping_add(!carry);
+    return set_state_condition_code(state, ConditionCodes::AC, ac_val>0xf);
+}
+
+fn set_cy_condition_sub(state: &mut Cpu, val1: u8, val2: u8, sub_carry : bool) {
+    let carry = (sub_carry && state.cc[&ConditionCodes::CY]) as u8;
+    let result = val1.wrapping_add(!val2).wrapping_add(!sub_carry as u8) ;
     return set_state_condition_code(state, ConditionCodes::CY, result > 0xff);
 }
 

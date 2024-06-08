@@ -277,6 +277,8 @@ impl Opcodes {
             0x85 => Opcodes::Add_L,
             0x86 => Opcodes::Add_M,
 
+            
+
             0xb8 => Opcodes::CMP_B,
             0xb9 => Opcodes::CMP_C,
             0xba => Opcodes::CMP_D,
@@ -538,8 +540,8 @@ pub fn xchg (state: &mut Cpu) {
 // arithmetic
 pub fn add_r(state: &mut Cpu, dest:Registers){
     let val = state.registers[Registers::A as usize];
+    update_conditions_add(state, val, state.registers[dest.clone() as usize], false);
     let result = val.wrapping_add(state.registers[dest as usize]);
-    update_conditions_add(state, val, state.registers[dest as usize], carry);
     state.registers[Registers::A as usize] = result;
 
 }
@@ -547,7 +549,9 @@ pub fn add_r(state: &mut Cpu, dest:Registers){
 pub fn add_m(state: &mut Cpu){
     let offset = state.get_register_pair(Registers::H, Registers::L);
     let val = state.registers[Registers::A as usize];
-    let result = val.wrapping_add(state.memory[offset as usize]);
+    let val2 = state.memory[offset as usize];
+    update_conditions_add(state, val, val2, false);
+    let result = val.wrapping_add(val2);
     state.registers[Registers::A as usize] = result;
 }
 
@@ -764,21 +768,46 @@ fn dcx(state: &mut Cpu, dest: Registers) {
 
 
 
+fn update_conditions_add(state: &mut Cpu, val1: u8, val2:u8, carry : bool){
+    let car = (carry && state.cc[&ConditionCodes::CY]) as u8;
+    let res = val1.wrapping_add(val2) + car;
+
+    set_z_condition(state, res);
+    set_p_condition(state, res);
+    set_s_condition(state, res);
+    set_ac_condition_add(state, val1, val2, car);
+    set_cy_condition_add(state, val1, val2, car)
+}
+
 
 fn set_state_condition_code(state: &mut Cpu, code: ConditionCodes, val: bool) {
     state.cc.entry(code).and_modify(|v| *v = val).or_insert(val);
 }
 
-fn update_conditions_add(state: &mut Cpu, val1: u8, val2:u8, carry : bool){
-    let car = (carry && state.cc[&ConditionCodes::CY]) as u8;
-    let res = val1.wrapping_add(val2) + car;
-}
-
 fn set_z_condition(state: &mut Cpu, val: u8) {
-    return state.set val == 0x00;
+    return set_state_condition_code(state, ConditionCodes::Z, val == 0x00);
 }
 
-fn ge
+fn set_s_condition(state: &mut Cpu, val: u8) {
+    return set_state_condition_code(state, ConditionCodes::S, val & 0x80 != 0);
+}
+
+fn set_p_condition(state: &mut Cpu, val: u8) {
+    return set_state_condition_code(state, ConditionCodes::P, val % 2 == 0);
+}
+
+fn set_ac_condition_add(state: &mut Cpu, val1: u8, val2: u8, add_carry : u8) {
+    let carry = (add_carry == 1 && state.cc[&ConditionCodes::CY]) as u8;
+    let ac_val = (val1 & 0xf) + (val2 & 0xf) + carry > 0xf;
+    return set_state_condition_code(state, ConditionCodes::AC, ac_val);
+}
+
+fn set_cy_condition_add(state: &mut Cpu, val1: u8, val2: u8, add_carry : u8) {
+    let carry = (add_carry == 1 && state.cc[&ConditionCodes::CY]) as u8;
+    let result = val1 as u16 + val2 as u16 + add_carry as u16;
+    return set_state_condition_code(state, ConditionCodes::CY, result > 0xff);
+}
+
 
 // fn get_s_condition(val: u8) -> bool {
 //     return (val & 0x80) != 0;

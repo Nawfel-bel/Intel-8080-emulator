@@ -1,11 +1,11 @@
-use std::{env, fs, str, vec};
 use std::{fs::File, io::Read};
 
+use cpu::Cpu;
 mod cpu;
 
 fn main() {
-    env::set_var("RUST_BACKTRACE", "1");
-    let mut state = cpu::State8080::new();
+    // env::set_var("RUST_BACKTRACE", "1");
+    let mut state = Cpu::new();
 
     let args = std::env::args().collect::<Vec<String>>();
     let file_path = &args[1];
@@ -18,7 +18,7 @@ fn main() {
     };
 
     let mut buffer = Vec::new();
-    _file.read_to_end(&mut buffer);
-    state.loadROM(&buffer);
+    _ = _file.read_to_end(&mut buffer);
+    state.load_rom(&buffer);
     state.read();
 }

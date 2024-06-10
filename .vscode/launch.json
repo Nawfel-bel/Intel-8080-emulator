@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/dissassembler.exe",
+            "name": "Debug executable 'my_project'",
+            "args": ["${workspaceFolder}/ROM/invaders.concatenated"],
+            "environment": [
+                {
+                    "name": "RUST_BACKTRACE",
+                    "value": "1"
+                }
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "externalTerminal"
+        }
+    ]
+}

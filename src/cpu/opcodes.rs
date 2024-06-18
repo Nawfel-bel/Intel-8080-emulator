@@ -942,6 +942,49 @@ pub fn rlc (state: &mut Cpu){
     state.registers[Registers::A as usize] = result;
 }
 
+pub fn rrc(state: &mut Cpu) {
+    let val = state.registers[Registers::A as usize];
+    let result = val.rotate_right(1);
+    set_state_condition_code(state, ConditionCodes::CY, val & 0x01 != 0);
+    state.registers[Registers::A as usize] = result;
+}
+
+pub fn ral(state: &mut Cpu) {
+    let val = state.registers[Registers::A as usize];
+    let result = val.rotate_left(1);
+    let carry = state.cc[&ConditionCodes::CY] as u8;
+    set_state_condition_code(state, ConditionCodes::CY, val & 0x80 != 0);
+    state.registers[Registers::A as usize] = result.wrapping_add(carry);
+}
+
+pub fn rar(state: &mut Cpu) {
+    let val = state.registers[Registers::A as usize];
+    let mut result = val.rotate_right(1);
+    let carry = state.cc[&ConditionCodes::CY];
+    set_state_condition_code(state, ConditionCodes::CY, val & 0x01 != 0);
+
+    if carry {
+        result |= 0x80;
+    } else {
+        result &= 0x7f;
+    }
+    state.registers[Registers::A as usize] = result;
+}
+
+pub fn cma(state: &mut Cpu) {
+    state.registers[Registers::A as usize] = !state.registers[Registers::A as usize];
+}
+
+pub fn cmc(state: &mut Cpu) {
+    let carry = state.cc[&ConditionCodes::CY];
+    set_state_condition_code(state, ConditionCodes::CY, !carry);
+}
+
+pub fn stc(state: &mut Cpu) {
+    set_state_condition_code(state, ConditionCodes::CY, true);
+}
+
+
 // fn inx(state: &mut Cpu, dest: Registers) {
 //     let mut result = state.get_register_pair(dest.clone(), dest.clone().next());
 //     result += 1;
@@ -1087,12 +1130,7 @@ pub fn rlc (state: &mut Cpu){
 // }
 
 // //0x0f
-// fn rrc(state: &mut Cpu) {
-//     let A = state.registers[Registers::A as usize];
-//     set_state_condition_code(state, ConditionCodes::CY, (A & 1) == 1);
-//     let result = A.rotate_right(1);
-//     state.registers[Registers::A as usize] = (result & 0xff) as u8;
-// }
+
 
 // fn cmp_r(state: &mut Cpu, A: u8, b: u8) {
 //     let result = A - b;

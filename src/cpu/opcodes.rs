@@ -245,7 +245,10 @@ pub enum Opcodes {
     RPE,
     RP,
     RM,
-
+    PUSH_D,
+    PUSH_H,
+    POP_D,
+    POP_H,
 }
 impl Opcodes {
     #[rustfmt::skip]
@@ -444,10 +447,10 @@ impl Opcodes {
             0xbf => Opcodes::CMP_A,
             0xc0 => Opcodes::RNZ,
             0xc1 => Opcodes::POP_B,
-            0xc5 => Opcodes::PUSH_B,
             0xc2 => Opcodes::JNZ, 
             0xc3 => Opcodes::JMP,
             0xc4 => Opcodes::CNZ,
+            0xc5 => Opcodes::PUSH_B,
             0xc7 => Opcodes::RST_0, 
             0xc8 => Opcodes::RZ,
             0xc9 => Opcodes::RET,
@@ -456,9 +459,11 @@ impl Opcodes {
             0xcd => Opcodes::CALL,
             0xce => Opcodes::ACI,
             0xcf => Opcodes::RST_1,     
-            0xd0 => Opcodes::RNC,                 
+            0xd0 => Opcodes::RNC,   
+            0xd1 => Opcodes::POP_D,       
             0xd2 => Opcodes::JNC, 
             0xd4 => Opcodes::CNC,
+            0xd5 => Opcodes::PUSH_D,
             0xd6 => Opcodes::SUI,
             0xd7 => Opcodes::RST_2, 
             0xd8 => Opcodes::RC,                      
@@ -466,9 +471,11 @@ impl Opcodes {
             0xdc => Opcodes::CC,
             0xdf => Opcodes::RST_3,                    
             0xe0 => Opcodes::RPO,
+            0xe1 => Opcodes::POP_H,
             0xe2 => Opcodes::JPO, 
             0xe3 => Opcodes::XTHL,
             0xe4 => Opcodes::CPO,
+            0xe5 => Opcodes::PUSH_H,
             0xe6 => Opcodes::ANI,
             0xe7 => Opcodes::RST_4, 
             0xe8 => Opcodes::RPE,
@@ -1065,6 +1072,29 @@ pub fn phcl (state: &mut Cpu){
     state.pc = offset as usize;
 }
 
+pub fn push_rp (state: &mut Cpu, src: Registers){
+    state.memory[state.sp as usize - 1] = state.registers[src.clone() as usize];
+    state.memory[state.sp as usize - 1] = state.registers[src.next() as usize];
+    state.sp -= 2;
+}
+
+pub fn push_psw (state: &mut Cpu){
+    state.memory[state.sp as usize - 1] = state.registers[Registers::A as usize];
+    let psw = state_get_sw(state);
+    state.memory[state.sp as usize - 2] = psw;
+    state.sp -= 2;
+}
+
+pub fn pop_rp(state: &mut Cpu, src: Registers){
+    state.registers[src.clone().next() as usize] = state.memory[state.sp as usize];
+    state.registers[src as usize] = state.memory[state.sp as usize + 1];
+    state.sp += 2;
+}
+
+pub fn pop_psw(state: &mut Cpu){
+    stopped here
+}
+
 
 // fn inx(state: &mut Cpu, dest: Registers) {
 //     let mut result = state.get_register_pair(dest.clone(), dest.clone().next());
@@ -1262,6 +1292,17 @@ pub fn phcl (state: &mut Cpu){
 // }
 
 
+
+fn state_get_sw(state: &mut Cpu) -> u8{
+    let psw = 
+    (state.cc[&ConditionCodes::S] as u8) << 7
+    | (state.cc[&ConditionCodes::Z] as u8) << 6
+    | (state.cc[&ConditionCodes::AC] as u8) << 4
+    | (state.cc[&ConditionCodes::P] as u8) << 2
+    | (1<<1)
+    | (state.cc[&ConditionCodes::CY] as u8);
+    return psw;
+}
 
 fn update_conditions_add(state: &mut Cpu, val1: u8, val2:u8, carry : bool){
     let car = (carry && state.cc[&ConditionCodes::CY]) as u8;

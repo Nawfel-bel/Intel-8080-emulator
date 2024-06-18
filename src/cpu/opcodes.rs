@@ -229,6 +229,23 @@ pub enum Opcodes {
     SUI,
     DAA,
     RST_7,
+    CNZ,
+    CZ,
+    CNC,
+    CC,
+    CPO,
+    CPE,
+    CP,
+    CM,
+    RNZ,
+    RZ,
+    RNC,
+    RC,
+    RPO,
+    RPE,
+    RP,
+    RM,
+
 }
 impl Opcodes {
     #[rustfmt::skip]
@@ -425,40 +442,54 @@ impl Opcodes {
             0xbd => Opcodes::CMP_L,
             0xbe => Opcodes::CMP_M,
             0xbf => Opcodes::CMP_A,
+            0xc0 => Opcodes::RNZ,
             0xc1 => Opcodes::POP_B,
             0xc5 => Opcodes::PUSH_B,
             0xc2 => Opcodes::JNZ, 
             0xc3 => Opcodes::JMP,
+            0xc4 => Opcodes::CNZ,
             0xc7 => Opcodes::RST_0, 
+            0xc8 => Opcodes::RZ,
             0xc9 => Opcodes::RET,
             0xca => Opcodes::JZ, 
+            0xcc => Opcodes::CZ,
             0xcd => Opcodes::CALL,
             0xce => Opcodes::ACI,
-            0xcf => Opcodes::RST_1,                      
+            0xcf => Opcodes::RST_1,     
+            0xd0 => Opcodes::RNC,                 
             0xd2 => Opcodes::JNC, 
+            0xd4 => Opcodes::CNC,
             0xd6 => Opcodes::SUI,
-            0xd7 => Opcodes::RST_2,                       
+            0xd7 => Opcodes::RST_2, 
+            0xd8 => Opcodes::RC,                      
             0xda => Opcodes::JC,  
+            0xdc => Opcodes::CC,
             0xdf => Opcodes::RST_3,                    
-
+            0xe0 => Opcodes::RPO,
             0xe2 => Opcodes::JPO, 
             0xe3 => Opcodes::XTHL,
+            0xe4 => Opcodes::CPO,
             0xe6 => Opcodes::ANI,
             0xe7 => Opcodes::RST_4, 
+            0xe8 => Opcodes::RPE,
 
             0xe9 => Opcodes::PHCL,
             0xea => Opcodes::JPE, 
             0xeb => Opcodes::XCHG,
+            0xec => Opcodes::CPE,
             0xee => Opcodes::XRI,
-            0xef => Opcodes::RST_5,                   
+            0xef => Opcodes::RST_5,  
+            0xf0 => Opcodes::RP,                 
             0xf1 => Opcodes::POP_PSW,
-
             0xf2 => Opcodes::JP, 
+            0xf4 => Opcodes::CP,
             0xf5 => Opcodes::PUSH_PSW,
             0xf6 => Opcodes::ORI,
             0xf7 => Opcodes::RST_6, 
+            0xf8 => Opcodes::RM,
             0xf9 => Opcodes::SPHL,
             0xfa => Opcodes::JM,
+            0xfc => Opcodes::CM,
             0xfe => Opcodes::CPI,
             0xff => Opcodes::RST_7, 
             _ => panic!("[from_hex]: Unknown opcode with hex origin: 0x{:02X}", opcode),
@@ -982,6 +1013,56 @@ pub fn cmc(state: &mut Cpu) {
 
 pub fn stc(state: &mut Cpu) {
     set_state_condition_code(state, ConditionCodes::CY, true);
+}
+
+pub fn jmp(state: &mut Cpu, operands: [u8; MAX_OPERANDS]) {
+    let offset = (operands[1] as u16) << 8 | operands[0] as u16;
+    state.pc = offset as usize;
+}
+
+pub fn jcc(state: &mut Cpu, condition: ConditionCodes, comp: bool, operands: [u8; MAX_OPERANDS]) {
+    if state.cc[&condition] == comp {
+        jmp(state, operands);
+    }
+}
+
+pub fn call (state: &mut Cpu, operands: [u8; MAX_OPERANDS]){
+    state.memory[state.sp as usize - 1] = (state.pc >> 8) as u8;
+    state.memory[state.sp as usize - 2] = (state.pc & 0xff) as u8;
+    state.sp -= 2;
+    jmp(state, operands);
+}
+
+pub fn ccc (state: &mut Cpu, condition: ConditionCodes, comp: bool, operands: [u8; MAX_OPERANDS]){
+    if state.cc[&condition] == comp {
+        call(state, operands);
+        // TODO: INCREMENT CYCLES HERE
+    }
+}
+
+pub fn ret (state: &mut Cpu){
+    let offset = (state.memory[state.sp as usize] as u16) | ((state.memory[state.sp as usize + 1] as u16) << 8);
+    state.sp += 2;
+    state.pc = offset as usize;
+}
+
+pub fn rcc (state: &mut Cpu, condition: ConditionCodes, comp: bool){
+    if state.cc[&condition] == comp {
+        ret(state);
+        // TODO: INCREMENT CYCLES HERE
+    }
+}
+
+pub fn rst_n(state: &mut Cpu, n: u8){
+    state.memory[state.sp as usize - 1] = (state.pc >> 8) as u8;
+    state.memory[state.sp as usize - 2] = (state.pc & 0xff) as u8;
+    state.sp -= 2;
+    state.pc = (n * 8) as usize;
+}
+
+pub fn phcl (state: &mut Cpu){
+    let offset = state.get_register_pair(Registers::H, Registers::L);
+    state.pc = offset as usize;
 }
 
 

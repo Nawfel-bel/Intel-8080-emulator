@@ -41,7 +41,7 @@ impl Cpu {
     }
 
     pub fn read(&mut self) {
-        for _i in 0..17 {
+        for _i in 0..80 {
             let cmd = self.memory[self.pc];
             println!("reading {} at command#: {}", cmd, _i);
             println!("PC: {:04x} SP: {:04x}", self.pc, self.sp);
@@ -151,14 +151,14 @@ impl Cpu {
                 Opcodes::XCHG => opcodes::xchg(self),
 
                 // arithmetic
-                Opcodes::Add_A => opcodes::add_r(self, Registers::A),
-                Opcodes::Add_B => opcodes::add_r(self, Registers::B),
-                Opcodes::Add_C => opcodes::add_r(self, Registers::C),
-                Opcodes::Add_D => opcodes::add_r(self, Registers::D),
-                Opcodes::Add_E => opcodes::add_r(self, Registers::E),
-                Opcodes::Add_H => opcodes::add_r(self, Registers::H),
-                Opcodes::Add_L => opcodes::add_r(self, Registers::L),
-                Opcodes::Add_M => opcodes::add_m(self),
+                Opcodes::ADD_A => opcodes::add_r(self, Registers::A),
+                Opcodes::ADD_B => opcodes::add_r(self, Registers::B),
+                Opcodes::ADD_C => opcodes::add_r(self, Registers::C),
+                Opcodes::ADD_D => opcodes::add_r(self, Registers::D),
+                Opcodes::ADD_E => opcodes::add_r(self, Registers::E),
+                Opcodes::ADD_H => opcodes::add_r(self, Registers::H),
+                Opcodes::ADD_L => opcodes::add_r(self, Registers::L),
+                Opcodes::ADD_M => opcodes::add_m(self),
 
                 Opcodes::ADC_A => opcodes::adc_r(self, Registers::A),
                 Opcodes::ADC_B => opcodes::adc_r(self, Registers::B),
@@ -281,6 +281,7 @@ impl Cpu {
                 Opcodes::JPE => opcodes::jcc(self, ConditionCodes::P, true, operands),
                 Opcodes::JP => opcodes::jcc(self, ConditionCodes::S, false, operands),
                 Opcodes::JM => opcodes::jcc(self, ConditionCodes::S, true, operands),
+                Opcodes::CALL => opcodes::call(self, operands),
                 Opcodes::CNZ => opcodes::ccc(self, ConditionCodes::Z, false, operands),
                 Opcodes::CZ => opcodes::ccc(self, ConditionCodes::Z, true, operands),
                 Opcodes::CNC => opcodes::ccc(self, ConditionCodes::CY, false, operands),
@@ -308,7 +309,7 @@ impl Cpu {
                 Opcodes::RST_5 => opcodes::rst_n(self, 5),
                 Opcodes::RST_6 => opcodes::rst_n(self, 6),
                 Opcodes::RST_7 => opcodes::rst_n(self, 7),
-                Opcodes::PHCL => opcodes::phcl(self),
+                Opcodes::PCHL => opcodes::pchl(self),
 
                 // Stack, I/O
                 Opcodes::PUSH_B => opcodes::push_rp(self, Registers::B),
@@ -324,7 +325,7 @@ impl Cpu {
                 Opcodes::SPHL => opcodes::sphl(self),
 
                 Opcodes::NOP => opcodes::nop(),
-                _ => panic!("Opcode excecution not implemented"),
+                _ => panic!("Opcode excecution not implemented {}", opcode),
             }
             // self::opcodes::read_op_code(self);
         }

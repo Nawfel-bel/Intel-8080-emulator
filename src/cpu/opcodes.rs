@@ -1,3 +1,4 @@
+use core::fmt;
 use std::{any::Any, ffi::c_void, mem};
 
 use super::{registers, ConditionCodes, Cpu, Registers};
@@ -7,6 +8,12 @@ const MAX_OPERANDS: usize = 2;
 pub struct InstructionDef {
     cycles: u8,
     pub size: u8,
+}
+
+impl fmt::Display for Opcodes {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "{:?}", self)
+    }
 }
 
 #[allow(nonstandard_style)]
@@ -150,14 +157,14 @@ pub enum Opcodes {
     XRA_M,
     XRA_A,
     XCHG,
-    Add_A,
-    Add_B,
-    Add_C,
-    Add_D,
-    Add_E,
-    Add_H,
-    Add_L,
-    Add_M,
+    ADD_A,
+    ADD_B,
+    ADD_C,
+    ADD_D,
+    ADD_E,
+    ADD_H,
+    ADD_L,
+    ADD_M,
     ADC_B,
     ADC_C,
     ADC_D,
@@ -216,7 +223,7 @@ pub enum Opcodes {
     XTHL,
     ANI,
     RST_4,
-    PHCL,
+    PCHL,
     JPE,
     RST_5,
     POP_PSW,
@@ -376,14 +383,14 @@ impl Opcodes {
             0x7e => Opcodes::MOV_A_M,
             0x7f => Opcodes::MOV_A_A,
 
-            0x80 => Opcodes::Add_B,
-            0x81 => Opcodes::Add_C,
-            0x82 => Opcodes::Add_D,
-            0x83 => Opcodes::Add_E,
-            0x84 => Opcodes::Add_H,
-            0x85 => Opcodes::Add_L,
-            0x86 => Opcodes::Add_M,
-            0x87 => Opcodes::Add_A,
+            0x80 => Opcodes::ADD_B,
+            0x81 => Opcodes::ADD_C,
+            0x82 => Opcodes::ADD_D,
+            0x83 => Opcodes::ADD_E,
+            0x84 => Opcodes::ADD_H,
+            0x85 => Opcodes::ADD_L,
+            0x86 => Opcodes::ADD_M,
+            0x87 => Opcodes::ADD_A,
 
             0x88 => Opcodes::ADC_B,
             0x89 => Opcodes::ADC_C,
@@ -480,7 +487,7 @@ impl Opcodes {
             0xe7 => Opcodes::RST_4, 
             0xe8 => Opcodes::RPE,
 
-            0xe9 => Opcodes::PHCL,
+            0xe9 => Opcodes::PCHL,
             0xea => Opcodes::JPE, 
             0xeb => Opcodes::XCHG,
             0xec => Opcodes::CPE,
@@ -503,23 +510,163 @@ impl Opcodes {
         }
     }
 
+    // pub fn get_instruction_def(&self) -> InstructionDef {
+    //     match self {
+    //         //LXI
+    //         Opcodes::LXI_B | Opcodes::LXI_D | Opcodes::LXI_H | Opcodes::LXI_SP => InstructionDef { cycles: 10, size: 3 },
+    //         Opcodes::NOP => InstructionDef { cycles : 4, size : 1 },
+    //         Opcodes::STAX_B => InstructionDef { cycles : 7, size : 1 },
+    //           Opcodes::MOV_A_A | Opcodes::MOV_A_B | Opcodes::MOV_A_C | Opcodes::MOV_A_D | Opcodes::MOV_A_E | Opcodes::MOV_A_H | Opcodes::MOV_A_L | Opcodes::MOV_A_M 
+    //         | Opcodes::MOV_B_A | Opcodes::MOV_B_B | Opcodes::MOV_B_C | Opcodes::MOV_B_D | Opcodes::MOV_B_E | Opcodes::MOV_B_H | Opcodes::MOV_B_L | Opcodes::MOV_B_M
+    //         | Opcodes::MOV_C_A | Opcodes::MOV_C_B | Opcodes::MOV_C_C | Opcodes::MOV_C_D | Opcodes::MOV_C_E | Opcodes::MOV_C_H | Opcodes::MOV_C_L | Opcodes::MOV_C_M
+    //         | Opcodes::MOV_D_A | Opcodes::MOV_D_B | Opcodes::MOV_D_C | Opcodes::MOV_D_D | Opcodes::MOV_D_E | Opcodes::MOV_D_H | Opcodes::MOV_D_L | Opcodes::MOV_D_M
+    //         | Opcodes::MOV_E_A | Opcodes::MOV_E_B | Opcodes::MOV_E_C | Opcodes::MOV_E_D | Opcodes::MOV_E_E | Opcodes::MOV_E_H | Opcodes::MOV_E_L | Opcodes::MOV_E_M
+    //         | Opcodes::MOV_H_A | Opcodes::MOV_H_B | Opcodes::MOV_H_C | Opcodes::MOV_H_D | Opcodes::MOV_H_E | Opcodes::MOV_H_H | Opcodes::MOV_H_L | Opcodes::MOV_H_M
+    //         | Opcodes::MOV_L_A | Opcodes::MOV_L_B | Opcodes::MOV_L_C | Opcodes::MOV_L_D | Opcodes::MOV_L_E | Opcodes::MOV_L_H | Opcodes::MOV_L_L | Opcodes::MOV_L_M
+    //         | Opcodes::MOV_M_A | Opcodes::MOV_M_B | Opcodes::MOV_M_C | Opcodes::MOV_M_D | Opcodes::MOV_M_E | Opcodes::MOV_M_H | Opcodes::MOV_M_L 
+    //         => InstructionDef { cycles : 5, size : 1 },
+    //         Opcodes::INX_B | Opcodes::INX_D | Opcodes::INX_H => InstructionDef { cycles : 5, size : 1 },
+
+    //         _ => panic!("[get_instruction_def]: Instruction not defined for opcode of type: {:?}", self),
+    //     }
+    // }
+
     pub fn get_instruction_def(&self) -> InstructionDef {
         match self {
-            //LXI
+            // NOP
+            Opcodes::NOP => InstructionDef { cycles: 4, size: 1 },
+    
+            // LXI
             Opcodes::LXI_B | Opcodes::LXI_D | Opcodes::LXI_H | Opcodes::LXI_SP => InstructionDef { cycles: 10, size: 3 },
-            Opcodes::NOP => InstructionDef { cycles : 4, size : 1 },
-            Opcodes::STAX_B => InstructionDef { cycles : 7, size : 1 },
-              Opcodes::MOV_A_A | Opcodes::MOV_A_B | Opcodes::MOV_A_C | Opcodes::MOV_A_D | Opcodes::MOV_A_E | Opcodes::MOV_A_H | Opcodes::MOV_A_L | Opcodes::MOV_A_M 
-            | Opcodes::MOV_B_A | Opcodes::MOV_B_B | Opcodes::MOV_B_C | Opcodes::MOV_B_D | Opcodes::MOV_B_E | Opcodes::MOV_B_H | Opcodes::MOV_B_L | Opcodes::MOV_B_M
-            | Opcodes::MOV_C_A | Opcodes::MOV_C_B | Opcodes::MOV_C_C | Opcodes::MOV_C_D | Opcodes::MOV_C_E | Opcodes::MOV_C_H | Opcodes::MOV_C_L | Opcodes::MOV_C_M
-            | Opcodes::MOV_D_A | Opcodes::MOV_D_B | Opcodes::MOV_D_C | Opcodes::MOV_D_D | Opcodes::MOV_D_E | Opcodes::MOV_D_H | Opcodes::MOV_D_L | Opcodes::MOV_D_M
-            | Opcodes::MOV_E_A | Opcodes::MOV_E_B | Opcodes::MOV_E_C | Opcodes::MOV_E_D | Opcodes::MOV_E_E | Opcodes::MOV_E_H | Opcodes::MOV_E_L | Opcodes::MOV_E_M
-            | Opcodes::MOV_H_A | Opcodes::MOV_H_B | Opcodes::MOV_H_C | Opcodes::MOV_H_D | Opcodes::MOV_H_E | Opcodes::MOV_H_H | Opcodes::MOV_H_L | Opcodes::MOV_H_M
-            | Opcodes::MOV_L_A | Opcodes::MOV_L_B | Opcodes::MOV_L_C | Opcodes::MOV_L_D | Opcodes::MOV_L_E | Opcodes::MOV_L_H | Opcodes::MOV_L_L | Opcodes::MOV_L_M
-            | Opcodes::MOV_M_A | Opcodes::MOV_M_B | Opcodes::MOV_M_C | Opcodes::MOV_M_D | Opcodes::MOV_M_E | Opcodes::MOV_M_H | Opcodes::MOV_M_L 
-            => InstructionDef { cycles : 5, size : 1 },
-            Opcodes::INX_B | Opcodes::INX_D | Opcodes::INX_H => InstructionDef { cycles : 5, size : 1 },
-
+    
+            // STAX
+            Opcodes::STAX_B | Opcodes::STAX_D => InstructionDef { cycles: 7, size: 1 },
+    
+            // INX
+            Opcodes::INX_B | Opcodes::INX_D | Opcodes::INX_H | Opcodes::INX_SP => InstructionDef { cycles: 5, size: 1 },
+    
+            // INR
+            Opcodes::INR_A | Opcodes::INR_B | Opcodes::INR_C | Opcodes::INR_D | Opcodes::INR_E | Opcodes::INR_H | Opcodes::INR_L | Opcodes::INR_M => 
+                InstructionDef { cycles: 5, size: 1 },
+    
+            // DCR
+            Opcodes::DCR_A | Opcodes::DCR_B | Opcodes::DCR_C | Opcodes::DCR_D | Opcodes::DCR_E | Opcodes::DCR_H | Opcodes::DCR_L | Opcodes::DCR_M => 
+                InstructionDef { cycles: 5, size: 1 },
+    
+            // MVI
+            Opcodes::MVI_A | Opcodes::MVI_B | Opcodes::MVI_C | Opcodes::MVI_D | Opcodes::MVI_E | Opcodes::MVI_H | Opcodes::MVI_L | Opcodes::MVI_M => 
+                InstructionDef { cycles: 7, size: 2 },
+    
+            // RLC, RRC, RAL, RAR
+            Opcodes::RLC | Opcodes::RRC | Opcodes::RAL | Opcodes::RAR => InstructionDef { cycles: 4, size: 1 },
+    
+            // DAD
+            Opcodes::DAD_B | Opcodes::DAD_D | Opcodes::DAD_H | Opcodes::DAD_SP => InstructionDef { cycles: 10, size: 1 },
+    
+            // LDAX
+            Opcodes::LDAX_B | Opcodes::LDAX_D => InstructionDef { cycles: 7, size: 1 },
+    
+            // DCX
+            Opcodes::DCX_B | Opcodes::DCX_D | Opcodes::DCX_H | Opcodes::DCX_SP => InstructionDef { cycles: 5, size: 1 },
+    
+            // MOV
+            Opcodes::MOV_A_A | Opcodes::MOV_A_B | Opcodes::MOV_A_C | Opcodes::MOV_A_D | Opcodes::MOV_A_E | Opcodes::MOV_A_H | Opcodes::MOV_A_L | Opcodes::MOV_A_M |
+            Opcodes::MOV_B_A | Opcodes::MOV_B_B | Opcodes::MOV_B_C | Opcodes::MOV_B_D | Opcodes::MOV_B_E | Opcodes::MOV_B_H | Opcodes::MOV_B_L | Opcodes::MOV_B_M |
+            Opcodes::MOV_C_A | Opcodes::MOV_C_B | Opcodes::MOV_C_C | Opcodes::MOV_C_D | Opcodes::MOV_C_E | Opcodes::MOV_C_H | Opcodes::MOV_C_L | Opcodes::MOV_C_M |
+            Opcodes::MOV_D_A | Opcodes::MOV_D_B | Opcodes::MOV_D_C | Opcodes::MOV_D_D | Opcodes::MOV_D_E | Opcodes::MOV_D_H | Opcodes::MOV_D_L | Opcodes::MOV_D_M |
+            Opcodes::MOV_E_A | Opcodes::MOV_E_B | Opcodes::MOV_E_C | Opcodes::MOV_E_D | Opcodes::MOV_E_E | Opcodes::MOV_E_H | Opcodes::MOV_E_L | Opcodes::MOV_E_M |
+            Opcodes::MOV_H_A | Opcodes::MOV_H_B | Opcodes::MOV_H_C | Opcodes::MOV_H_D | Opcodes::MOV_H_E | Opcodes::MOV_H_H | Opcodes::MOV_H_L | Opcodes::MOV_H_M |
+            Opcodes::MOV_L_A | Opcodes::MOV_L_B | Opcodes::MOV_L_C | Opcodes::MOV_L_D | Opcodes::MOV_L_E | Opcodes::MOV_L_H | Opcodes::MOV_L_L | Opcodes::MOV_L_M |
+            Opcodes::MOV_M_A | Opcodes::MOV_M_B | Opcodes::MOV_M_C | Opcodes::MOV_M_D | Opcodes::MOV_M_E | Opcodes::MOV_M_H | Opcodes::MOV_M_L => 
+                InstructionDef { cycles: 7, size: 1 },
+    
+            // ADD
+            Opcodes::ADD_A | Opcodes::ADD_B | Opcodes::ADD_C | Opcodes::ADD_D | Opcodes::ADD_E | Opcodes::ADD_H | Opcodes::ADD_L | Opcodes::ADD_M => 
+                InstructionDef { cycles: 4, size: 1 },
+    
+            // ADC
+            Opcodes::ADC_A | Opcodes::ADC_B | Opcodes::ADC_C | Opcodes::ADC_D | Opcodes::ADC_E | Opcodes::ADC_H | Opcodes::ADC_L | Opcodes::ADC_M => 
+                InstructionDef { cycles: 4, size: 1 },
+    
+            // SUB
+            Opcodes::SUB_A | Opcodes::SUB_B | Opcodes::SUB_C | Opcodes::SUB_D | Opcodes::SUB_E | Opcodes::SUB_H | Opcodes::SUB_L | Opcodes::SUB_M => 
+                InstructionDef { cycles: 4, size: 1 },
+    
+            // SBB
+            Opcodes::SBB_A | Opcodes::SBB_B | Opcodes::SBB_C | Opcodes::SBB_D | Opcodes::SBB_E | Opcodes::SBB_H | Opcodes::SBB_L | Opcodes::SBB_M => 
+                InstructionDef { cycles: 4, size: 1 },
+    
+            // ANA
+            Opcodes::ANA_A | Opcodes::ANA_B | Opcodes::ANA_C | Opcodes::ANA_D | Opcodes::ANA_E | Opcodes::ANA_H | Opcodes::ANA_L | Opcodes::ANA_M => 
+                InstructionDef { cycles: 4, size: 1 },
+    
+            // XRA
+            Opcodes::XRA_A | Opcodes::XRA_B | Opcodes::XRA_C | Opcodes::XRA_D | Opcodes::XRA_E | Opcodes::XRA_H | Opcodes::XRA_L | Opcodes::XRA_M => 
+                InstructionDef { cycles: 4, size: 1 },
+    
+            // ORA
+            Opcodes::ORA_A | Opcodes::ORA_B | Opcodes::ORA_C | Opcodes::ORA_D | Opcodes::ORA_E | Opcodes::ORA_H | Opcodes::ORA_L | Opcodes::ORA_M => 
+                InstructionDef { cycles: 4, size: 1 },
+    
+            // CMP
+            Opcodes::CMP_A | Opcodes::CMP_B | Opcodes::CMP_C | Opcodes::CMP_D | Opcodes::CMP_E | Opcodes::CMP_H | Opcodes::CMP_L | Opcodes::CMP_M => 
+                InstructionDef { cycles: 4, size: 1 },
+    
+            // JMP
+            Opcodes::JMP | Opcodes::JC | Opcodes::JNC | Opcodes::JZ | Opcodes::JNZ | Opcodes::JM | Opcodes::JP | Opcodes::JPE | Opcodes::JPO => 
+                InstructionDef { cycles: 10, size: 3 },
+    
+            // CALL
+            Opcodes::CALL | Opcodes::CC | Opcodes::CNC | Opcodes::CZ | Opcodes::CNZ | Opcodes::CM | Opcodes::CP | Opcodes::CPE | Opcodes::CPO => 
+                InstructionDef { cycles: 17, size: 3 },
+    
+            // RET
+            Opcodes::RET | Opcodes::RC | Opcodes::RNC | Opcodes::RZ | Opcodes::RNZ | Opcodes::RM | Opcodes::RP | Opcodes::RPE | Opcodes::RPO => 
+                InstructionDef { cycles: 10, size: 1 },
+    
+            // RST
+            Opcodes::RST_0 | Opcodes::RST_1 | Opcodes::RST_2 | Opcodes::RST_3 | Opcodes::RST_4 | Opcodes::RST_5 | Opcodes::RST_6 | Opcodes::RST_7 => 
+                InstructionDef { cycles: 11, size: 1 },
+    
+            // PCHL
+            Opcodes::PCHL => InstructionDef { cycles: 5, size: 1 },
+    
+            // POP
+            Opcodes::POP_B | Opcodes::POP_D | Opcodes::POP_H | Opcodes::POP_PSW => InstructionDef { cycles: 10, size: 1 },
+    
+            // PUSH
+            Opcodes::PUSH_B | Opcodes::PUSH_D | Opcodes::PUSH_H | Opcodes::PUSH_PSW => InstructionDef { cycles: 11, size: 1 },
+    
+            // XCHG
+            Opcodes::XCHG => InstructionDef { cycles: 4, size: 1 },
+    
+            // XTHL
+            Opcodes::XTHL => InstructionDef { cycles: 18, size: 1 },
+    
+            // SPHL
+            Opcodes::SPHL => InstructionDef { cycles: 5, size: 1 },
+    
+            // EI
+            // Opcodes::EI => InstructionDef { cycles: 4, size: 1 },
+    
+            // DI
+            // Opcodes::DI => InstructionDef { cycles: 4, size: 1 },
+    
+            // HLT
+            // Opcodes::HLT => InstructionDef { cycles: 7, size: 1 },
+    
+            // CMA
+            Opcodes::CMA => InstructionDef { cycles: 4, size: 1 },
+    
+            // CMC
+            Opcodes::CMC => InstructionDef { cycles: 4, size: 1 },
+    
+            // STC
+            Opcodes::STC => InstructionDef { cycles: 4, size: 1 },
+    
+            // DAA
+            Opcodes::DAA => InstructionDef { cycles: 4, size: 1 },
+        
             _ => panic!("[get_instruction_def]: Instruction not defined for opcode of type: {:?}", self),
         }
     }
@@ -589,7 +736,7 @@ pub fn shld (state: &mut Cpu, operands: [u8; MAX_OPERANDS]){
 }
 
 pub fn lhld(state: &mut Cpu, operands: [u8; MAX_OPERANDS]) {
-    let offset = (operands[1] << 8) as u16 | operands[0] as u16;
+    let offset = operands[1].rotate_left(8) as u16 | operands[0] as u16;
     state.registers[Registers::L as usize] = state.memory[offset as usize];
     state.registers[Registers::H as usize] = state.memory[offset.wrapping_add(1) as usize]
 }
@@ -961,7 +1108,7 @@ pub fn rst_n(state: &mut Cpu, n: u8){
     state.pc = (n * 8) as usize;
 }
 
-pub fn phcl (state: &mut Cpu){
+pub fn pchl (state: &mut Cpu){
     let offset = state.get_register_pair(Registers::H, Registers::L);
     state.pc = offset as usize;
 }

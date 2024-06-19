@@ -1,4 +1,4 @@
-use std::{any::Any, ffi::c_void};
+use std::{any::Any, ffi::c_void, mem};
 
 use super::{registers, ConditionCodes, Cpu, Registers};
 
@@ -1092,8 +1092,29 @@ pub fn pop_rp(state: &mut Cpu, src: Registers){
 }
 
 pub fn pop_psw(state: &mut Cpu){
-    stopped here
+    let psw = state.memory[state.sp as usize];
+    set_state_condition_code(state, ConditionCodes::CY, (psw & 1) != 0);
+    set_state_condition_code(state, ConditionCodes::P, (psw & (1<<2))!=0);
+    set_state_condition_code(state, ConditionCodes::AC, (psw & (1<<4))!=0);
+    set_state_condition_code(state, ConditionCodes::Z, (psw & (1<<6))!=0);
+    set_state_condition_code(state, ConditionCodes::S, (psw & (1<<7))!=0);
+    state.registers[Registers::A as usize] = state.memory[state.sp as usize + 1];
+    state.sp += 2;
 }
+
+pub fn xthl(state: &mut Cpu){
+    let val = &mut state.registers[Registers::L as usize];
+    let val2 = &mut state.memory[state.sp as usize];
+    mem::swap(val, val2);
+    let val = &mut state.registers[Registers::H as usize];
+    let val2 = &mut state.memory[state.sp as usize  + 1];
+    mem::swap(val, val2);
+}
+
+pub fn sphl(state: &mut Cpu){
+    state.sp = state.get_register_pair(Registers::H, Registers::L);
+}
+
 
 
 // fn inx(state: &mut Cpu, dest: Registers) {

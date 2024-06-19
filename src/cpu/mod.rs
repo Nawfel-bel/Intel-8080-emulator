@@ -6,7 +6,7 @@ mod opcodes;
 mod registers;
 
 #[derive(Hash, Debug, PartialEq, Eq)]
-enum ConditionCodes {
+pub enum ConditionCodes {
     Z,  // when the result == 0
     S,  //sign
     P,  //parity
@@ -270,6 +270,59 @@ impl Cpu {
                 Opcodes::CMA => opcodes::cma(self),
                 Opcodes::CMC => opcodes::cmc(self),
                 Opcodes::STC => opcodes::stc(self),
+
+                // Branch group
+                Opcodes::JMP => opcodes::jmp(self, operands),
+                Opcodes::JNZ => opcodes::jcc(self, ConditionCodes::Z, false, operands),
+                Opcodes::JZ => opcodes::jcc(self, ConditionCodes::Z, true, operands),
+                Opcodes::JNC => opcodes::jcc(self, ConditionCodes::CY, false, operands),
+                Opcodes::JC => opcodes::jcc(self, ConditionCodes::CY, true, operands),
+                Opcodes::JPO => opcodes::jcc(self, ConditionCodes::P, false, operands),
+                Opcodes::JPE => opcodes::jcc(self, ConditionCodes::P, true, operands),
+                Opcodes::JP => opcodes::jcc(self, ConditionCodes::S, false, operands),
+                Opcodes::JM => opcodes::jcc(self, ConditionCodes::S, true, operands),
+                Opcodes::CNZ => opcodes::ccc(self, ConditionCodes::Z, false, operands),
+                Opcodes::CZ => opcodes::ccc(self, ConditionCodes::Z, true, operands),
+                Opcodes::CNC => opcodes::ccc(self, ConditionCodes::CY, false, operands),
+                Opcodes::CC => opcodes::ccc(self, ConditionCodes::CY, true, operands),
+                Opcodes::CPO => opcodes::ccc(self, ConditionCodes::P, false, operands),
+                Opcodes::CPE => opcodes::ccc(self, ConditionCodes::P, true, operands),
+                Opcodes::CP => opcodes::ccc(self, ConditionCodes::S, false, operands),
+                Opcodes::CM => opcodes::ccc(self, ConditionCodes::S, true, operands),
+
+                Opcodes::RET => opcodes::ret(self),
+                Opcodes::RNZ => opcodes::rcc(self, ConditionCodes::Z, false),
+                Opcodes::RZ => opcodes::rcc(self, ConditionCodes::Z, true),
+                Opcodes::RNC => opcodes::rcc(self, ConditionCodes::CY, false),
+                Opcodes::RC => opcodes::rcc(self, ConditionCodes::CY, true),
+                Opcodes::RPO => opcodes::rcc(self, ConditionCodes::P, false),
+                Opcodes::RPE => opcodes::rcc(self, ConditionCodes::P, true),
+                Opcodes::RP => opcodes::rcc(self, ConditionCodes::S, false),
+                Opcodes::RM => opcodes::rcc(self, ConditionCodes::S, true),
+
+                Opcodes::RST_0 => opcodes::rst_n(self, 0),
+                Opcodes::RST_1 => opcodes::rst_n(self, 1),
+                Opcodes::RST_2 => opcodes::rst_n(self, 2),
+                Opcodes::RST_3 => opcodes::rst_n(self, 3),
+                Opcodes::RST_4 => opcodes::rst_n(self, 4),
+                Opcodes::RST_5 => opcodes::rst_n(self, 5),
+                Opcodes::RST_6 => opcodes::rst_n(self, 6),
+                Opcodes::RST_7 => opcodes::rst_n(self, 7),
+                Opcodes::PHCL => opcodes::phcl(self),
+
+                // Stack, I/O
+                Opcodes::PUSH_B => opcodes::push_rp(self, Registers::B),
+                Opcodes::PUSH_D => opcodes::push_rp(self, Registers::D),
+                Opcodes::PUSH_H => opcodes::push_rp(self, Registers::H),
+                Opcodes::PUSH_PSW => opcodes::push_psw(self),
+                Opcodes::POP_B => opcodes::pop_rp(self, Registers::B),
+                Opcodes::POP_D => opcodes::pop_rp(self, Registers::D),
+                Opcodes::POP_H => opcodes::pop_rp(self, Registers::H),
+                Opcodes::POP_PSW => opcodes::pop_psw(self),
+
+                Opcodes::XTHL => opcodes::xthl(self),
+                Opcodes::SPHL => opcodes::sphl(self),
+
                 Opcodes::NOP => opcodes::nop(),
                 _ => panic!("Opcode excecution not implemented"),
             }
